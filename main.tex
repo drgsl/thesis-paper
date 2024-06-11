@@ -9,7 +9,8 @@
 \usepackage{indentfirst}        % indentation
 \usepackage[nottoc]{tocbibind}  % table of contents style
 \usepackage[unicode]{hyperref}  % references from the table of contents
-
+\usepackage{wrapfig}            % for the small images that have text around
+\usepackage[rightcaption]{sidecap}
 % includes options
 \geometry{  a4paper,            % scientific thesis standard
             left=3cm,
@@ -17,7 +18,7 @@
             top=2cm,
             bottom=2cm,
  }
-\graphicspath{{images/}}        % path where the images are located
+\graphicspath{{src/images/}}        % path where the images are located
 \setlength{\parindent}{1cm}     % paragraph indentation
 
 % other options
@@ -27,32 +28,32 @@
 % the document content
 \begin{document}
     % macros (global)
-    \input{front/macros}
+    \input{src/front/macros}
     
     % front-matter
     \pagenumbering{gobble}
     
-    \input{front/cover}
-    \input{front/titlepage}
-    \input{front/declaration1}
-    \input{front/declaration2}
+    \input{src/front/cover}
+    \input{src/front/titlepage}
+    % \input{src/front/declaration1}
+    % \input{src/front/declaration2}
 
     % chapters
     \setcounter{page}{1}
     \pagenumbering{arabic}
     
-    \input{chapters/0Abstract}
+    \input{src/chapters/Abstract}
     
     % table of contents
     \tableofcontents
     
-    \input{chapters/1introduction}
-    \input{chapters/2motivation}
+    \input{src/chapters/introduction}
+    % \input{src/chapters/motivation}
     
-    \input{chapters/3chapter1}
-    \input{chapters/4chapter2}
-    \input{chapters/5chapter3}
+    \input{src/chapters/chapter1}
+    \input{src/chapters/chapter2}
+    \input{src/chapters/chapter3}
     
-    \input{chapters/6conclusions}
-    \input{chapters/7bibliography}
+    \input{src/chapters/conclusions}
+    \input{src/chapters/bibliography}
 \end{document}
