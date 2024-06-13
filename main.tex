@@ -1,5 +1,12 @@
 \documentclass[12pt]{report}
 
+\def\blankpage{%
+      \clearpage%
+      \thispagestyle{empty}%
+      \addtocounter{page}{-1}%
+      \null%
+      \clearpage} 
+
 % includes
 \usepackage{geometry}           % page size
 \usepackage[utf8]{inputenc}     % encoding
@@ -34,7 +41,9 @@
     \pagenumbering{gobble}
     
     \input{src/front/cover}
+    \blankpage
     \input{src/front/titlepage}
+    \blankpage
     % \input{src/front/declaration1}
     % \input{src/front/declaration2}
 
@@ -43,7 +52,8 @@
     \pagenumbering{arabic}
     
     \input{src/chapters/Abstract}
-    
+    \blankpage
+   
     % table of contents
     \tableofcontents
     

@@ -2,43 +2,51 @@
 \contentsline {chapter}{Abstract}{1}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{4}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Background}{4}{subsection.1.1.1}%
-\contentsline {subsubsection}{Computer Graphics Experience}{4}{section*.3}%
-\contentsline {subsubsection}{Game Development Experience}{5}{section*.4}%
-\contentsline {subsubsection}{in game development}{5}{section*.5}%
-\contentsline {subsection}{\numberline {1.1.2}Goal}{5}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Literature Review}{5}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Books}{6}{subsection.1.2.1}%
-\contentsline {subsubsection}{OpenGL SuperBible}{6}{section*.6}%
-\contentsline {subsubsection}{Computer Graphics (Donald Hearn)}{6}{section*.7}%
-\contentsline {subsubsection}{Mathematics for Game Development (Christopher Tremblay)}{6}{section*.8}%
-\contentsline {subsubsection}{C++ (Bjarne Stroustrup)}{6}{section*.9}%
-\contentsline {subsection}{\numberline {1.2.2}Papers}{7}{subsection.1.2.2}%
-\contentsline {subsubsection}{ml agents that can communicate to one another}{7}{section*.10}%
-\contentsline {subsubsection}{comp graphics projects from stanford}{7}{section*.11}%
-\contentsline {subsubsection}{...}{7}{section*.12}%
-\contentsline {section}{\numberline {1.3}Theorethical overview}{7}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Electronics}{7}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Math}{7}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Computer Graphics}{7}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Game Development}{7}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}Coding Practices}{7}{subsection.1.3.5}%
-\contentsline {chapter}{\numberline {2}Computer Graphics}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Math Engine}{8}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}vector.cpp}{8}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}random.cpp}{8}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Renderer Engine}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}primitives}{8}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Transformations}{9}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}color.cpp}{9}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Collision Detection}{9}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Game Development}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Game Engine}{10}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}GameObjects}{10}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Components}{10}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Collision Detection}{10}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Machine Learning}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Probabilities}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Scipy compatibility}{11}{section.4.2}%
-\contentsline {chapter}{Concluzii}{12}{chapter*.13}%
-\contentsline {chapter}{Bibliografie}{13}{chapter*.14}%
+\contentsline {section}{\numberline {1.2}Goal}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}What makes a piece of software a game engine?}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}What does it mean to be machine learning compatible?}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}What is a game engine?}{5}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}What should a game engine do?}{6}{subsection.1.2.4}%
+\contentsline {subsubsection}{Computer Graphics Experience}{6}{section*.7}%
+\contentsline {subsubsection}{Game Development Experience}{7}{section*.8}%
+\contentsline {subsubsection}{in game development}{7}{section*.9}%
+\contentsline {subsection}{\numberline {1.2.5}Goal}{7}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Literature Review}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Simulating Human Interaction}{8}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Out-performing Human Performance}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Bibliography Review}{8}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Books}{8}{subsection.1.3.4}%
+\contentsline {subsubsection}{OpenGL SuperBible}{8}{section*.10}%
+\contentsline {subsubsection}{Computer Graphics (Donald Hearn)}{9}{section*.11}%
+\contentsline {subsubsection}{Mathematics for Game Development (Christopher Tremblay)}{9}{section*.12}%
+\contentsline {subsubsection}{C++ (Bjarne Stroustrup)}{9}{section*.13}%
+\contentsline {subsection}{\numberline {1.3.5}Papers}{10}{subsection.1.3.5}%
+\contentsline {subsubsection}{ml agents that can communicate to one another}{10}{section*.14}%
+\contentsline {subsubsection}{comp graphics projects from stanford}{10}{section*.15}%
+\contentsline {subsubsection}{...}{10}{section*.16}%
+\contentsline {section}{\numberline {1.4}from leds to opengl}{10}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Why does my computer need a graphics card?}{10}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Colors and Vectors}{10}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Computer Graphics}{11}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Game Development}{11}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Coding Practices}{11}{subsection.1.4.5}%
+\contentsline {section}{\numberline {1.5}from opengl to end-users}{11}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Computer Graphics}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Math Engine}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}vector.cpp}{12}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}random.cpp}{12}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Renderer Engine}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}primitives}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Transformations}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}color.cpp}{13}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Collision Detection}{13}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Game Development}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Game Engine}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}GameObjects}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Components}{14}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Collision Detection}{14}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Machine Learning}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Probabilities}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Scipy compatibility}{15}{section.4.2}%
+\contentsline {chapter}{Concluzii}{16}{chapter*.17}%
+\contentsline {chapter}{Bibliografie}{17}{chapter*.18}%

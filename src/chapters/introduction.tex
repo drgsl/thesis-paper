@@ -2,12 +2,105 @@
 % \addcontentsline{toc}{chapter}{Introduction}
 
     \section{Motivation}
-        I chose this thesis project because of my extended knowledge around the subject and because i thought i could combine all of my past research into this.
+        I chose this thesis project because of the extended knowledge i obtained during my computer science bachelors in the fields of computer graphics and machine learning and because of my personal interest in the field of game development.
+
+        My goal was to apply some of those newly aquired concepts in a project that would benefit my long-term game development research. 
+
+        The way i've decided to apply these concepts is by building a graphics framework compatible with some of the simpler machine learning solutions.
+
+        \
+        \hrule
+        \
+
+    \section{Goal}
+        \subsection{What makes a piece of software a game engine?}
+            \paragraph*{Wikipedia} "A game engine is a software framework primarily designed for the development of video games and generally includes relevant libraries
+            % and support programs such as a level editor.
+            (...).
+            % Game engine can also refer to the development software supporting this framework, typically 
+            % a suite of tools and features for developing games.
+            The core functionality typically provided by a game engine may include a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, artificial intelligence, 
+            (...)
+            % networking, streaming, memory management, threading, localization support, scene graph, and video support for cinematics.
+            "
+
+            So, in order to satisfy this wikipedia definition, in order for a piece of software \emph{P} to be considered a game engine, \emph{P}has to satisfy the following:
+                \begin{itemize}
+                    \item \emph{P} must be a software framework
+                    \item \emph{P} should include relevant libraries
+                    \item \emph{P} should include a suite of engines
+                \end{itemize}
+
+            \subsubsection*{is \emph{P} a software framework?}
+                \paragraph*{Wikipedia} "A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code.
+                % , thus providing application-specific software. 
+                (...)
+                It provides a standard way to build and deploy applications and is a universal, reusable software environment 
+                % that provides particular functionality as part of a larger software platform 
+                (...)
+                to facilitate the development of software applications, products and solutions. "
+                
+                \begin{itemize}
+                    \item Generic functionality that can be selectively adapted based on user's code.
+                    \item provides a standard way of building and deploying applications
+                \end{itemize}
+        \subsection{What does it mean to be machine learning compatible?}
+
+
+
+        \subsection{What is a game engine?}
+            Maybe it feels irrelevant to talk about game engines when the project title says graphics engine, but in reality the graphics engine is one of the core components of a game engine. 
+            
+            A graphics engine is complex task in itself, besides the renderer itself, it requires a math backend and ways for fast inter-process communication.
+
+            These being said, let's formally define a game engine!
+
+
+        \paragraph*{Paper} Providing frameworks for reusability and separation of concerns is key to software development today. 
+        % https://www.scirp.org/html/4-9301886_47999.htm
+
+
+
+        % \paragraph*{Axiom} A framework provides a collection of operations, data-structures and procedures and has specific "magic formulas" that allow the end-user to communicate with the base functionalities. 
+
+
+
+        Licenses:
+
+        \begin{itemize}
+            \item Closed source with closed access
+            \item Closed source with open access
+            \item Open Source
+        \end{itemize}
+
+        Closed source game engines are usually a sign that the project is owned by a big company with a big number of employees and generous funding.
+        
+        It is unusual for a game company to provide access to its game engine to the end-users. This could be exploited into an competitive disadvantage.
+        Although, once in a while, because of leaks or because of reverse-engineering some parts of the ecosystem are revealed to the public.
+
+        In the following i will insert some snapshots of Rockstar's RAGE engine that had older versions reverse engineered and the newer ones leaked. 
+
+        
+        % images here
+
+        As you can see, the environments offer statistics relevant to development.
+
+        A closer inspection on figure [??] shows this line of code: "" that would indicate that ...
+
+
+        % For the scope of this argument i will say that there are 2 main ways of developing a game and the choice is dependent on the size and budget of the developing team.
+
+        The two options are either building an in-house framework 
+        % around the subject and because i thought i could combine all of my past research into this.
 
         Before i even started writing, i already had experience working in the following fields and i will briefly present my computer science background
 
-        \subsection{Background}
-            The following sections highlight pieces of my work that are relevant to this thesis. Each included project is significant due to specific implementations that are directly or indirectly connected to this paper.
+
+
+        \subsection{What should a game engine do?}
+            In this subsection i will describe some of the tools that i would like my game engine to be able to offer.
+            I will ilustrate this by showcasing some projects from my personal repertoir that had been built in a variety of environments and highlight the relevant tools that each environment offered me.
+            % The following sections highlight pieces of my work that are relevant to this thesis. Each included project is significant due to specific implementations that are directly or indirectly connected to this paper.
 
             \subsubsection{Computer Graphics Experience}
                 \begin{SCfigure}[0.9][h] 
@@ -63,7 +156,30 @@
         %     Now that i've been able to replicate some of the foundational concepts in enclosed environments, in the future i tend to use some already existing frameworks for physics and scene management and also ml libraries like scipy.
 
     \section{Literature Review}
+        In this section i will explore other's solutions to the problem i was trying to solve.
+
+        Unfortunately, there aren't many studies regarding "Machine Learning Compatible Game Engines" so i had to broaden my search.
+
+        \subsection{Simulating Human Interaction}
+                % TODO: Refactor and fact-check with paper.
+            One paper that i found extremily fascinating was \href[]{google.com}{TITLE} by AUTHOR. They created an environment that allowed ml agents to communicate to one another. One of the most exciting outcomes was that one agent organised a birthday party and proceeded to invite other ml agents to the party. In the following i will briefly go over the implementatation design for one agent:
             
+            % there were cool images of tables for the datastructures used. they had a timetable and there was a complex way for managing memories and long-time storage of relevant info. 
+
+            Another paper that highlights machine-learning agents interacting in human-like behaviour is \href[]{google.com}{TITLE} by AUTHOR. This team even offers multiple solutions for implementing such agents in popular environments such as Unity or ??.
+
+            One popular demo of their plugin? is the game \href[]{google.com}{GAMENAME}. 
+            Game that illustrates a scenario where the player is a detective and has to figure out a case, with the added twist that comunicating with any of the non-playable-characters (NPCs) is made through the microphone and with openai dialogue. 
+            
+            There is also a mod for the popular game Skyrim that allows the player to have fluid dialogue with any in-game character. 
+        
+        \subsection{Out-performing Human Performance}
+            popular youtuber Code Bullet has a series where he "solves" games using AI models. He usually uses neural-networks for his solutions. One recent such video is where he programmed a JUMP KING ml.
+            
+            There are chess bots being developed that use machine learning in an attempt to "solve" the game of chess. So it is clear to say there is is a lot of incentivise towards acomodating machine learning algorithms into games.
+
+        \subsection{Bibliography Review}
+            % this might be more relevant in an bibliography overview chapter
             in order to achieve this project i have went through multiple pieces of literature.
 
             the ones i used most extensively are:
@@ -109,13 +225,41 @@
                     \subsubsection{comp graphics projects from stanford}
                     \subsubsection{...}
 
-    \section{Theorethical overview}
-        \subsection{Electronics}
-        \subsection{Math}
+    \section{from leds to opengl}
+        \subsection{Why does my computer need a graphics card?}
+            There is this extremily interesting video that showcases how easily one can communicate through the VGA protocol with any display. (BEN EATER)
+
+            There are X many pins on a VGA port. From which, X1 are GROUND, X2 are VCC and 4? are used for actually displaying.
+
+            The algorithm loop is fairly straight-forward: The monitor expects data through Y pin every Z miliseconds. Every piece of data is considered to be a pixel on the grid, if there is data sent through W pin, the monitor knows to skip to the next line.
+
+            The setup revolves around telling the monitor the display resolution, refresh rate and bitmap? of the colors. 
+
+            Roughly speaking, an led can receive anywhere from 0V to 3.3V (of course this can get more complicated depending on the color of the led). This is electronics-language but computer programs dont work with volts, they work with variables. A translation convention is needed.
+
+            This 0V-3.3V range can be devided into however many steps but 255 steps is the most popular and widely accepted one. 
+            Fun Fact: old apple/MSDOS/... computers are using 2Bit colors. That meaning that any led can be either completly turned on or off.
+
+            Also old computers were using 1Led/Pixel and now we use 3LEDs/Pixel.
+        \subsection{Colors and Vectors}
+            So we need a data-structure that can hold 3 255bit values: r, g and b. Throw in an extra one for opacity and make it a vector.
+
+            % image of color class
+
+            This data-structure should be used repetedly and continuosuly because there are many pixels in a line and there are many lines in a display matrix.
+
+            This color class is inherited from the vector class because it makes some calculations easier.
+
+            % image of vector3 base class
+
+            This Vector3 Class is the class that is used regulately
+
         \subsection{Computer Graphics}
         \subsection{Game Development}
         \subsection{Coding Practices}
 
+    \section{from opengl to end-users}
+        This is the space in the rendering pipeline that my project desires to occupies. 
 
 % The first ever game created was 'Tennis for Two' and was played on an oscilloscope. From then, gaming evolved from simple pixelated experiences to complex, immersive digital worlds.
 

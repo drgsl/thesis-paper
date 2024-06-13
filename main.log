@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.8)  11 JUN 2024 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  13 JUN 2024 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/admin/github/thesis/main.tex
-(/home/admin/github/thesis/main.tex
+**/home/admin/git/thesis-paper/main.tex
+(/home/admin/git/thesis-paper/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/report.cls
@@ -225,7 +225,7 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \c@SC@C=\count281
 \SC@BOX=\box52
 )
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 29.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 36.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -235,24 +235,24 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -313,7 +313,7 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 36.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -339,7 +339,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 6.
-<src/images/logoFii.png, id=136, 193.47281pt x 188.95593pt>
+<src/images/logoFii.png, id=168, 193.47281pt x 188.95593pt>
 File: src/images/logoFii.png Graphic file (type png)
 <use src/images/logoFii.png>
 Package pdftex.def Info: src/images/logoFii.png  used on input line 13.
@@ -350,12 +350,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 18.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./src/images/logoFii.png>]) (./src/front/titlepage.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./src/images/logoFii.png>])
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44     \blankpage
+                    [0
+
+] (./src/front/titlepage.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.35 \end{titlepage}
-                     [1]) (./src/chapters/Abstract.tex) [1
+                     [1
+
+])
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46     \blankpage
+                    [0
+
+] (./src/chapters/Abstract.tex) [1
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.55     \blankpage
+                    [1
 
 ] (./main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -364,37 +388,39 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
  [2
 
+
 ])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
  (./src/chapters/introduction.tex [3]
 Chapter 1.
-<src/images/fractal.png, id=196, 1003.75pt x 702.625pt>
-File: src/images/fractal.png Graphic file (type png)
-<use src/images/fractal.png>
-Package pdftex.def Info: src/images/fractal.png  used on input line 20.
-(pdftex.def)             Requested size: 227.62204pt x 159.32745pt.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 24.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 29.
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [4
 
- <./src/images/fractal.png>] [5]) (./src/chapters/chapter1.tex [6] [7]
+] [5]
+<src/images/fractal.png, id=260, 1003.75pt x 702.625pt>
+File: src/images/fractal.png Graphic file (type png)
+<use src/images/fractal.png>
+Package pdftex.def Info: src/images/fractal.png  used on input line 113.
+(pdftex.def)             Requested size: 227.62204pt x 159.32745pt.
+ [6 <./src/images/fractal.png>] [7] [8] [9] [10]) (./src/chapters/chapter1.tex [11]
 Chapter 2.
-[8
+[12
 
-]) (./src/chapters/chapter2.tex [9]
+]) (./src/chapters/chapter2.tex [13]
 Chapter 3.
-) (./src/chapters/chapter3.tex [10
+) (./src/chapters/chapter3.tex [14
 
 ]
 Chapter 4.
-) (./src/chapters/conclusions.tex [11
+) (./src/chapters/conclusions.tex [15
 
-]) (./src/chapters/bibliography.tex [12
+]) (./src/chapters/bibliography.tex [16
 
-]) [13
+]) [17
 
 ] (./main.aux)
  ***********
@@ -402,21 +428,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EB872548022909ADF7CA6261C1D9453C;3933.
+(rerunfilecheck)             Checksum: 8FA69452353AE2F2699D9FDC1724A9A5;5987.
  ) 
 Here is how much of TeX's memory you used:
- 10682 strings out of 476076
- 169582 string characters out of 5793776
- 1934187 words of memory out of 5000000
- 32551 multiletter control sequences out of 15000+600000
- 575560 words of font info for 77 fonts, out of 8000000 for 9000
+ 10710 strings out of 476076
+ 169953 string characters out of 5793775
+ 1935187 words of memory out of 5000000
+ 32561 multiletter control sequences out of 15000+600000
+ 576663 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,7n,79p,966b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (15 pages, 99687 bytes).
+ 75i,7n,79p,969b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (22 pages, 117726 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 328 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 
