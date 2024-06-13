@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  13 JUN 2024 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  13 JUN 2024 19:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,7 +339,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 6.
-<src/images/logoFii.png, id=168, 193.47281pt x 188.95593pt>
+<src/images/logoFii.png, id=192, 193.47281pt x 188.95593pt>
 File: src/images/logoFii.png Graphic file (type png)
 <use src/images/logoFii.png>
 Package pdftex.def Info: src/images/logoFii.png  used on input line 13.
@@ -383,9 +383,9 @@ l.55     \blankpage
 
 ] (./main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 6.
  [2
 
 
@@ -395,32 +395,53 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  (./src/chapters/introduction.tex [3]
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 29.
-(/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [4
-
-] [5]
-<src/images/fractal.png, id=260, 1003.75pt x 702.625pt>
-File: src/images/fractal.png Graphic file (type png)
-<use src/images/fractal.png>
-Package pdftex.def Info: src/images/fractal.png  used on input line 113.
-(pdftex.def)             Requested size: 227.62204pt x 159.32745pt.
- [6 <./src/images/fractal.png>] [7] [8] [9] [10]) (./src/chapters/chapter1.tex [11]
-Chapter 2.
-[12
-
-]) (./src/chapters/chapter2.tex [13]
-Chapter 3.
-) (./src/chapters/chapter3.tex [14
+[4
 
 ]
+Chapter 2.
+[5
+
+]
+Chapter 3.
+[6
+
+]
+Overfull \hbox (7.74736pt too wide) in paragraph at lines 62--64
+[]\OT1/ppl/m/n/12 Such so-lu-tions have al-ready been ex-per-i-mented with, in the fol-low-ing i will present
+ []
+
+[7] [8]
 Chapter 4.
-) (./src/chapters/conclusions.tex [15
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 101.
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [9
 
-]) (./src/chapters/bibliography.tex [16
+]
+<src/images/fractal.png, id=314, 1003.75pt x 702.625pt>
+File: src/images/fractal.png Graphic file (type png)
+<use src/images/fractal.png>
+Package pdftex.def Info: src/images/fractal.png  used on input line 183.
+(pdftex.def)             Requested size: 227.62204pt x 159.32745pt.
 
-]) [17
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10] [11 <./src/images/fractal.png>] [12] [13] [14]) (./src/chapters/chapter1.tex [15]
+Chapter 5.
+[16
+
+]) (./src/chapters/chapter2.tex [17]
+Chapter 6.
+) (./src/chapters/chapter3.tex [18
+
+]
+Chapter 7.
+) (./src/chapters/conclusions.tex [19
+
+]) (./src/chapters/bibliography.tex [20
+
+]) [21
 
 ] (./main.aux)
  ***********
@@ -428,21 +449,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8FA69452353AE2F2699D9FDC1724A9A5;5987.
+(rerunfilecheck)             Checksum: A442E0F6FCA16CBB5E0F323404ECA886;7151.
  ) 
 Here is how much of TeX's memory you used:
- 10710 strings out of 476076
- 169953 string characters out of 5793775
+ 10726 strings out of 476076
+ 170137 string characters out of 5793775
  1935187 words of memory out of 5000000
- 32561 multiletter control sequences out of 15000+600000
- 576663 words of font info for 79 fonts, out of 8000000 for 9000
+ 32566 multiletter control sequences out of 15000+600000
+ 575560 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,7n,79p,969b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (22 pages, 117726 bytes).
+</usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (26 pages, 115814 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 339 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 419 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

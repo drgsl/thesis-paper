@@ -1,67 +1,138 @@
 \chapter{Introduction} 
 % \addcontentsline{toc}{chapter}{Introduction}
 
-    \section{Motivation}
-        I chose this thesis project because of the extended knowledge i obtained during my computer science bachelors in the fields of computer graphics and machine learning and because of my personal interest in the field of game development.
+    In the following i will present to you my work of the past year. Work where i attempt to combine multiple computer sciences. 
 
-        My goal was to apply some of those newly aquired concepts in a project that would benefit my long-term game development research. 
+\chapter{Motivation}
 
-        The way i've decided to apply these concepts is by building a graphics framework compatible with some of the simpler machine learning solutions.
+    I chose this thesis project because of the extended knowledge i obtained during my computer science bachelors in the fields of computer graphics and machine learning and because of my personal interest in the field of game development.
 
-        \
-        \hrule
-        \
+    My goal was to apply some of those newly aquired concepts in a project that would benefit my long-term game development research. 
 
-    \section{Goal}
-        \subsection{What makes a piece of software a game engine?}
-            \paragraph*{Wikipedia} "A game engine is a software framework primarily designed for the development of video games and generally includes relevant libraries
-            % and support programs such as a level editor.
-            (...).
-            % Game engine can also refer to the development software supporting this framework, typically 
-            % a suite of tools and features for developing games.
-            The core functionality typically provided by a game engine may include a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, artificial intelligence, 
-            (...)
-            % networking, streaming, memory management, threading, localization support, scene graph, and video support for cinematics.
-            "
+    The way i've decided to apply these concepts is by building a graphics framework compatible with some of the simpler machine learning solutions.
 
-            So, in order to satisfy this wikipedia definition, in order for a piece of software \emph{P} to be considered a game engine, \emph{P}has to satisfy the following:
-                \begin{itemize}
-                    \item \emph{P} must be a software framework
-                    \item \emph{P} should include relevant libraries
-                    \item \emph{P} should include a suite of engines
-                \end{itemize}
+\chapter{Goal}
 
-            \subsubsection*{is \emph{P} a software framework?}
-                \paragraph*{Wikipedia} "A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code.
-                % , thus providing application-specific software. 
-                (...)
-                It provides a standard way to build and deploy applications and is a universal, reusable software environment 
-                % that provides particular functionality as part of a larger software platform 
-                (...)
-                to facilitate the development of software applications, products and solutions. "
-                
-                \begin{itemize}
-                    \item Generic functionality that can be selectively adapted based on user's code.
-                    \item provides a standard way of building and deploying applications
-                \end{itemize}
-        \subsection{What does it mean to be machine learning compatible?}
+    The goal is to build a game engine that has machine learning solutions already integrated. 
+    In the following i will present the benefits of this goal.
 
+    \section{Benefits of building your own game engine}
+        \subsection{Standard industry practice}
+            it is common for big companies to build their own in-house game engines and then develop their games on it.
+            advantages:     provides competitive edge, security, integrity ...
+            disadvantages:  cost, team special for that.
 
+            it is common for smaller sized companies to develop their games/projects on already existing game engines  
+            advantages:     already existing reources and docs, community, 
+            disadvantages:  dificult to come up with unique style.
 
-        \subsection{What is a game engine?}
-            Maybe it feels irrelevant to talk about game engines when the project title says graphics engine, but in reality the graphics engine is one of the core components of a game engine. 
+            On the following, i want us to analyse some of the game engines that there are. and draw out relevant particularities of each of them.
+
+            for this i have chosen 1 Open Source graphics framework (p5.js), 1 closed software game engine (RAGE) and 1 restricted game engine (UNITY).
+
+            \subsubsection*{RAGE}
+                even though this is a closed project and unaccesible to the public, over the years different screenshots and code snippets had been leaked and/or reverse-engineered and i would like us to take a look at some of the more expressive ones.
+            \subsubsection*{Unity}
+                Even though unity's source code is not accesible to the public, the engine is completly free to use for any individual*.
+            \subsubsection*{P5.js}
+                This graphics engine is completly free and \href[]{github.com}{open-source}
+
+        \subsection{Educational purposes}
+            i strongly believe that building a game engine had massively improved my abilities.
+
+    \section{Benefits of integrating machine learning with gaming}
+
+        ml is the new and fancy cool shiny thing that shows promising numbers and gets ppl hyped and everyone loves it and it must be implemented into everything that exists.
+
+        game development is no exception.
+
+        \subsection{Simulating Human Interaction}
+            NPCs are important in games.
+
+            NPCs are there to guide the player and are the projection the game designers into the game world. 
+
+            Because of this, is is really important that npcs have fluid dialogue and dont break the illusion of choice too easily.
+
+            Current solutions imply using dialogue trees.
             
-            A graphics engine is complex task in itself, besides the renderer itself, it requires a math backend and ways for fast inter-process communication.
+            they can still feel rough on the edges. and the illusion can be broken easily when u have to decide from a set of predefined dialogue choices.
 
-            These being said, let's formally define a game engine!
+            the imersiveness of games could greatly improve if ml were to be implemented on top of this already existing dialogue tree solution.
+
+            Such solutions have already been experimented with, in the following i will present the findings of 3 other papers that use machine learning to improve npc dialogue and interaction.
+            Two of the following are solutions for human-to-ai dialogue and one of them simulates ai-to-ai.
+            \subsubsection*{Ai interacting to Ai}
+                % TODO: Refactor and fact-check with paper.
+                One paper that i found extremily fascinating was \href[]{google.com}{TITLE} by AUTHOR. They created an environment that allowed ml agents to communicate to one another. One of the most exciting outcomes was that one agent organised a birthday party and proceeded to invite other ml agents to the party. In the following i will briefly go over the implementatation design for one agent:
+                
+                % there were cool images of tables for the datastructures used. they had a timetable and there was a complex way for managing memories and long-time storage of relevant info. 
+
+            \subsection*{Ai interacting to humans}
+                Another paper that highlights machine-learning agents interacting in human-like behaviour is \href[]{google.com}{TITLE} by AUTHOR. This team even offers multiple solutions for implementing such agents in popular environments such as Unity or ??.
+
+                One popular demo of their plugin? is the game \href[]{google.com}{GAMENAME}. 
+                Game that illustrates a scenario where the player is a detective and has to figure out a case, with the added twist that comunicating with any of the non-playable-characters (NPCs) is made through the microphone and with openai dialogue. 
+                
+                There is also a mod for the popular game Skyrim that allows the player to have fluid dialogue with any in-game character. 
+        
+        \subsection{Out-performing Human Performance}
+            popular youtuber Code Bullet has a series where he "solves" games using AI models. He usually uses neural-networks for his solutions. One recent such video is where he programmed a JUMP KING ml.
+            
+            There are chess bots being developed that use machine learning in an attempt to "solve" the game of chess. So it is clear to say there is is a lot of incentivise towards acomodating machine learning algorithms into games.
+
+\chapter{Achievements}
+
+    In this chapter, i will prove that i have achieved the goals stated in the previous chapter.
+
+    \section{Proof that i have built a game engine}
+        \paragraph*{Wikipedia} "A game engine is a software framework primarily designed for the development of video games and generally includes relevant libraries
+        % and support programs such as a level editor.
+        (...).
+        % Game engine can also refer to the development software supporting this framework, typically 
+        % a suite of tools and features for developing games.
+        The core functionality typically provided by a game engine may include a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, artificial intelligence, 
+        (...)
+        % networking, streaming, memory management, threading, localization support, scene graph, and video support for cinematics.
+        "
+
+        So, in order to satisfy this definition, a piece of software \emph{P} can be considered a game engine, if and only if \emph{P} satisfies the following:
+
+        \begin{itemize}
+            \item \emph{P} is a software framework
+            \item \emph{P} includes a suite of relevant engines
+        \end{itemize}
+
+        \subsection{is my project a software framework?}
+
+            \paragraph*{Wikipedia} "A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code.
+            % , thus providing application-specific software. 
+            (...)
+            It provides a standard way to build and deploy applications and is a universal, reusable software environment 
+            % that provides particular functionality as part of a larger software platform 
+            (...)
+            to facilitate the development of software applications, products and solutions. "
+            
+            \begin{itemize}
+                \item Generic functionality that can be selectively adapted based on user's code.
+                \item provides a standard way of building and deploying applications
+            \end{itemize}
 
 
-        \paragraph*{Paper} Providing frameworks for reusability and separation of concerns is key to software development today. 
-        % https://www.scirp.org/html/4-9301886_47999.htm
+
+        % \subsection{What is a game engine?}
+        %     Maybe it feels irrelevant to talk about game engines when the project title says graphics engine, but in reality the graphics engine is one of the core components of a game engine. 
+            
+        %     A graphics engine is complex task in itself, besides the renderer itself, it requires a math backend and ways for fast inter-process communication.
+
+        %     These being said, let's formally define a game engine!
+
+
+        % \paragraph*{Paper} Providing frameworks for reusability and separation of concerns is key to software development today. 
+        % % https://www.scirp.org/html/4-9301886_47999.htm
 
 
 
-        % \paragraph*{Axiom} A framework provides a collection of operations, data-structures and procedures and has specific "magic formulas" that allow the end-user to communicate with the base functionalities. 
+        % % \paragraph*{Axiom} A framework provides a collection of operations, data-structures and procedures and has specific "magic formulas" that allow the end-user to communicate with the base functionalities. 
 
 
 
@@ -75,11 +146,10 @@
 
         Closed source game engines are usually a sign that the project is owned by a big company with a big number of employees and generous funding.
         
-        It is unusual for a game company to provide access to its game engine to the end-users. This could be exploited into an competitive disadvantage.
+        It is unusual for a game company to provide access to its game engine to the end-users. This could be exploited into a competitive disadvantage.
         Although, once in a while, because of leaks or because of reverse-engineering some parts of the ecosystem are revealed to the public.
 
         In the following i will insert some snapshots of Rockstar's RAGE engine that had older versions reverse engineered and the newer ones leaked. 
-
         
         % images here
 
