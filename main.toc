@@ -18,50 +18,55 @@
 \contentsline {subsection}{\numberline {4.2.1}Providers}{10}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Pipelines}{10}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Game Engines}{10}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5}Achievements}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Proof that i have built a game engine}{11}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}is my project a software framework?}{11}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}What should a game engine do?}{12}{subsection.5.1.2}%
-\contentsline {subsubsection}{Computer Graphics Experience}{12}{section*.10}%
-\contentsline {subsubsection}{Game Development Experience}{13}{section*.11}%
-\contentsline {subsubsection}{in game development}{13}{section*.12}%
-\contentsline {subsection}{\numberline {5.1.3}Goal}{13}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Literature Review}{14}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Simulating Human Interaction}{14}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Out-performing Human Performance}{14}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Bibliography Review}{15}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Books}{15}{subsection.5.2.4}%
-\contentsline {subsubsection}{OpenGL SuperBible}{15}{section*.13}%
-\contentsline {subsubsection}{Computer Graphics (Donald Hearn)}{15}{section*.14}%
-\contentsline {subsubsection}{Mathematics for Game Development (Christopher Tremblay)}{15}{section*.15}%
-\contentsline {subsubsection}{C++ (Bjarne Stroustrup)}{15}{section*.16}%
-\contentsline {subsection}{\numberline {5.2.5}Papers}{16}{subsection.5.2.5}%
-\contentsline {subsubsection}{ml agents that can communicate to one another}{16}{section*.17}%
-\contentsline {subsubsection}{comp graphics projects from stanford}{16}{section*.18}%
-\contentsline {subsubsection}{...}{16}{section*.19}%
-\contentsline {section}{\numberline {5.3}from leds to opengl}{16}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Why does my computer need a graphics card?}{16}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Colors and Vectors}{17}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Computer Graphics}{17}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Game Development}{17}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Coding Practices}{17}{subsection.5.3.5}%
-\contentsline {section}{\numberline {5.4}from opengl to end-users}{17}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Computer Graphics}{18}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Math Engine}{18}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}vector.cpp}{18}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}random.cpp}{18}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Renderer Engine}{18}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}primitives}{18}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Transformations}{19}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}color.cpp}{19}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Collision Detection}{19}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Game Development}{20}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Game Engine}{20}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}GameObjects}{20}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Components}{20}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Collision Detection}{20}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Machine Learning}{21}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Probabilities}{21}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Scipy compatibility}{21}{section.8.2}%
-\contentsline {chapter}{Concluzii}{22}{chapter*.20}%
-\contentsline {chapter}{Bibliografie}{23}{chapter*.21}%
+\contentsline {chapter}{\numberline {5}My Application}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The C++ backend}{11}{section.5.1}%
+\contentsline {section}{\numberline {5.2}The Python backend}{11}{section.5.2}%
+\contentsline {section}{\numberline {5.3}The C++ frontend programming interface}{11}{section.5.3}%
+\contentsline {section}{\numberline {5.4}The Python frontend programming interface}{11}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Achievements}{12}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Proof that i have built a game engine}{12}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}is my project a software framework?}{12}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}What should a game engine do?}{13}{subsection.6.1.2}%
+\contentsline {subsubsection}{Computer Graphics Experience}{13}{section*.10}%
+\contentsline {subsubsection}{Game Development Experience}{14}{section*.11}%
+\contentsline {subsubsection}{in game development}{14}{section*.12}%
+\contentsline {subsection}{\numberline {6.1.3}Goal}{14}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Literature Review}{15}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Simulating Human Interaction}{15}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Out-performing Human Performance}{15}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Bibliography Review}{16}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Books}{16}{subsection.6.2.4}%
+\contentsline {subsubsection}{OpenGL SuperBible}{16}{section*.13}%
+\contentsline {subsubsection}{Computer Graphics (Donald Hearn)}{16}{section*.14}%
+\contentsline {subsubsection}{Mathematics for Game Development (Christopher Tremblay)}{16}{section*.15}%
+\contentsline {subsubsection}{C++ (Bjarne Stroustrup)}{16}{section*.16}%
+\contentsline {subsection}{\numberline {6.2.5}Papers}{17}{subsection.6.2.5}%
+\contentsline {subsubsection}{ml agents that can communicate to one another}{17}{section*.17}%
+\contentsline {subsubsection}{comp graphics projects from stanford}{17}{section*.18}%
+\contentsline {subsubsection}{...}{17}{section*.19}%
+\contentsline {section}{\numberline {6.3}from leds to opengl}{17}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Why does my computer need a graphics card?}{17}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Colors and Vectors}{18}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Computer Graphics}{18}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Game Development}{18}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Coding Practices}{18}{subsection.6.3.5}%
+\contentsline {section}{\numberline {6.4}from opengl to end-users}{18}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Computer Graphics}{19}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Math Engine}{19}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}vector.cpp}{19}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}random.cpp}{19}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Renderer Engine}{19}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}primitives}{19}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Transformations}{20}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}color.cpp}{20}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Collision Detection}{20}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Game Development}{21}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Game Engine}{21}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}GameObjects}{21}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Components}{21}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Collision Detection}{21}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Machine Learning}{22}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Probabilities}{22}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Scipy compatibility}{22}{section.9.2}%
+\contentsline {chapter}{Concluzii}{23}{chapter*.20}%
+\contentsline {chapter}{Bibliografie}{24}{chapter*.21}%
