@@ -1,84 +1,89 @@
-\chapter{Introduction} 
-% \addcontentsline{toc}{chapter}{Introduction}
+
+
+\part*{Academic Overview}
+\addcontentsline{toc}{Part}{Overview}
+
+  \chapter*{Introduction} 
+  \addcontentsline{toc}{chapter}{Introduction}
 
     In the following i will present to you my work of the past year. Work where i attempt to combine multiple computer sciences. 
 
-\chapter{Motivation}
+  \chapter{Motivation}
 
-    I chose this thesis project because of the extended knowledge i obtained during my computer science bachelors in the fields of computer graphics and machine learning and because of my personal interest in the field of game development.
+      I chose this thesis project because of the extended knowledge i obtained during my computer science bachelors in the fields of computer graphics and machine learning and because of my personal interest in the field of game development.
 
-    My goal was to apply some of those newly aquired concepts in a project that would benefit my long-term game development research. 
+      My goal was to apply some of those newly aquired concepts in a project that would benefit my long-term game development research. 
 
-    The way i've decided to apply these concepts is by building a graphics framework compatible with some of the simpler machine learning solutions.
+      The way i've decided to apply these concepts is by building a graphics framework compatible with some of the simpler machine learning solutions.
 
-\chapter{Goals}
+  \chapter{Goals}
 
-    The goal is to build a game engine that has machine learning solutions already integrated. 
-    In the following i will present the benefits of this goal.
+      The goal is to build a game engine that has machine learning solutions already integrated. 
+      In the following i will present the benefits of this goal.
 
-    \section{Benefits of building your own game engine}
-        \subsection{Standard industry practice}
-            it is common for big companies to build their own in-house game engines and then develop their games on it.
-            advantages:     provides competitive edge, security, integrity ...
-            disadvantages:  cost, team special for that.
+      \section{Benefits of building your own game engine}
+          \subsection{Standard industry practice}
+              it is common for big companies to build their own in-house game engines and then develop their games on it.
+              advantages:     provides competitive edge, security, integrity ...
+              disadvantages:  cost, team special for that.
 
-            it is common for smaller sized companies to develop their games/projects on already existing game engines  
-            advantages:     already existing reources and docs, community, 
-            disadvantages:  dificult to come up with unique style.
+              it is common for smaller sized companies to develop their games/projects on already existing game engines  
+              advantages:     already existing reources and docs, community, 
+              disadvantages:  dificult to come up with unique style.
 
-            On the following, i want us to analyse some of the game engines that there are. and draw out relevant particularities of each of them.
+              On the following, i want us to analyse some of the game engines that there are. and draw out relevant particularities of each of them.
 
-            for this i have chosen 1 Open Source graphics framework (p5.js), 1 closed software game engine (RAGE) and 1 restricted game engine (UNITY).
+              for this i have chosen 1 Open Source graphics framework (p5.js), 1 closed software game engine (RAGE) and 1 restricted game engine (UNITY).
 
-            \subsubsection*{RAGE}
-                even though this is a closed project and unaccesible to the public, over the years different screenshots and code snippets had been leaked and/or reverse-engineered and i would like us to take a look at some of the more expressive ones.
-            \subsubsection*{Unity}
-                Even though unity's source code is not accesible to the public, the engine is completly free to use for any individual*.
-            \subsubsection*{P5.js}
-                This graphics engine is completly free and \href[]{github.com}{open-source}
+              \subsubsection*{RAGE}
+                  even though this is a closed project and unaccesible to the public, over the years different screenshots and code snippets had been leaked and/or reverse-engineered and i would like us to take a look at some of the more expressive ones.
+              \subsubsection*{Unity}
+                  Even though unity's source code is not accesible to the public, the engine is completly free to use for any individual*.
+              \subsubsection*{P5.js}
+                  This graphics engine is completly free and \href[]{github.com}{open-source}
 
-        \subsection{Educational purposes}
-            i strongly believe that building a game engine had massively improved my abilities.
+          \subsection{Educational purposes}
+              i strongly believe that building a game engine had massively improved my abilities.
 
-    \section{Benefits of integrating machine learning with gaming}
+      \section{Benefits of integrating machine learning with gaming}
 
-        ml is the new and fancy cool shiny thing that shows promising numbers and gets ppl hyped and everyone loves it and it must be implemented into everything that exists.
+          ml is the new and fancy cool shiny thing that shows promising numbers and gets ppl hyped and everyone loves it and it must be implemented into everything that exists.
 
-        game development is no exception.
+          game development is no exception.
 
-        \subsection{Simulating Human Interaction}
-            NPCs are important in games.
+          \subsection{Simulating Human Interaction}
+              NPCs are important in games.
 
-            NPCs are there to guide the player and are the projection the game designers into the game world. 
+              NPCs are there to guide the player and are the projection the game designers into the game world. 
 
-            Because of this, is is really important that npcs have fluid dialogue and dont break the illusion of choice too easily.
+              Because of this, is is really important that npcs have fluid dialogue and dont break the illusion of choice too easily.
 
-            Current solutions imply using dialogue trees.
-            
-            they can still feel rough on the edges. and the illusion can be broken easily when u have to decide from a set of predefined dialogue choices.
+              Current solutions imply using dialogue trees.
+              
+              they can still feel rough on the edges. and the illusion can be broken easily when u have to decide from a set of predefined dialogue choices.
 
-            the imersiveness of games could greatly improve if ml were to be implemented on top of this already existing dialogue tree solution.
+              the imersiveness of games could greatly improve if ml were to be implemented on top of this already existing dialogue tree solution.
 
-            Such solutions have already been experimented with, in the following i will present the findings of 3 other papers that use machine learning to improve npc dialogue and interaction.
-            Two of the following are solutions for human-to-ai dialogue and one of them simulates ai-to-ai.
-            \subsubsection*{Ai interacting to Ai}
-                % TODO: Refactor and fact-check with paper.
-                One paper that i found extremily fascinating was \href[]{google.com}{TITLE} by AUTHOR. They created an environment that allowed ml agents to communicate to one another. One of the most exciting outcomes was that one agent organised a birthday party and proceeded to invite other ml agents to the party. In the following i will briefly go over the implementatation design for one agent:
-                
-                % there were cool images of tables for the datastructures used. they had a timetable and there was a complex way for managing memories and long-time storage of relevant info. 
+              Such solutions have already been experimented with, in the following i will present the findings of 3 other papers that use machine learning to improve npc dialogue and interaction.
+              Two of the following are solutions for human-to-ai dialogue and one of them simulates ai-to-ai.
+              \subsubsection*{Ai interacting to Ai}
+                  % TODO: Refactor and fact-check with paper.
+                  One paper that i found extremily fascinating was \href[]{google.com}{TITLE} by AUTHOR. They created an environment that allowed ml agents to communicate to one another. One of the most exciting outcomes was that one agent organised a birthday party and proceeded to invite other ml agents to the party. In the following i will briefly go over the implementatation design for one agent:
+                  
+                  % there were cool images of tables for the datastructures used. they had a timetable and there was a complex way for managing memories and long-time storage of relevant info. 
 
-            \subsection*{Ai interacting to humans}
-                Another paper that highlights machine-learning agents interacting in human-like behaviour is \href[]{google.com}{TITLE} by AUTHOR. This team even offers multiple solutions for implementing such agents in popular environments such as Unity or ??.
+              \subsection*{Ai interacting to humans}
+                  Another paper that highlights machine-learning agents interacting in human-like behaviour is \href[]{google.com}{TITLE} by AUTHOR. This team even offers multiple solutions for implementing such agents in popular environments such as Unity or ??.
 
-                One popular demo of their plugin? is the game \href[]{google.com}{GAMENAME}. 
-                Game that illustrates a scenario where the player is a detective and has to figure out a case, with the added twist that comunicating with any of the non-playable-characters (NPCs) is made through the microphone and with openai dialogue. 
-                
-                There is also a mod for the popular game Skyrim that allows the player to have fluid dialogue with any in-game character. 
-        
-        \subsection{Out-performing Human Performance}
-            popular youtuber Code Bullet has a series where he "solves" games using AI models. He usually uses neural-networks for his solutions. One recent such video is where he programmed a JUMP KING ml.
-            
-            There are chess bots being developed that use machine learning in an attempt to "solve" the game of chess. So it is clear to say there is is a lot of incentivise towards acomodating machine learning algorithms into games.
+                  One popular demo of their plugin? is the game \href[]{google.com}{GAMENAME}. 
+                  Game that illustrates a scenario where the player is a detective and has to figure out a case, with the added twist that comunicating with any of the non-playable-characters (NPCs) is made through the microphone and with openai dialogue. 
+                  
+                  There is also a mod for the popular game Skyrim that allows the player to have fluid dialogue with any in-game character. 
+          
+          \subsection{Out-performing Human Performance}
+              popular youtuber Code Bullet has a series where he "solves" games using AI models. He usually uses neural-networks for his solutions. One recent such video is where he programmed a JUMP KING ml.
+              
+              There are chess bots being developed that use machine learning in an attempt to "solve" the game of chess. So it is clear to say there is is a lot of incentivise towards acomodating machine learning algorithms into games.
 
 
 
