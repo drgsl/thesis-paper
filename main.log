@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  14 JUN 2024 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  15 JUN 2024 05:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,7 +339,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 6.
-<src/images/logoFii.png, id=301, 193.47281pt x 188.95593pt>
+<src/images/logoFii.png, id=305, 193.47281pt x 188.95593pt>
 File: src/images/logoFii.png Graphic file (type png)
 <use src/images/logoFii.png>
 Package pdftex.def Info: src/images/logoFii.png  used on input line 13.
@@ -410,50 +410,69 @@ Overfull \hbox (7.74736pt too wide) in paragraph at lines 62--64
 []\OT1/ppl/m/n/12 Such so-lu-tions have al-ready been ex-per-i-mented with, in the fol-low-ing i will present
  []
 
-[8] [9]
+[8] [9] [10
+
+] [11
+
+] [12
+
+] [13
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 172.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [14] [15] [16
+
+] [17
+
+]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 238.
+
+[18
+
+] [19
+
+] [20
+
+] [21
+
+]
 Chapter 4.
-[10
+
+Overfull \hbox (7.19556pt too wide) in paragraph at lines 289--294
+[]\OT1/ppl/m/n/12 "A soft-ware frame-work is an ab-strac-tion in which soft-ware, pro-vid-ing generic
+ []
+
+[22
 
 ]
 Chapter 5.
-[11
+[23
 
 ]
-Chapter 6.
-[12
-
-]
-Chapter 7.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 170.
-(/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [13
-
-] [14]
-Chapter 8.
-[15
-
-]
-<src/images/fractal.png, id=475, 1003.75pt x 702.625pt>
+<src/images/fractal.png, id=524, 1003.75pt x 702.625pt>
 File: src/images/fractal.png Graphic file (type png)
 <use src/images/fractal.png>
-Package pdftex.def Info: src/images/fractal.png  used on input line 269.
+Package pdftex.def Info: src/images/fractal.png  used on input line 391.
 (pdftex.def)             Requested size: 227.62204pt x 159.32745pt.
- [16 <./src/images/fractal.png>] [17] [18] [19] [20]) (./src/chapters/chapter1.tex [21]
-Chapter 9.
-[22
+ [24 <./src/images/fractal.png>] [25] [26] [27] [28]) (./src/chapters/chapter1.tex [29]
+Chapter 6.
+[30
 
-]) (./src/chapters/chapter2.tex [23]
-Chapter 10.
-) (./src/chapters/chapter3.tex [24
+]) (./src/chapters/chapter2.tex [31]
+Chapter 7.
+) (./src/chapters/chapter3.tex [32
 
 ]
-Chapter 11.
-) (./src/chapters/conclusions.tex [25
+Chapter 8.
+) (./src/chapters/conclusions.tex [33
 
-]) (./src/chapters/bibliography.tex [26
+]) (./src/chapters/bibliography.tex [34
 
-]) [27
+]) [35
 
 ] (./main.aux)
  ***********
@@ -461,21 +480,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AA8E32471103C5E1D83B5F8C51BEB094;12017.
+(rerunfilecheck)             Checksum: B1BC1E1F1DEB3E6E196638FB32BB64FE;10167.
  ) 
 Here is how much of TeX's memory you used:
- 10786 strings out of 476076
- 170957 string characters out of 5793775
- 1938187 words of memory out of 5000000
- 32593 multiletter control sequences out of 15000+600000
+ 10808 strings out of 476076
+ 171040 string characters out of 5793775
+ 1936187 words of memory out of 5000000
+ 32595 multiletter control sequences out of 15000+600000
  575560 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,7n,79p,969b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (32 pages, 124466 bytes).
+Output written on main.pdf (40 pages, 128119 bytes).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
- 538 compressed objects within 6 object streams
- 122 named destinations out of 1000 (max. 500000)
- 603 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 584 compressed objects within 6 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 611 words of extra memory for PDF output out of 10000 (max. 10000000)
 
