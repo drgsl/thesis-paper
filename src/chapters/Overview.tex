@@ -1,0 +1,646 @@
+\part{Overview}
+% \addcontentsline{toc}{part}{Overview}
+  % I am now on the edge and await.
+  "This University teaches you more than what to think. It teaches you how to think" Stefan Pantiru
+  \chapter*{Introduction} 
+  \addcontentsline{toc}{chapter}{Introduction}
+    What you are about to read is over 5 years of game engines introductions research combined with my recently gained machine learning experience aquired as part of my bachelors programme. 
+
+    Each part acts as an introduction to the one following it. You are now reading about the academic influence that lead to this extended study.
+
+    Of course, machine learning wasn't the only knowledge i gained during my bachelors study. I also take pride of myself for actively improving my Software Engineering and Object-Oriented-Programming knowledge, my System Design and Management skills and Computer Graphics and Computational Geometry understanding. 
+
+    Besides the knowledges, i have gained much experience working with industry-standard tools. There were courses where the main goal was a specific programming language understanding. Courses like Python Programming, OOP, Python Programming, PLP and many many more. Courses like this made me an agile handyman that has his toolbox in order.
+
+  \chapter*{Motivation}
+  \addcontentsline{toc}{chapter}{Motivation}
+
+  In the previous i mentioned the toolbox that this university allowed me to organise for myself. In the following i will go over some of the tools i specifically tailered for this implementation.
+
+  The biggest motivator factor for persuing this project is a strong personal interest in the field of game development and computer graphics.
+
+  My goal became to apply some of those concepts aquired during my study in my personal research.
+
+  The way i chose to apply these concepts is by building a graphics framework compatible with some of the simpler machine learning solutions.
+
+  \chapter*{Goal}
+  \addcontentsline{toc}{chapter}{Goal}
+
+    The goal is to build an Abstraction Layer that opens the inner workings of computer graphics and machine learning.
+
+    This Abstraction Layer \textbf{must} respect PHIGS standards, \textbf{must} be easy-to-learn for both intermediate and beginner end-users, \textbf{must} present shorter and more straight-forward solution than existing solutions.
+
+    The project's theme is combining Machine Learning with the Game Makers' Environments and standards.
+
+    \chapter*{Benefits of Game Engines}
+    \addcontentsline{toc}{chapter}{Benefits}
+      In the following i will present the benefits of this theme.
+
+      Building your own game engine is the standard practice when it comes to big in-house solutions. 
+      This of course, comes with both advantages and disadvantages.
+      The advantages are spaced around the ideas of security and integrity.
+      While the disadvantages are mostly cost-related.
+
+      The often solution for the smaller companies remains open-source software.
+      There are a few providers on the market already, if names like Unity, Unreal, godot might sound familiar, then maybe also do names like P5.js, Processing or maybe even Coding Train, Sebastian Lague, Code Bullet all the way towards electronics field with Ben Eater. 
+
+      It doesn't matter where in the previous enumeration you lost the references because the following will go more in-depth on the relevant discoveries of each of them.
+
+
+      \section*{Benefits of building your own game engine}
+          \subsection*{Standard industry practice}
+              it is common for big companies to build their own in-house game engines and then develop their games on it.
+              advantages:     provides competitive edge, security, integrity ...
+              disadvantages:  cost, team special for that.
+
+              it is common for smaller sized companies to develop their games/projects on already existing game engines  
+              advantages:     already existing reources and docs, community, 
+              disadvantages:  dificult to come up with unique style.
+
+              On the following, i want us to analyse some of the game engines that there are. and draw out relevant particularities of each of them.
+
+              for this i have chosen 1 Open Source graphics framework (p5.js), 1 closed software game engine (RAGE) and 1 restricted game engine (UNITY).
+
+              \subsubsection*{RAGE}
+                  even though this is a closed project and unaccesible to the public, over the years different screenshots and code snippets had been leaked and/or reverse-engineered and i would like us to take a look at some of the more expressive ones.
+              \subsubsection*{Unity}
+                  Even though unity's source code is not accesible to the public, the engine is completly free to use for any individual*.
+              \subsubsection*{P5.js}
+                  This graphics engine is completly free and \href[]{github.com}{open-source}
+
+          \subsection*{Educational purposes}
+              i strongly believe that building a game engine had massively improved my abilities.
+
+      \section*{Benefits of integrating machine learning with gaming}
+
+          ml is the new and fancy cool shiny thing that shows promising numbers and gets ppl hyped and everyone loves it and it must be implemented into everything that exists.
+
+          game development is no exception.
+
+          \subsection*{Simulating Human Interaction}
+              NPCs are important in games.
+
+              NPCs are there to guide the player and are the projection the game designers into the game world. 
+
+              Because of this, is is really important that npcs have fluid dialogue and dont break the illusion of choice too easily.
+
+              Current solutions imply using dialogue trees.
+              
+              they can still feel rough on the edges. and the illusion can be broken easily when u have to decide from a set of predefined dialogue choices.
+
+              the imersiveness of games could greatly improve if ml were to be implemented on top of this already existing dialogue tree solution.
+
+              Such solutions have already been experimented with, in the following i will present the findings of 3 other papers that use machine learning to improve npc dialogue and interaction.
+              Two of the following are solutions for human-to-ai dialogue and one of them simulates ai-to-ai.
+              \subsubsection*{Ai interacting to Ai}
+                  % TODO: Refactor and fact-check with paper.
+                  One paper that i found extremily fascinating was \href[]{google.com}{TITLE} by AUTHOR. They created an environment that allowed ml agents to communicate to one another. One of the most exciting outcomes was that one agent organised a birthday party and proceeded to invite other ml agents to the party. In the following i will briefly go over the implementatation design for one agent:
+                  
+                  % there were cool images of tables for the datastructures used. they had a timetable and there was a complex way for managing memories and long-time storage of relevant info. 
+
+              \subsection*{Ai interacting to humans}
+                  Another paper that highlights machine-learning agents interacting in human-like behaviour is \href[]{google.com}{TITLE} by AUTHOR. This team even offers multiple solutions for implementing such agents in popular environments such as Unity or ??.
+
+                  One popular demo of their plugin? is the game \href[]{google.com}{GAMENAME}. 
+                  Game that illustrates a scenario where the player is a detective and has to figure out a case, with the added twist that comunicating with any of the non-playable-characters (NPCs) is made through the microphone and with openai dialogue. 
+                  
+                  There is also a mod for the popular game Skyrim that allows the player to have fluid dialogue with any in-game character. 
+          
+          \subsection*{Out-performing Human Performance}
+              popular youtuber Code Bullet has a series where he "solves" games using AI models. He usually uses neural-networks for his solutions. One recent such video is where he programmed a JUMP KING ml.
+              
+              There are chess bots being developed that use machine learning in an attempt to "solve" the game of chess. So it is clear to say there is is a lot of incentivise towards acomodating machine learning algorithms into games.
+
+
+
+\part{Field Study}
+\addcontentsline{toc}{part}{Field Study}
+
+\chapter*{Field Study - Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+    The Field Study chapters will present a brief explication of the moving parts that are involved in computer graphics rendering.
+
+    First chapter is the one with more focus on embedded-systems concepts 
+    Second chapter goes through graphics abstraction layers 
+    Third chapter presents an overview of the popular solutions offered to end-users. 
+
+
+    \section*{Real-World use cases}
+    \addcontentsline{toc}{section}{use-cases}
+        \subsection*{Student Projects - Stanford Computer Graphics Course}
+            LINK
+        \subsection*{Academic Research}
+            IMAGES
+
+
+\chapter*{Field Study - Hardware}
+\addcontentsline{toc}{chapter}{Hardware}
+
+    This chapter brings focus towards embedded systems by being a brief description of the process of getting the LEDs on our screens to display whatever the computer's video board decides to render. 
+
+    \section*{The connection between screen and motherboard}
+    \addcontentsline{toc}{section}{Video cards}
+        \subsection*{Proof of concept using Arduino}
+            TINKERCAD IMAGE
+            % \href{https://www.youtube.com/watch?v=l7rce6IQDWs}{video}
+        \subsection*{Proof of concept using embedded circuits}
+            BEN EATER VIDEO
+        \subsection*{videoboards}
+            LINUS TECH TIPS OLD VIDEO MANUFATEURS PCBs
+
+    % \section{Graphics Abstraction Layers}
+
+    %     \subsection{Providers}
+
+
+    %         \subsubsection{opengl}
+
+
+    %             % Besides this book series, there is, of course, more literature around it. It's fair to say that is an field studied intensively.
+
+    %             % In the following i will go through some of the relevant literature and highlight diverse concepts that made it into the implementation. 
+    %             % \begin{itemize}
+    %             %   \item OpenGL superbible
+    %             %       \begin{itemize}
+    %             %         \item 
+    %             %       \end{itemize}
+    %             % \end{itemize}
+    %             % Computer Graphics 2nd Edition (in C) by Donald Hearn
+    %             % \item *Rodica baciu manual operare opengl
+    %             %     \begin{itemize}
+    %             %       \item 
+    %             %     \end{itemize}
+    %         \subsubsection{vulkan}
+    %         \subsubsection{directx}
+
+    %     \subsection{Pipelines}
+
+    %     \subsection{Game Engines}
+
+\chapter*{Field Study - Software}
+\addcontentsline{toc}{chapter}{Software}
+    This chapter accepts the embedded solutions as they are and develops solutions that step forward. 
+    The usual philosophy is abstraction layers.
+
+    \section*{OPENGL - Motivation}
+    \addcontentsline{toc}{section}{opengl}
+        There are a few options when choosing a graphics abstraction solution. The most popular in the game development industry are Vulkan and DirectX. DirectX is more appropriate when it comes to ... , while Vulkan profits from ... and performs better at ... .
+
+        The only disadvantage to both those solution is that neither of them is as documented as opengl. Also, opengl is more popular in the educational/academic space and felt like the more appropriate choice.
+
+    \section*{OPENGL - Features}
+        OpenGL's extensive documentation comes with both positives and negatives. Being one of the oldest solution to this problem it had seen multiple refactoring stages throught the years, this is best observed when realising there is a new revision of the opengl superbible released every couple of years. Each presenting the usual "How-to" projects and also acting as an update journal.
+
+        \pagebreak
+
+        In the following i will briefly talk about popular opengl features.
+
+        \subsection*{PHIGS Standard Compliant}
+            Offers primitive support and for their attributes by using Rendering Algorithms that use the low-level per pixel drawing functions extensively.
+
+            \subsubsection*{Primitives}
+                \begin{itemize}
+                  \item Points and Lines
+                  \begin{itemize}
+                    \item Width
+                    \item Color
+                    \begin{itemize}
+                      \item Flood-Fill Algorithms
+                    \end{itemize}
+                    \item Segments
+                  \end{itemize}
+                  \item Circle-generating Algorithms
+                  \item Text Renderer
+                \end{itemize}
+
+            \subsubsection*{Operations}
+              \begin{itemize}
+                \item Matrices
+                \begin{itemize}
+                  \item Homogeneous Representation
+                  \item Matrix      Multiplication
+                \end{itemize}
+
+                \item Basic Transformations
+                \begin{itemize}
+                    \item Translation
+                    % TODO: ADD EQUASIONS
+                    \item Rotation
+                    \begin{itemize}
+                        \item Euler Method
+                        \item Euler Problem
+                        \item Quaternions
+                        % TODO: EQUASIONS
+                    \end{itemize}
+                    \item Scaling
+                    % TODO: EQUASIONS
+                \end{itemize}
+                \end{itemize}
+
+
+    \section*{Other Graphics Abstraction Layers}
+    \addcontentsline{toc}{section}{Other Graphics Abstraction Layers}
+        \subsection*{Vulkan}
+        \addcontentsline{toc}{subsection}{Vulkan}
+        \subsection*{directX}
+        \addcontentsline{toc}{subsection}{DirectX}
+
+
+
+
+\chapter*{Field Study - Game Engines}
+\addcontentsline{toc}{section}{Other Graphics Abstraction Layers}
+
+\part{Implementation}
+% \addcontentsline{toc}{part}{Implementation}
+
+\chapter*{Implementation - Architecture}
+\addcontentsline{toc}{chapter}{Architecture}
+
+    In case you haven't read the previous chapter i advise glimsing over the chapters' titles at least once because it would give better context on where my project lives in the graphics lifecycle.
+
+    My Application is a Graphics Abstraction Layer that imitates industry standards when it comes to procedures used for ease of learning.
+    Besides being an easy-to-use beginner-friendly tool because of following industry standard solution in the c++ rendering backend engine. At it's core, this rendering engine is built on top of a vectorial mathematics engine.
+
+    The novelty that this project brings to the computer graphics world is the presence of a python Machine Learning backend that acts as an abstraction layer for simplifying the communication with services (openai, ollama) or with powerful machine learning libraries (scipy, skilearn) 
+
+
+    % TODO: DRAW>IO DRAWINGS FOR ALL OF THOSE
+    \section*{The C++    backend}
+    \addcontentsline{toc}{section}{Backend}
+    \section*{The Python backend}
+
+    \section*{The C++    frontend programming interface}
+    \addcontentsline{toc}{section}{Frontend}
+    \section*{The Python frontend programming interface}
+
+\chapter*{Comparison between results}
+\addcontentsline{toc}{chapter}{Result Comparison}
+    \section*{DVD bouncer}
+    \addcontentsline{toc}{section}{DVD}
+
+    \section*{Pong, The Game}
+    \addcontentsline{toc}{section}{Pong}
+
+\chapter*{The Machine Learning Interface}
+\addcontentsline{toc}{chapter}{Features}
+    \section*{interface for communicating with openai}
+    \addcontentsline{toc}{section}{openai, oLlama}
+    \section*{interface for communicating with scipy}
+    \addcontentsline{toc}{section}{SciPy, SkiLearn}
+    \section*{tool for web crawling}
+    \addcontentsline{toc}{section}{Data Crawling}
+
+\chapter*{Technical Review}
+\addcontentsline{toc}{chapter}{Technical Review}
+    \section*{Speed}
+    \addcontentsline{toc}{section}{Speed}
+    \section*{Memory}
+    \addcontentsline{toc}{section}{Memory}
+
+
+\chapter{Technical Review}
+    In this chapter, we will inspect to what extent needs one piece of software to satisfy in order for it to be considered part of the collection containing game engine.
+    
+    \paragraph*{Wikipedia} "A game engine is a software framework primarily designed for the development of video games and generally includes relevant libraries
+    % and support programs such as a level editor.
+    (...).
+    % Game engine can also refer to the development software supporting this framework, typically 
+    % a suite of tools and features for developing games.
+    The core functionality typically provided by a game engine may include a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, artificial intelligence, 
+    (...)
+    % networking, streaming, memory management, threading, localization support, scene graph, and video support for cinematics.
+    "
+
+    So, in order to satisfy this definition, a piece of software \emph{P} can be considered a game engine, if and only if \emph{P} satisfies the following:
+
+    \begin{itemize}
+        \item \emph{P} is a software framework
+        \begin{itemize}
+          \item {"A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code. 
+            (...) 
+            It provides a standard way to build and deploy applications and is a universal, reusable software environment 
+            (...)
+            to facilitate the development of software applications, products and solutions. "} source: Wikipedia
+
+            % \paragraph*{Wikipedia} {"A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code.
+            % % , thus providing application-specific software. 
+            % (...)
+            % It provides a standard way to build and deploy applications and is a universal, reusable software environment 
+            % % that provides particular functionality as part of a larger software platform 
+            % (...)
+            % to facilitate the development of software applications, products and solutions. "}
+            \begin{itemize}
+                \item Generic functionality that can be selectively adapted based on user's code.
+                \item provides a standard way of building and deploying applications
+            \end{itemize}
+        \end{itemize}
+        \item \emph{P} includes a suite of relevant engines
+    \end{itemize}
+
+
+
+\chapter{Conclusions}
+    
+    \section{Summary of this paper}
+        This has been a journey and after reading this paper you should have a view through the window of progress. There are still many to implement and properly integrate. There will be multiple update journals of this type posted on the following.
+
+    \section{Future improvements}
+        
+
+        \subsection{Packaged builds}
+            The scope of this project is to one day make it as an AUR package and also a PyPi library.
+
+            Some work has already been made in this direction in the matter that one of the early builds is available by running 'pip install -i https://test.pypi.org/simple/ game-genie' in any terminal.
+            Unfortunately, I had to interrupt pip support for until application grows into a more stable and mature form.
+
+
+        \subsection{}
+            This project could just as well transform into an companion app for a 
+
+        % \subsection{What is a game engine?}
+        %     Maybe it feels irrelevant to talk about game engines when the project title says graphics engine, but in reality the graphics engine is one of the core components of a game engine. 
+            
+        %     A graphics engine is complex task in itself, besides the renderer itself, it requires a math backend and ways for fast inter-process communication.
+
+        %     These being said, let's formally define a game engine!
+
+
+        % \paragraph*{Paper} Providing frameworks for reusability and separation of concerns is key to software development today. 
+        % % https://www.scirp.org/html/4-9301886_47999.htm
+
+
+
+        % % \paragraph*{Axiom} A framework provides a collection of operations, data-structures and procedures and has specific "magic formulas" that allow the end-user to communicate with the base functionalities. 
+
+
+
+        Licenses:
+
+        \begin{itemize}
+            \item Closed source with closed access
+            \item Closed source with open access
+            \item Open Source
+        \end{itemize}
+
+        Closed source game engines are usually a sign that the project is owned by a big company with a big number of employees and generous funding.
+        
+        It is unusual for a game company to provide access to its game engine to the end-users. This could be exploited into a competitive disadvantage.
+        Although, once in a while, because of leaks or because of reverse-engineering some parts of the ecosystem are revealed to the public.
+
+        In the following i will insert some snapshots of Rockstar's RAGE engine that had older versions reverse engineered and the newer ones leaked. 
+        
+        % images here
+
+        As you can see, the environments offer statistics relevant to development.
+
+        A closer inspection on figure [??] shows this line of code: "" that would indicate that ...
+
+
+        % For the scope of this argument i will say that there are 2 main ways of developing a game and the choice is dependent on the size and budget of the developing team.
+
+        The two options are either building an in-house framework 
+        % around the subject and because i thought i could combine all of my past research into this.
+
+        Before i even started writing, i already had experience working in the following fields and i will briefly present my computer science background
+
+
+
+        \subsection{What should a game engine do?}
+            In this subsection i will describe some of the tools that i would like my game engine to be able to offer.
+            I will ilustrate this by showcasing some projects from my personal repertoir that had been built in a variety of environments and highlight the relevant tools that each environment offered me.
+            % The following sections highlight pieces of my work that are relevant to this thesis. Each included project is significant due to specific implementations that are directly or indirectly connected to this paper.
+
+            \subsubsection{Computer Graphics Experience}
+                \begin{SCfigure}[0.9][h] 
+                    \caption{Fractal Tree Visualization
+                    
+                    (usage of p5.js primitive functions in a recursive manner)
+
+                    \href{https://www.youtube.com/watch?v=ajd0GGZgnDg&list=PL-j3UE1st04BZqRXq6eUBHpovhKjA1kiX&index=7}{showcase}}
+                    
+                    \includegraphics[width=8cm]{fractal.png}
+                    \centering
+                \end{SCfigure}                    
+                \begin{itemize} 
+                    \item Supershape Rendering Techniques 
+                    \item Function Visualizer in OpenGL 
+                    \item Complex Function Visualizer 
+                \end{itemize}
+
+            \subsubsection{Game Development Experience} 
+                \begin{itemize} 
+                    \item 3D Open World Environment Development 
+                    \item Studies of Vector Movements in Unity 
+                \end{itemize}
+
+                % \subsubsection{in computer graphics}
+            %     \subsubsection{fractal tree}
+            %     \subsubsection{supershapes}
+            %     \subsubsection{visualising basic function in opengl}
+            %     \subsubsection{moving towards complex functions (mandelbrot series, julia fatou series)}
+            %     \subsubsection{3D rendering}
+
+            \subsubsection{in game development}
+                my game development studies had mostly been around 3D open-world games. Being fascinated by rockstar's grand theft auto series i want to build something similar. i always wondered how cj was able to move in all the directions and calculating how there would be way too many paths to generate all the possible outcomes. so there should be smarter ways to do movement.
+                And there is. Using vectors.
+                My unity projects were mostly about perfectioning the 3D vector movement. Something that i also tried to implement in the opengl framework.   
+
+        \subsection{Goal}
+            I challenged myself to dig deeper into Game Development. I wanted to understand what makes all the pretty images move. i already had somewhat of an understanding of how the frames have to be processed independently and displayed in a fastly manner in order to trick the brain. but i wanted to go deeper then that.
+
+            i already understood how to do certain simple tasks in unity, but i was so fascinated of the "transform.position = Vector2.One * scalar" command that i wanted to create a similar environment. 
+
+
+
+
+            the intention of this project is to act as a foundation for a possible game engine that i will continue to deveop in the future. 
+
+            a game engine is no easy task, there are many running parts and each of them must be SOLID. 
+
+        % \subsection{Progress}
+
+        %     until now i have the opengl framework in a stable state, this journey gave me a deeper understanding of all the running parts needed. 
+
+        %     Now that i've been able to replicate some of the foundational concepts in enclosed environments, in the future i tend to use some already existing frameworks for physics and scene management and also ml libraries like scipy.
+
+    \section{Literature Review}
+        In this section i will explore other's solutions to the problem i was trying to solve.
+
+        Unfortunately, there aren't many studies regarding "Machine Learning Compatible Game Engines" so i had to broaden my search.
+
+        \subsection{Simulating Human Interaction}
+                % TODO: Refactor and fact-check with paper.
+            One paper that i found extremily fascinating was \href[]{google.com}{TITLE} by AUTHOR. They created an environment that allowed ml agents to communicate to one another. One of the most exciting outcomes was that one agent organised a birthday party and proceeded to invite other ml agents to the party. In the following i will briefly go over the implementatation design for one agent:
+            
+            % there were cool images of tables for the datastructures used. they had a timetable and there was a complex way for managing memories and long-time storage of relevant info. 
+
+            Another paper that highlights machine-learning agents interacting in human-like behaviour is \href[]{google.com}{TITLE} by AUTHOR. This team even offers multiple solutions for implementing such agents in popular environments such as Unity or ??.
+
+            One popular demo of their plugin? is the game \href[]{google.com}{GAMENAME}. 
+            Game that illustrates a scenario where the player is a detective and has to figure out a case, with the added twist that comunicating with any of the non-playable-characters (NPCs) is made through the microphone and with openai dialogue. 
+            
+            There is also a mod for the popular game Skyrim that allows the player to have fluid dialogue with any in-game character. 
+        
+        \subsection{Out-performing Human Performance}
+            popular youtuber Code Bullet has a series where he "solves" games using AI models. He usually uses neural-networks for his solutions. One recent such video is where he programmed a JUMP KING ml.
+            
+            There are chess bots being developed that use machine learning in an attempt to "solve" the game of chess. So it is clear to say there is is a lot of incentivise towards acomodating machine learning algorithms into games.
+
+        \subsection{Bibliography Review}
+            % this might be more relevant in an bibliography overview chapter
+            in order to achieve this project i have went through multiple pieces of literature.
+
+            the ones i used most extensively are:
+                \subsection{Books}
+                    \subsubsection{OpenGL SuperBible}
+                        SuperBible provided a thorough introduction to OpenGL,
+                        detailing its functions and capabilities. This resource
+                        was instrumental in understanding the core principles of
+                        rendering and shading, which are fundamental to the
+                        development of any graphics application. By following
+                        the examples and exercises in this book, I was able to
+                        implement efficient rendering pipelines and gain a deep
+                        understanding of shader programming.
+                    \subsubsection{Computer Graphics (Donald Hearn)}
+                        % this gave me an in-depth understanding of the computer graphics field and also very insightful insides to primitives, drawing algorithms, popular solutions to popular problems. 
+                        Donald Hearn's Computer Graphics offered a comprehensive overview of graphics
+                        primitives and the algorithms used to draw them. The book's clear explanations
+                        of line drawing algorithms, polygon filling techniques, and transformations were
+                        particularly beneficial. Implementing these algorithms in my application allowed
+                        me to create accurate and efficient rendering routines.
+                    \subsubsection{Mathematics for Game Development (Christopher Tremblay)}
+                        % i held this book very closely while writing the math engine for the game-engine.
+                        % i recaped my veVctorial knowledge and understood which operators are most relevant in such projects and why. 
+                        Christopher Tremblay's book on
+                        mathematics for game development provided a solid
+                        foundation in vectorial math, which is crucial for tasks
+                        such as collision detection and physics simulation. The
+                        detailed explanations of vector operations, matrix
+                        transformations, and geometric algorithms were directly
+                        applied in the development of the vector math library in
+                        my application.
+                    \subsubsection{C++ (Bjarne Stroustrup)}
+                        Bjarne Stroustrup's definitive
+                        guide to C++ significantly improved my programming
+                        skills, enabling me to write efficient, robust, and
+                        maintainable code. The book's coverage of advanced C++
+                        features, such as templates, polymorphism, and the
+                        Standard Template Library (STL), was particularly
+                        valuable in structuring my application and optimizing:want
+                        performance.
+                \subsection{Papers}
+                    \subsubsection{ml agents that can communicate to one another}
+                    \subsubsection{comp graphics projects from stanford}
+                    \subsubsection{...}
+
+    \section{from leds to opengl}
+        \subsection{Why does my computer need a graphics card?}
+            There is this extremily interesting video that showcases how easily one can communicate through the VGA protocol with any display. (BEN EATER)
+
+            There are X many pins on a VGA port. From which, X1 are GROUND, X2 are VCC and 4? are used for actually displaying.
+
+            The algorithm loop is fairly straight-forward: The monitor expects data through Y pin every Z miliseconds. Every piece of data is considered to be a pixel on the grid, if there is data sent through W pin, the monitor knows to skip to the next line.
+
+            The setup revolves around telling the monitor the display resolution, refresh rate and bitmap? of the colors. 
+
+            Roughly speaking, an led can receive anywhere from 0V to 3.3V (of course this can get more complicated depending on the color of the led). This is electronics-language but computer programs dont work with volts, they work with variables. A translation convention is needed.
+
+            This 0V-3.3V range can be devided into however many steps but 255 steps is the most popular and widely accepted one. 
+            Fun Fact: old apple/MSDOS/... computers are using 2Bit colors. That meaning that any led can be either completly turned on or off.
+
+            Also old computers were using 1Led/Pixel and now we use 3LEDs/Pixel.
+        \subsection{Colors and Vectors}
+            So we need a data-structure that can hold 3 255bit values: r, g and b. Throw in an extra one for opacity and make it a vector.
+
+            % image of color class
+
+            This data-structure should be used repetedly and continuosuly because there are many pixels in a line and there are many lines in a display matrix.
+
+            This color class is inherited from the vector class because it makes some calculations easier.
+
+            % image of vector3 base class
+
+            This Vector3 Class is the class that is used regulately
+
+        \subsection{Computer Graphics}
+        \subsection{Game Development}
+        \subsection{Coding Practices}
+
+    \section{from opengl to end-users}
+        This is the space in the rendering pipeline that my project desires to occupies. 
+
+% The first ever game created was 'Tennis for Two' and was played on an oscilloscope. From then, gaming evolved from simple pixelated experiences to complex, immersive digital worlds.
+
+% "Before game engines, games were typically written as singular entities: a game for the Atari 2600, for example, had to be designed from the bottom up to make optimal use of the display hardware (...) 
+% Even on more accommodating platforms, very little could be reused between games."
+
+% (Game Engine, Wikipedia)
+
+% % (Did u know that the first Roller Coaster Tycoon was written completly in Assembly?)
+
+% Programmers needed a way to make the game building process more efficient. So around the mid-1990s, thanks to Epic Games and their launch of the Unreal Engine and thanks to Id Software's Doom and Quake games the term "Game Engine" started to become more and more popular.
+
+% Fast forward mid-2020s, now we have access to ultra realistic tank simulators for soldier training ( projectName ), surreal worlds filled with fantasy creatures ( Middle Earth: Shadow Of Mordor ) and even indie projects like Hyerbolica that portraits how a non-euclidian world would behave like. Projects like these would've been way harder ( if not actually impossible ) to pull off without the help of game engines.
+
+% \pagebreak
+
+% \section{Game Engines}
+% "The line between a game and its engine is often blurry. Some engines make a reasonably clear distinction, while others make almost no attempt to separate the two. ( ... ) We should probably reserve the term
+% 'game engine' for software that is extensible and can be used as the foundation for many different games without major modification."
+
+% ( Game Engine Architecture. by Jason Gregory )
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=1\linewidth]{chapters/gameEngine Usability.png}
+%     \caption{Game Engine Reusability Gamut}
+%     \label{fig:Game-Engine Reusability}
+% \end{figure}
+
+
+
+% Behind the curtains of any interactive application there is most likely a Game Engine. 
+% You have probably heard before about Unity and Unreal but there are many more game engines out there. Some of them are In-House, some of them are Open-Source, some of them are made for a specific Genre. But none of them is offering Built-In Machine Learning Integration. 
+
+% \subsection{What does a Game Engine offer?}
+
+% While not limited to, some of the tools we expect a game engine to offer are: 
+% \begin{enumerate}
+%     \item Input Handling
+%     \item Player Mechanics
+%     \item Game-Specific Rendering
+%     \item Collision \& Physics
+%     \item Audio Playback
+%     \item Game Cameras
+%     \item Ai \& Behaviour Management
+%     \item Online Multiplayer
+%     \item Scene Graph
+%     \item Scripting System
+%     \item Visual Effects
+% \end{enumerate}
+
+% \section{What is Machine Learning?}
+
+% \begin{enumerate}
+%     \item predicts text, predicts what the next word in a sentence would most likely be.
+%     \item it's too broad of a topic to be able to explain in detail in just one paper. And it's also not the purpose of this paper. This paper only wants to use the power of ai to simulate better npc's in games.
+%     \item for the purpose of this, i will not try to recreate or train an machine learning model, i will use an already existing one: GPT 3.5-Turbo by OpenAI.
+% \end{enumerate}
+
+% \subsection{Machine Learning in Game Engines}
+% \begin{enumerate}
+%     \item Inworld Origins are already working on a solution for implementing GPT4 to be used in a NPC dialogue scenario.
+%     \item There is this study where multiple GPT4 agents that can simulate believable human behavior. (Generative Agents: Interactive Simulacra of Human Behavior)
+%     % https://arxiv.org/pdf/2304.03442.pdf
+%     \item Currently, there are no game engines that have Machine Learning Systems built-in. 
+% \end{enumerate}
+
+% \section{Scope and Objectives of the Thesis}
+% \begin{enumerate}
+%     \item exploration, development, and evaluation of a game engine that integrates GPT-based machine learning capabilities 
+%     \item explore the architecture of a game engine while building a basic one in Python using OpenGL.
+%     \item explore what it means to add machine learning capabilities to a game engine. 
+%     \item The focus of this research is on leveraging the power of natural language processing (NLP) and GPT models to enhance various aspects of game development, including storytelling, character interactions, procedural content generation, and player experiences.
+% \end{enumerate}
+

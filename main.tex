@@ -40,6 +40,7 @@
     % front-matter
     \pagenumbering{gobble}
     
+    \blankpage
     \input{src/front/cover}
     \blankpage
     \input{src/front/titlepage}
@@ -51,19 +52,29 @@
     \setcounter{page}{1}
     \pagenumbering{arabic}
     
-    \input{src/chapters/Abstract}
+    \input{src/parts/Abstract}
     \blankpage
    
     % table of contents
     \tableofcontents
-    
-    \input{src/chapters/introduction}
+
+    \blankpage
+
+    \input{src/parts/Overview.tex}
+    \input{src/parts/FieldStudy.tex}
+
+    \input{src/parts/Implementation.tex}
+    \input{src/parts/Results}
+
+    \input{src/parts/Bibliography}
+
+    % \input{src/chapters/introduction}
     % \input{src/chapters/motivation}
     
-    \input{src/chapters/chapter1}
-    \input{src/chapters/chapter2}
-    \input{src/chapters/chapter3}
+    % \input{src/chapters/chapter1}
+    % \input{src/chapters/chapter2}
+    % \input{src/chapters/chapter3}
     
-    \input{src/chapters/conclusions}
-    \input{src/chapters/bibliography}
+    % \input{src/chapters/conclusions}
+
 \end{document}
