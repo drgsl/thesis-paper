@@ -1,0 +1,154 @@
+
+\chapter*{Mathematical Framework}
+
+This mathematical framework is very important because it assures that the phigs requirements can be fulfiled and how to.
+
+\section*{Homogenous Representation}
+
+Intuitively, for storing a 3D point one might think about using a vector of length 3 ( maybe call them x, y, z ) and have a good day.
+Well, this datastructure is good \emph{enough} for most cases.
+There is, of course, one little edge case in one of the things we must be able to do with this DataStructure that would benefit of storing a 3D point as a 4D Vector (x, y, z, \textbf{\emph{w}}).
+
+
+\subsection*{Please do not be afraid of the \emph{w}.}
+  Since \emph{w} is defined by a pretty straight-forward formula:
+  \begin{equation}
+    \emph{w} =
+    \[ \begin{cases} 
+          0 & ,x::TYPE==Vector.Point\\
+          1 & ,x::TYPE==Vector.Arrow
+       \end{cases}
+    \]
+    \label{}
+  \end{equation}
+
+
+% TODO: MATH FORMULA FOR w = 1, if point w = 0, if arrow
+
+\subsection*{Vector Multiplication}
+
+\begin{equation}
+    \mathbf{v_1} = \begin{pmatrix} x_1 & y_1 & z_1 & w_1 \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    \mathbf{v_2} = \begin{pmatrix} x_2 & y_2 & z_2 & w_2 \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    \mathbf{v_1} \cdot \mathbf{v_2} = (x_1 x_2) + (y_1 y_2) + (z_1 z_2) + (w_1 w_2)
+\end{equation}
+
+
+
+\subsection*{Matrix Multiplication}
+
+
+
+\begin{equation}
+    \mathbf{A} = \begin{pmatrix}
+    a_{11} & a_{12} & a_{13} & a_{14} \\
+    a_{21} & a_{22} & a_{23} & a_{24} \\
+    a_{31} & a_{32} & a_{33} & a_{34} \\
+    a_{41} & a_{42} & a_{43} & a_{44}
+    \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    \mathbf{B} = \begin{pmatrix}
+    b_{11} & b_{12} & b_{13} & b_{14} \\
+    b_{21} & b_{22} & b_{23} & b_{24} \\
+    b_{31} & b_{32} & b_{33} & b_{34} \\
+    b_{41} & b_{42} & b_{43} & b_{44}
+    \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    \mathbf{C} = \mathbf{A} \times \mathbf{B} = \begin{pmatrix}
+    c_{11} & c_{12} & c_{13} & c_{14} \\
+    c_{21} & c_{22} & c_{23} & c_{24} \\
+    c_{31} & c_{32} & c_{33} & c_{34} \\
+    c_{41} & c_{42} & c_{43} & c_{44}
+    \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    c_{ij} = \sum_{k=1}^{4} a_{ik} b_{kj} = a_{i1}b_{1j} + a_{i2}b_{2j} + a_{i3}b_{3j} + a_{i4}b_{4j}
+\end{equation}
+
+
+
+
+\section*{Coordinate Systems}
+
+There are two main coordinate systems:
+
+
+
+\textbf{Cartesian Coordinates:}
+\begin{equation}
+    (x, y, z)
+\end{equation}
+
+\textbf{Polar Coordinates:}
+\begin{equation}
+    (r, \theta, \phi)
+\end{equation}
+
+\textbf{Transformation Formulas:}
+\begin{align}
+    r &= \sqrt{x^2 + y^2 + z^2} \\
+    \theta &= \arctan\left(\frac{y}{x}\right) \\
+    \phi &= \arccos\left(\frac{z}{r}\right)
+\end{align}
+
+
+
+
+
+
+
+% TODO LATE
+% \begin{itemize}
+%   \item Cartesian Coordinates
+%   \item Polar     Coordinates 
+% \end{itemize}
+
+% Formulas for converting from one to another:
+% \begin{itemize}
+%   \item from Polar     to Cartesian
+%   \begin{itemize}
+%     \item cos(x)
+%     \item sin(x)
+%   \end{itemize}
+%   \item from Cartesian to Polar
+%   \begin{itemize}
+%     \item x
+%     \item y
+%   \end{itemize}
+% \end{itemize}
+
+
+In the following, we will take a look over the possible operation that are extensively used:
+
+In most of the cases, the equasions are really easy.
+
+\subsection*{Translation}
+\subsection*{Scalation}
+\subsection*{Rotation}
+\subsubsection*{Euler-Lock}
+And it would've been all so easy if it weren't for you! 
+
+Euler Lock is a problem that ocurs when we try to use euler coordinates in rotation aplications. This problem can become extremily dangerous when solving robotics solutions where you can't afford to ???
+
+\subsubsection*{Quaternions}
+For eliminating the euler-lock problem, quaternions are used. Quaternions are ??
+
+Formulas:
+
+
+
+
+
+
+

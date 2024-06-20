@@ -1,0 +1,378 @@
+
+\section*{Mathematical Framework with Homogenous Representation Support}
+
+Intuitively, for storing a 3D point one might think about using a vector of length 3 ( maybe call them x, y, z ) and have a great day.
+Well, this datastructure is good \emph{enough} for most cases.
+There is, of course, one little edge-case in one of those cases where we might be needing a fancier solution.
+Also, this fancy solution somewhat simplifies the other calculations as well.
+
+
+This new datastructure implies using a k+1 dimentional vector space for representing k dimensional entities. 
+
+% TODO:  REFERENCE HERE
+Meaning that, in our application's purposes, a Vector3 class should store 4 elements. [More about this in future work]
+
+
+% #include <iostream>
+    % // Constructor with default parameters
+% // C++ class definition for Vector2
+\begin{lstlisting}
+class Vector3 
+{
+  public:
+    double x, y, z, w;
+    Vector3(double _x, double _y = 0, double _z = 0, double _w = 1) 
+           : x(_x), y(_y), z(_z), w(_w) { }
+};
+\end{lstlisting}
+
+
+\begin{equation*}
+    \mathbf{v_1} = \begin{pmatrix} x_1 & y_1 & z_1 & w_1 \end{pmatrix}.
+\end{equation*}
+
+\begin{equation*}
+    \mathbf{v_2} = \begin{pmatrix} x_2 & y_2 & z_2 & w_2 \end{pmatrix}.
+\end{equation*}
+
+
+
+
+
+% int main() {
+%     // Example usage of Vector3 class
+%     Vector3 v1(1.0, 2.0, 3.0);
+%     Vector3 v2(4.0, 5.0);
+
+%     std::cout << "v1: (" << v1.getX() << ", " << v1.getY() << ", " << v1.getZ() << ", " << v1.getW() << ")" << std::endl;
+%     std::cout << "v2: (" << v2.getX() << ", " << v2.getY() << ", " << v2.getZ() << ", " << v2.getW() << ")" << std::endl;
+
+%     return 0;
+% }
+
+
+% we must be able to do with this DataStructure that would benefit of storing a 3D point as a 4D Vector (x, y, z, \textbf{\emph{w}}).
+
+
+% This mathematical framework is very important because it assures that the phigs requirements can be fulfiled and how.
+
+
+\pagebreak
+
+\section*{Please do not be afraid of the \emph{w}.}
+
+  \begin{equation}
+    \emph{v.w} =
+    \[ \begin{cases} 
+      1 & ,\text{if v is used for describing a \hspace{8} point in space}\\ 
+      % v ==Vector3::Point\\
+      0 & ,\text{if v is used for describing an arrow in space} 
+          % ,x::TYPE==Vector3::Arrow
+       \end{cases}
+    \]
+    \label{}
+  \end{equation}
+
+
+
+Since \emph{w} is defined by a pretty straight-forward formula and the vector \textbf{usually} behaves like a point:
+
+
+\begin{lstlisting}
+    Vector3 v = new Vector3::one * 7
+    Debug::Log(v); // <7,7,7,1>
+\end{lstlisting}
+
+
+
+
+
+% TODO: MATH FORMULA FOR w = 1, if point w = 0, if arrow
+
+\section*{Data Structures}
+\textbf{Vector Multiplication:}
+
+\begin{equation}
+    \mathbf{v_1} \cdot \mathbf{v_2} = (x_1 x_2) + (y_1 y_2) + (z_1 z_2) + (w_1 w_2)
+\end{equation}
+
+\textbf{Dot Product of Vectors:}
+
+The dot product \( \mathbf{v}_1 \cdot \mathbf{v}_2 \) between vectors \( \mathbf{v}_1 \) and \( \mathbf{v}_2 \) is calculated as:
+
+\[
+\mathbf{v}_1 \cdot \mathbf{v}_2 = v_{1,1} \cdot v_{2,1} + v_{1,2} \cdot v_{2,2} + \cdots + v_{1,m} \cdot v_{2,m}
+\]
+
+
+\textbf{Constructing a Matrix from Vectors:}
+
+Let \( \mathbf{v}_1 = (v_{1,1}, v_{1,2}, \ldots, v_{1,m}) \) be a vector representing the row elements.
+
+Let \( \mathbf{v}_2 = (v_{2,1}, v_{2,2}, \ldots, v_{2,n}) \) be a vector representing the column elements.
+
+
+\begin{lstlisting}
+  v1 = Random::Vector3();
+  v2 = Random::Vector3();
+\end{lstlisting}
+
+
+  % matrix = line.dot(column);
+
+  % return matrix;
+
+
+
+The resulting matrix \( \mathbf{M} \) formed by these vectors is:
+
+\[
+\mathbf{M} = \begin{pmatrix}
+v_{1,1} & v_{1,2} & \cdots & v_{1,m} \\
+v_{2,1} & v_{2,2} & \cdots & v_{2,m} \\
+\end{pmatrix}
+\]
+
+
+
+  % \subsection*{Matrix Multiplication}
+  % \begin{equation}
+  %     \mathbf{A} = \begin{pmatrix}
+  %     a_{11} & a_{12} & a_{13} & a_{14} \\
+  %     a_{21} & a_{22} & a_{23} & a_{24} \\
+  %     a_{31} & a_{32} & a_{33} & a_{34} \\
+  %     a_{41} & a_{42} & a_{43} & a_{44}
+  %     \end{pmatrix}
+  % \end{equation}
+
+  % \begin{equation}
+  %     \mathbf{B} = \begin{pmatrix}
+  %     b_{11} & b_{12} & b_{13} & b_{14} \\
+  %     b_{21} & b_{22} & b_{23} & b_{24} \\
+  %     b_{31} & b_{32} & b_{33} & b_{34} \\
+  %     b_{41} & b_{42} & b_{43} & b_{44}
+  %     \end{pmatrix}
+  % \end{equation}
+
+  % \begin{equation}
+  %     \mathbf{C} = \mathbf{A} \times \mathbf{B} = \begin{pmatrix}
+  %     c_{11} & c_{12} & c_{13} & c_{14} \\
+  %     c_{21} & c_{22} & c_{23} & c_{24} \\
+  %     c_{31} & c_{32} & c_{33} & c_{34} \\
+  %     c_{41} & c_{42} & c_{43} & c_{44}
+  %     \end{pmatrix}
+  % \end{equation}
+
+
+\pagebreak
+
+
+
+\textbf{Matrix Multiplication (Traditional):}
+\begin{equation}
+    C = A \times B \quad \text{where} \quad C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
+\end{equation}
+
+% \begin{equation*}
+%     c_{ij} = \sum_{k=0}^{4} v_{ik} v_{kj} = v_{i1}v_{1j} + v_{i2}v_{2j} + v_{i3}v_{3j} + v_{i4}v_{4j}
+% \end{equation*}
+
+
+\textbf{Strassen Matrix Multiplication (Recursive):}
+\begin{equation}
+    \mathbf{M}_1 = (A_{11} + A_{22})(B_{11} + B_{22})
+\end{equation}
+\begin{equation}
+    \mathbf{M}_2 = (A_{21} + A_{22})B_{11}
+\end{equation}
+\begin{equation}
+    \mathbf{M}_3 = A_{11}(B_{12} - B_{22})
+\end{equation}
+\begin{equation}
+    \mathbf{M}_4 = A_{22}(B_{21} - B_{11})
+\end{equation}
+\begin{equation}
+    \mathbf{M}_5 = (A_{11} + A_{12})B_{22}
+\end{equation}
+\begin{equation}
+    \mathbf{M}_6 = (A_{21} - A_{11})(B_{11} + B_{12})
+\end{equation}
+\begin{equation}
+    \mathbf{M}_7 = (A_{12} - A_{22})(B_{21} + B_{22})
+\end{equation}
+
+
+\section*{Software Engineering}
+
+There are two main coordinate systems:
+
+\textbf{Cartesian Coordinates:}
+\begin{equation}
+    (x, y, z)
+\end{equation}
+
+\textbf{Polar Coordinates:}
+\begin{equation}
+    (r, \theta, \phi)
+\end{equation}
+
+\textbf{Transformation Formulas:}
+\begin{align}
+    r &= \sqrt{x^2 + y^2 + z^2} \\
+    \theta &= \arctan\left(\frac{y}{x}\right) \\
+    \phi &= \arccos\left(\frac{z}{r}\right)
+\end{align}
+
+
+
+
+
+
+
+% LATE TODO 
+% \begin{itemize}
+%   \item Cartesian Coordinates
+%   \item Polar     Coordinates 
+% \end{itemize}
+
+% Formulas for converting from one to another:
+% \begin{itemize}
+%   \item from Polar     to Cartesian
+%   \begin{itemize}
+%     \item cos(x)
+%     \item sin(x)
+%   \end{itemize}
+%   \item from Cartesian to Polar
+%   \begin{itemize}
+%     \item x
+%     \item y
+%   \end{itemize}
+% \end{itemize}
+
+
+\pagebreak
+
+In the following, we will take a look over the possible operation that are extensively used:
+
+\textbf{Operations in Computer Graphics}
+
+\textbf{Translation:}
+\begin{equation}
+    T(x, y, z) = \begin{pmatrix}
+    1 & 0 & 0 & x \\
+    0 & 1 & 0 & y \\
+    0 & 0 & 1 & z \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}
+\end{equation}
+
+\textbf{Scaling:}
+\begin{equation}
+    S(s_x, s_y, s_z) = \begin{pmatrix}
+    s_x & 0 & 0 & 0 \\
+    0 & s_y & 0 & 0 \\
+    0 & 0 & s_z & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}
+\end{equation}
+
+
+
+These equasions must be really easy to use. 
+For this i have chosen the option that highly resembles Unity's ecosystem.
+
+
+\begin{lstlisting}
+void start();
+void update();
+int main() { Awake(); }
+void Awake() {
+  RenderEngine::setStart(start);
+  RenderEngine::setUpdate(update);
+  RenderEngine::setFixedUpdate(fixedUpdate);
+  // MUST BE CALLED LAST
+  RenderEngine::START(true);
+}
+void start() {
+  Gameobject go; int speed = 0.01;
+  Debug::Log(go.transform.name)
+  Debug::Log(go.transform.position)
+  
+  go.transform.translate(Vector3::Right * speed)
+  Debug::Log(go.transform.position)
+  go.transform.position = Vector3::one * Math::sqrt(Math::pi);
+  Debug::Log(go.transform.position)
+}
+\end{lstlisting}
+
+The implementation feels self-explanatory from here. But for reference i advise 
+\href{https://www.github.com}{source-code}
+
+
+
+
+
+\pagebreak
+
+
+Here lives the little inconvenience i mentioned at the beginning of the chapter 
+that justified Homogenous Coordinates.
+
+\textbf{Rotation with Euler Angles (XYZ order):}
+\begin{equation}
+    R_{XYZ}(\alpha, \beta, \gamma) = R_X(\alpha) \cdot R_Y(\beta) \cdot R_Z(\gamma)
+\end{equation}
+where
+\begin{align}
+    R_X(\alpha) &= \begin{pmatrix}
+    1 & 0 & 0 & 0 \\
+    0 & \cos\alpha & -\sin\alpha & 0 \\
+    0 & \sin\alpha & \cos\alpha & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}, \\
+    R_Y(\beta) &= \begin{pmatrix}
+    \cos\beta & 0 & \sin\beta & 0 \\
+    0 & 1 & 0 & 0 \\
+    -\sin\beta & 0 & \cos\beta & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}, \\
+    R_Z(\gamma) &= \begin{pmatrix}
+    \cos\gamma & -\sin\gamma & 0 & 0 \\
+    \sin\gamma & \cos\gamma & 0 & 0 \\
+    0 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}
+\end{align}
+
+\textbf{Gimbal Lock Issue:} Euler angles suffer from gimbal lock, where two of the three rotational axes align, leading to a loss of one degree of freedom.
+
+\textbf{Solution: Quaternions}
+\begin{equation}
+    q = \cos\left(\frac{\theta}{2}\right) + \sin\left(\frac{\theta}{2}\right)(u_x i + u_y j + u_z k)
+\end{equation}
+where \( \theta \) is the rotation angle and \( (u_x, u_y, u_z) \) is the unit vector representing the axis of rotation.
+
+
+
+
+% In most of the cases, the equasions are really easy.
+
+% \subsection*{Translation}
+% \subsection*{Scalation}
+% \subsection*{Rotation}
+% \subsubsection*{Euler-Lock}
+% And it would've been all so easy if it weren't for you! 
+
+% Euler Lock is a problem that ocurs when we try to use euler coordinates in rotation aplications. This problem can become extremily dangerous when solving robotics solutions where you can't afford to ???
+
+% \subsubsection*{Quaternions}
+% For eliminating the euler-lock problem, quaternions are used. Quaternions are ??
+
+% Formulas:
+
+
+
+
+
+
+

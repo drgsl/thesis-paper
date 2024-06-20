@@ -1,57 +1,93 @@
 
 
 
-\chapter*{Implementation - Architecture}
+\part*{Implementation - Architecture}
 \addcontentsline{toc}{chapter}{Architecture}
 
-  In case you haven't read the previous chapter i advise glimsing over the chapters' titles at least once because it would give better context on where my project lives in the graphics lifecycle.
-
-  My Application is a Graphics Abstraction Layer that imitates industry standards when it comes to procedures used for ease of learning.
-  Besides being an easy-to-use beginner-friendly tool because of following industry standard solution in the c++ rendering backend engine. At it's core, this rendering engine is built on top of a vectorial mathematics engine.
-
-  The novelty that this project brings to the computer graphics world is the presence of a python Machine Learning backend that acts as an abstraction layer for simplifying the communication with services (openai, ollama) or with powerful machine learning libraries (scipy, skilearn) 
-  
-  \begin{figure}
-    \begin{center}
-      \includegraphics[width=\textwidth]{implementation_arch.png}
-    \caption{Arch}
-    \end{center}
-  \end{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{implementation_arch.png}
+  \end{center}
   \pagebreak
 
+  I intent for this project to become a collection of technologies that can be interconnected.
+Similar to how Internet-of-Things solutions involve different running parts for achieving one goal, 
+as such i want my software making environment to be as versatile as possible. 
 
-  \section*{The backend}
-    The Backend is wrote mostly in C++ and offers the user namespaces to interact with the opengl inner-workings of the engine.
+  One obvious start impediment is going past the first couple of hello-world projects
+  until you find a tool that does the job.
 
-    \begin{figure}
-      \begin{center}
-        \includegraphics[width=\textwidth]{implementation_arch.png}
-      \caption{Arch}
-      \end{center}
-    \end{figure}
-    \pagebreak
+  The percentage of availability of one component can be determined by the color of one's title. 
 
-  \section*{The Frontend}
+    \textcolor {red} {bright  colors} means more relevant to this  \textcolor {orange} {iteration}.
 
-    The frontend is wrote mostly in Python with the help of PyQt, a python wrapper for the industry standard qt.
+    \textcolor {brown} {neutral colors} suggests the component's state of integrity and integration.
 
-    \begin{figure}
-      \begin{center}
-        \includegraphics[width=\textwidth]{implementation_arch.png}
-      \caption{Arch}
-      \end{center}
-    \end{figure}
-    \pagebreak
+    \textcolor {gray} {non-colors} and you're looking at a component that hasn't been integrated yet.
 
-  \section*{Additional Tools}
+  Future expansion possibilities are in \textcolor {white} {white} color. 
 
-    Additional tools has been developed already, tools that improves the programmer's workflow.
-    Such example is a web scraper for data collecting.
-    Docs for each major component.
-    \begin{figure}
-      \begin{center}
-        \includegraphics[width=\textwidth]{implementation_arch.png}
-      \caption{Arch}
-      \end{center}
-    \end{figure}
+
+  \begin{itemize}
+    \item  \textcolor {brown} { \textbf { FrontEnd ( PyQt   GUI programming interface)} } \\
+    \textcolor {gray}   { integration dispatch layer  }
+    \item \textcolor {red}    { Backend  ( Python Machine Learning Interface) } \\
+      \textcolor {gray}   { communication socket }
+    \item \textcolor {orange} { \textbf { Backend  ( C/C++  Render Engine,Math Engine) } }
+
+    \textcolor {white}  { ROBOTICS / ARDUINO / PIE integration }
+    % \item \textcolor {gray}   { FrontEnd ( web app ) }
+    % \hline \textcolor {gray}   { integration dispatch layer  }
+    % \item \textcolor {brown}  { Backend  ( Python Django ) }
+    % \item \textcolor {gray}   { Database ( MariaDB) }
+\end{itemize}
+
+
+
+\pagebreak
+
+
+
+\part*{The backend}
+
+  There are two main languages used in this backend implementation:
+
+  \hline
+  \hspace{10}
+
+  in C/C++  we have: Rendering Engine, Vectorial MathEngine, GameEngine.
+
+  in Python we have: pyqt editor, Bash File Manager, Machine Learning Interface, Django.
+
+  \chapter*{The Vectorial Math Engine}
+  \input{src/sections/mathEngine}
+
+  \chapter*{The opengl Rendering Framework}
+  \input{src/sections/renderEngine}
+
+  \chapter*{The Machine Learning libraries interface}
+  \input{src/sections/mlInterface}
+
+
+
+\part*{The Frontend}
+
+  This too, 
+  splits into two.
+
+  We have the software application and the web application.
+
+  As of writing this, no demonstrabable movement had been done in the web application department. 
+  The team lead suggests building software solutions that can be easily imported into web applications without needing to re-implement. Research had been done into webGL integration and the low-level graphics calls we use from opengl are compatible with webgl as well. 
+  There are even resources involving qt and pyqt integration. As of writing this, all of the GUI work had been done in the qt environment.  
+
+
+    The software frontend is wrote in PyQt,a python wrapper for the industry standard qt.
+
+  \chapter*{PyQt Editor}
+    \input{src/sections/pyqt}
+
+
+
+
+
     \pagebreak
