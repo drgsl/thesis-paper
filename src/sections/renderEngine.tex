@@ -1,0 +1,469 @@
+
+\section*{Color32}
+
+
+\begin{lstlisting}
+class color32
+{
+  public:
+    unsigned int r, g, b, a;
+
+    color32(double grayscale) 
+           : color(grayscale, grayscale, grayscale, 1.0f) { }
+    color32(double _r, double _g, double _b, double _a = 1.0f) {  }
+};
+\end{lstlisting}
+
+
+
+
+As you can see, similar to the vector class, the color datastructure is also a 4D vector. This will come in handy when dealing with shaders. 
+
+
+  \subsection*{Opposite Colors}
+  \begin{lstlisting}
+  class color32
+  {
+    public:
+      unsigned int r, g, b, a;
+
+      color32(double grayscale) 
+             : color(grayscale, grayscale, grayscale, 1.0f) { }
+      color32(double _r, double _g, double _b, double _a = 1.0f) {  }
+  };
+
+
+
+  \end{lstlisting}
+
+
+  \begin{lstlisting}
+  void start();
+  void update();
+  int main() { Awake(); }
+  void Awake() {
+    RenderEngine::setStart(start);
+    RenderEngine::setUpdate(update);
+    RenderEngine::setFixedUpdate(fixedUpdate);
+    // MUST BE CALLED LAST
+    RenderEngine::START(true);
+  }
+  void start() {
+    Gameobject go;
+    go.transform.position = Random::Vector3().normalised *  Random::Value(-5, 5); 
+    Debug::Log(go.transform.position)
+  }
+  \end{lstlisting}
+
+
+\section*{Primitives}
+
+% PHIGS (Programmer's Hierarchical Interactive Graphics System) provides the function:
+
+\begin{lstlisting}
+
+  point(x, y, c); // Changes the color of the pixel at location <x, y> to c
+
+  line(<<x>, <y>>, 
+       <<x>, <y>>); // Draws a line between 2 points
+
+  background(color);
+
+  square(point1, point2);
+  fill(color);
+  circle(point , radius);
+
+  noStroke();
+\end{lstlisting}
+
+% \begin{equation}
+  % P(x, y), \forall x, y, -\frac{\text{screen::WIDTH}}{2} \leq x \leq \frac{\text{screen::WIDTH}}{2}
+  % \label{eq:pixel}
+% \end{equation}
+
+These functions are the fundamental building blocks for rendering graphics on a screen in OpenGL. 
+For the existance of these functions, 
+OpenGL implements various procedures to draw shapes and perform graphical operations.
+
+\subsection*{Points and Lines}
+
+Points and lines are basic graphical primitives. A point is represented by its coordinates \((x, y)\) on the screen, and a line is represented by a linear equation.
+
+\subsubsection*{Line-Drawing Procedure}
+
+A line can be represented by the equation:
+
+\begin{equation}
+  y = mx + b
+\end{equation}
+
+where \( m \) is the slope of the line, calculated as:
+
+\begin{equation}
+  m = \frac{\Delta y}{\Delta x}
+\end{equation}
+
+% % ### DDA Algorithm (Digital Differential Analyzer)
+
+% The DDA algorithm is an incremental method for drawing lines:
+
+% \[
+% \begin{align*}
+%   \Delta x &= x_1 - x_0 \\
+%   \Delta y &= y_1 - y_0 \\
+%   \text{If } |\Delta x| > |\Delta y|, &\text{ then } \text{steps} = |\Delta x| \text{ else } \text{steps} = |\Delta y| \\
+%   \Delta x_{\text{increment}} &= \frac{\Delta x}{\text{steps}} \\
+%   \Delta y_{\text{increment}} &= \frac{\Delta y}{\text{steps}}
+% \end{align*}
+% \]
+
+% Starting from \((x_0, y_0)\), the algorithm increments the coordinates:
+
+% \[
+% \begin{align*}
+%   x &= x + \Delta x_{\text{increment}} \\
+%   y &= y + \Delta y_{\text{increment}}
+% \end{align*}
+% \]
+
+% % ### Bresenham's Line Drawing Algorithm
+
+% Bresenham's algorithm uses integer arithmetic for efficient computation:
+
+% \[
+% \begin{align*}
+%   \Delta x &= x_1 - x_0 \\
+%   \Delta y &= y_1 - y_0 \\
+%   \text{Decision parameter} \, p &= 2\Delta y - \Delta x
+% \end{align*}
+% \]
+
+% For each \(x\) from \(x_0\) to \(x_1\):
+
+% \[
+% \begin{align*}
+%   \text{If } p < 0, &\text{ then } p = p + 2\Delta y \\
+%   \text{else}, &\text{ increment } y \text{ and } p = p + 2(\Delta y - \Delta x)
+% \end{align*}
+% \]
+
+% % ### Line Attributes
+
+% % #### Width
+
+% Line width can be controlled using a parameter \(w\):
+
+% \begin{equation}
+%   \text{LineWidth}(w)
+% \end{equation}
+
+% % #### Color
+
+% Color can be specified using RGB values:
+
+% \begin{equation}
+%   \text{Color}(r, g, b)
+% \end{equation}
+
+% % #### Segments
+
+% A line segment between two points \((x_0, y_0)\) and \((x_1, y_1)\) can be drawn using the above algorithms, with the line attributes applied.
+
+% \subsection*{Circle-generating Algorithms}
+
+% % ### Midpoint Circle Algorithm
+
+% The midpoint circle algorithm efficiently draws circles using the symmetry of circles and incremental calculations:
+
+% \[
+% \begin{align*}
+%   x &= r, y = 0 \\
+%   \text{Decision parameter} \, p &= 1 - r
+% \end{align*}
+% \]
+
+% For each \(x\) from \(r\) to 0:
+
+% \[
+% \begin{align*}
+%   \text{If } p < 0, &\text{ then } p = p + 2x + 3 \\
+%   \text{else}, &\text{ decrement } y \text{ and } p = p + 2(x - y) + 5
+% \end{align*}
+% \]
+
+% % ### Parametric Form
+
+% Using the parametric form of a circle:
+
+% \[
+% \begin{align*}
+%   x &= r \cos \theta \\
+%   y &= r \sin \theta
+% \end{align*}
+% \]
+
+% \subsection*{Flood-Fill Algorithms}
+
+% Flood-fill algorithms fill a contiguous area of pixels with a specified color.
+
+% % ### Boundary Fill Algorithm
+
+% Starting from a seed point \((x, y)\):
+
+% \[
+% \begin{align*}
+%   \text{If } P(x, y) \neq \text{boundary\_color} \text{ and } P(x, y) \neq \text{fill\_color}, &\text{ then fill } P(x, y) \text{ and apply to neighboring pixels}
+% \end{align*}
+% \]
+
+% \subsection*{Text Renderer}
+
+% Rendering text involves drawing each character glyph using the above primitives and positioning them appropriately.
+
+% \section*{Conclusion}
+
+% The described primitives and algorithms form the basis of graphical rendering in OpenGL, allowing the creation of complex images from basic elements like points, lines, and circles.
+
+
+
+
+
+
+
+
+
+
+
+
+
+%       % \begin{itemize}
+%       %   \item Points and Lines
+%       %   \begin{itemize}
+%       %     \item Width
+%       %     \item Color
+%       %     \begin{itemize}
+%       %       \item Flood-Fill Algorithms
+%       %     \end{itemize}
+%       %     \item Segments
+%       %   \end{itemize}
+%       %   \item Circle-generating Algorithms
+%       %   \item Text Renderer
+%       % \end{itemize}
+
+%   % \subsubsection*{Operations}
+%   %   \begin{itemize}
+%   %     \item Matrices
+%   %     \begin{itemize}
+%   %       \item Homogeneous Representation
+%   %       \item Matrix      Multiplication
+%   %     \end{itemize}
+
+%   %     \item Basic Transformations
+%   %     \begin{itemize}
+%   %         \item Translation
+%   %         % TODO: ADD EQUASIONS
+%   %         \item Rotation
+%   %         \begin{itemize}
+%   %             \item Euler Method
+%   %             \item Euler Problem
+%   %             \item Quaternions
+%   %             % TODO: EQUASIONS
+%   %         \end{itemize}
+%   %         \item Scaling
+%   %         % TODO: EQUASIONS
+%   %     \end{itemize}
+%   %     \end{itemize}
+
+
+
+
+
+
+
+% \section*{Game Engine Component}
+
+% \subsection*{Render Engine}
+
+% \begin{verbatim}
+% namespace RenderEngine
+% {
+%     void Enabled(bool state);
+ 
+%     void setStart (void (*func)());
+ 
+%     void setUpdate(void (*func)());
+% }
+% \end{verbatim}
+
+% The Render Engine namespace includes functions for enabling or disabling the engine, and setting start and update functions. These functions are represented as follows:
+
+% \[
+% \text{Enabled}(state) \rightarrow \text{void}
+% \]
+
+% \[
+% \text{setStart}(\text{func}) \rightarrow \text{void}
+% \]
+
+% \[
+% \text{setUpdate}(\text{func}) \rightarrow \text{void}
+% \]
+
+% Here, \(\text{func}\) is a function pointer that can be assigned to start or update functions for the engine.
+
+% \subsection*{Vector3 Class}
+
+% \begin{verbatim}
+% class Vector3
+% {
+% public:
+%   double x, y, z, w;
+%   static Vector3 zero;
+%   static Vector3 one;
+
+%   Vector3() : Vector3(0, 0, 0, 1) {}
+ 
+%   Vector3(double _x, double _y = 0.0f, double _z = 0.0f, double _w = 1.0f) 
+%     : x(_x), y(_y), z(_z), w(_w) {}
+ 
+%   Vector3& operator=(const Vector3& other);
+%   Vector3& operator+=(const Vector3& other);
+%   Vector3& operator*=(double scalar);
+%   Vector3 operator*(double scalar) const;
+%   Vector3 operator-(const Vector3& other) const; 
+%   Vector3 operator+(const Vector3& other) const; 
+%   double dot(const Vector3& other) const;
+%   Vector3 operator/(double scalar) const;
+% };
+% \end{verbatim}
+
+% Vector operations for the Vector3 class can be represented mathematically as follows:
+
+% \[
+% \mathbf{v} = \begin{pmatrix} x \\ y \\ z \\ w \end{pmatrix}
+% \]
+
+% Addition:
+% \[
+% \mathbf{v}_1 + \mathbf{v}_2 = \begin{pmatrix} x_1 \\ y_1 \\ z_1 \\ w_1 \end{pmatrix} + \begin{pmatrix} x_2 \\ y_2 \\ z_2 \\ w_2 \end{pmatrix} = \begin{pmatrix} x_1 + x_2 \\ y_1 + y_2 \\ z_1 + z_2 \\ w_1 + w_2 \end{pmatrix}
+% \]
+
+% Dot product:
+% \[
+% \mathbf{v}_1 \cdot \mathbf{v}_2 = x_1 x_2 + y_1 y_2 + z_1 z_2 + w_1 w_2
+% \]
+
+% Scalar multiplication:
+% \[
+% \mathbf{v} \cdot s = \begin{pmatrix} x \\ y \\ z \\ w \end{pmatrix} \cdot s = \begin{pmatrix} sx \\ sy \\ sz \\ sw \end{pmatrix}
+% \]
+
+% \subsection*{Color Class}
+
+% \begin{verbatim}
+% class Color
+% {
+% public:
+%   float r, g, b, a;
+%   /* 4bit color support */
+%   static Color black;
+%   static Color white;
+%   static Color red;
+%   static Color green;
+%   static Color blue;
+%   static Color yellow;
+%   static Color cyan;
+%   static Color magenta;
+%   static Color gray;
+%   static Color darkGray;
+%   static Color lightGray;
+%   static Color darkRed;
+%   static Color darkGreen;
+%   static Color darkBlue;
+%   static Color brown;
+%   static Color orange;
+ 
+%   Color(double _value)
+%     : Color(_value, _value, _value, 1.0f) {}
+ 
+%   Color(double _r, double _g, double _b)
+%     : Color(_r, _g, _b, 1.0f) {}
+ 
+%   Color(double _r, double _g, double _b, double _a)
+%     : r(_r), g(_g), b(_b), a(_a) {}
+% };
+% \end{verbatim}
+
+% Colors in the Color class can be represented mathematically as:
+
+% \[
+% \mathbf{c} = \begin{pmatrix} r \\ g \\ b \\ a \end{pmatrix}
+% \]
+
+% Where \(r\), \(g\), \(b\), and \(a\) represent the red, green, blue, and alpha (transparency) components of the color, respectively.
+
+% \subsection*{Component Namespace}
+
+% \begin{verbatim}
+% namespace Component
+% {
+%   class Transform
+%   {
+%     public:
+%       Vector3 position; 
+%       Vector3 rotation; 
+%       Vector3 scale;    
+%   };
+
+%   class Rigidbody
+%   {
+%     public:
+%       Vector3 velocity;
+%   };
+
+%   class Renderer
+%   {
+%     public:
+%       Color color;
+%   };
+% }
+% \end{verbatim}
+
+% The Component namespace includes classes for Transform, Rigidbody, and Renderer components. Mathematically, these components can be represented as follows:
+
+% \[
+% \text{Transform} = \begin{pmatrix} \text{position} \\ \text{rotation} \\ \text{scale} \end{pmatrix}
+% \]
+
+% \[
+% \text{Rigidbody} = \text{velocity}
+% \]
+
+% \[
+% \text{Renderer} = \text{color}
+% \]
+
+% Where position, rotation, and scale are Vector3 objects, velocity is a Vector3 object, and color is a Color object.
+
+% \subsection*{GameObject Class}
+
+% \begin{verbatim}
+% class GameObject
+% {
+% public:
+%   Component::Transform transform;
+%   Component::Rigidbody rigidbody;
+%   Component::Renderer renderer;
+
+%   GameObject();
+% };
+% \end{verbatim}
+
+% A GameObject is composed of a Transform, Rigidbody, and Renderer component. This can be represented as:
+
+% \[
+% \text{GameObject} = \begin{pmatrix} \text{Transform} \\ \text{Rigidbody} \\ \text{Renderer} \end{pmatrix}
+% \]
+
+% Where each component is as defined in the Component namespace, representing the position, rotation, scale, velocity, and color of the GameObject.
+

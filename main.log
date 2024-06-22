@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.8)  20 JUN 2024 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  21 JUN 2024 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/admin/github/thesis/main.tex
-(/home/admin/github/thesis/main.tex
+**/home/admin/git/thesis-paper/main.tex
+(/home/admin/git/thesis-paper/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/report.cls
@@ -335,7 +335,7 @@ File: lstlang1.sty 2024/02/21 1.10 listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 81.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 82.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -345,24 +345,24 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -417,7 +417,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 81.
+Package hyperref Info: Link coloring OFF on input line 82.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
@@ -459,7 +459,7 @@ l.47 \end{titlepage}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90     \blankpage
+l.91     \blankpage
                     [0
 
 ] (./src/front/titlepage.tex
@@ -473,7 +473,7 @@ l.35 \end{titlepage}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92     \blankpage
+l.93     \blankpage
                     [0
 
 ] [0
@@ -588,18 +588,12 @@ Package pdftex.def Info: src/images/beneater.jpeg  used on input line 13.
 
  <./src/images/arduino.jpeg>] [19 <./src/images/beneater.jpeg>] [20
 
-]) (./src/chapters/research/phigs.tex
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 7.
- (/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-))) (./src/parts/Implementation.tex [21] [22
+]) (./src/chapters/research/phigs.tex)) (./src/parts/Implementation.tex [21] [22
 
-] (./src/chapters/app/overview.tex) (./src/chapters/app/arch.tex [23
-
-] [24
+] (./src/chapters/app/overview.tex) (./src/chapters/app/arch.tex [23] [24
 
 ]
-<src/images/implementation_arch.png, id=172, 841.1425pt x 1184.425pt>
+<src/images/implementation_arch.png, id=169, 841.1425pt x 1184.425pt>
 File: src/images/implementation_arch.png Graphic file (type png)
 <use src/images/implementation_arch.png>
 Package pdftex.def Info: src/images/implementation_arch.png  used on input line 8.
@@ -609,200 +603,164 @@ Overfull \hbox (2.31148pt too wide) in paragraph at lines 16--18
 []\OT1/ppl/m/n/12 One ob-vi-ous start im-ped-i-ment is go-ing past the first cou-ple of hello-world projects
  []
 
-[26] [27
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 31.
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [26] [27
 
-]
-./src/chapters/app/arch.tex:54: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.54   \hline
-             
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./src/chapters/app/arch.tex:55: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.55   \hspace{10}
-                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[28] (./src/sections/mathEngine.tex
+] [28] (./src/sections/mathEngine.tex
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 19.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [29
 
+] [30] [31] [32]) [33] (./src/sections/renderEngine.tex [34
+
+] [35]) [36] (./src/sections/mlInterface.tex) [37
+
+] [38
+
+] (./src/sections/pyqt.tex
+
+./src/sections/pyqt.tex:39: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39   \text{typeOf} (\(
+                         d_i \)) \in \{\text{File}, \text{Directory}\}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./src/sections/pyqt.tex:39: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39   \text{typeOf} (\( d_i \)
+                               ) \in \{\text{File}, \text{Directory}\}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 101.
+ [39
+
 ]
-
-./src/sections/mathEngine.tex:66: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66     \[
-            \begin{cases}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./src/sections/mathEngine.tex:67: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.67 ...or describing a \hspace{8} point in space}
-                                                  \\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./src/sections/mathEngine.tex:67: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.67 ...or describing a \hspace{8} point in space}
-                                                  \\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./src/sections/mathEngine.tex:67: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.67 ...or describing a \hspace{8} point in space}
-                                                  \\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./src/sections/mathEngine.tex:67: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.67 ...or describing a \hspace{8} point in space}
-                                                  \\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./src/sections/mathEngine.tex:72: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.72     \]
-           
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-./src/sections/mathEngine.tex:72: LaTeX Error: \begin{equation} on input line 64 ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72     \]
-           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./src/sections/mathEngine.tex:74: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74   \end{equation}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./src/sections/mathEngine.tex:74: LaTeX Error: \begin{document} ended by \end{equation}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74   \end{equation}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./src/sections/mathEngine.tex:74: Missing $ inserted.
+./src/sections/pyqt.tex:140: Missing $ inserted.
 <inserted text> 
                 $
-l.74   \end{equation}
-                     
+l.140 \end{lstlisting}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./src/sections/pyqt.tex:140: Missing { inserted.
+<to be read again> 
+                   _
+l.140 \end{lstlisting}
+                      
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./src/sections/pyqt.tex:140: Missing { inserted.
+<to be read again> 
+                   _
+l.140 \end{lstlisting}
+                      
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./src/sections/pyqt.tex:140: Missing $ inserted.
+<inserted text> 
+                $
+l.140 \end{lstlisting}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./src/sections/pyqt.tex:140: Missing } inserted.
+<inserted text> 
+                }
+l.140 \end{lstlisting}
+                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./src/sections/mathEngine.tex:74: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.74   \end{equation}
-                     
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+./src/sections/pyqt.tex:140: Missing } inserted.
+<inserted text> 
+                }
+l.140 \end{lstlisting}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-./src/sections/mathEngine.tex:74: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.74   \end{equation}
-                     
-Things are pretty mixed up, but I think the worst is over.
+[40] [41])) [42]) (./src/parts/Results.tex [43
 
-[30] [31] [32]) [33] (./src/sections/renderEngine.tex) [34
-
-] (./src/sections/mlInterface.tex) [35
-
-] [36
-
-] [37] (./src/sections/pyqt.tex (./src/sections/webcrawler.tex
-File: src/images/implementation_arch.png Graphic file (type png)
-<use src/images/implementation_arch.png>
-Package pdftex.def Info: src/images/implementation_arch.png  used on input line 12.
-(pdftex.def)             Requested size: 455.24411pt x 641.04388pt.
-))) [38
-
-] [39]) (./src/parts/Results.tex [40
-
-] (./src/chapters/results/performance.tex
-Overfull \hbox (7.19556pt too wide) in paragraph at lines 31--36
-[]\OT1/ppl/m/n/12 "A soft-ware frame-work is an ab-strac-tion in which soft-ware, pro-vid-ing generic
- []
-
-) (./src/chapters/results/future.tex [41
-
-])) (./src/parts/Bibliography.tex [42
+] (./src/chapters/results/performance.tex [44
 
 ]
+
+./src/chapters/results/performance.tex:135: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \[
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./src/chapters/results/performance.tex:145: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.145 \]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[45]
+Overfull \hbox (193.3746pt too wide) detected at line 246
+[] \OT1/cmr/m/n/12 = []
+ []
+
+
+Overfull \hbox (7.53082pt too wide) in paragraph at lines 251--252
+[][]\OT1/ppl/m/n/12 : Py-roGamer pro-vides a stan-dard way of build-
+ []
+
+
+Overfull \hbox (145.44026pt too wide) detected at line 265
+[] \OT1/cmr/m/n/12 = []
+ []
+
+[46]) (./src/chapters/results/future.tex [47] [48
+
+])) (./src/parts/Bibliography.tex [49]
 Chapter 1.
-) [43
+) [50
 
 ] (./main.aux)
  ***********
@@ -811,30 +769,27 @@ L3 programming layer <2024-02-20>
  ***********
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  67DF5C269BE56BF7CFBCDFA1C8EA5A82;2037.
+(rerunfilecheck)             After:  448D8E087EB48D12F3539514E4E371EF;3246.
  ) 
 Here is how much of TeX's memory you used:
- 13988 strings out of 476076
- 217207 string characters out of 5793776
- 2064187 words of memory out of 5000000
- 35664 multiletter control sequences out of 15000+600000
- 581802 words of font info for 95 fonts, out of 8000000 for 9000
+ 14286 strings out of 476076
+ 220490 string characters out of 5793775
+ 2126187 words of memory out of 5000000
+ 35859 multiletter control sequences out of 15000+600000
+ 581875 words of font info for 95 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,14n,79p,527b,1247s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (49 pages, 2143587 bytes).
+ 75i,14n,79p,608b,2195s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (56 pages, 2173341 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 340 compressed objects within 4 object streams
- 153 named destinations out of 1000 (max. 500000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 256 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

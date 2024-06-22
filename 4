@@ -1,0 +1,362 @@
+
+
+
+\section*{Color32}
+
+
+\begin{lstlisting}
+class color32
+{
+  public:
+    unsigned int r, g, b, a;
+
+    color32(double grayscale) 
+           : color(grayscale, grayscale, grayscale, 1.0f) { }
+    color32(double _r, double _g, double _b, double _a = 1.0f) {  }
+};
+\end{lstlisting}
+
+
+
+
+As you can see, similar to the vector class, the color datastructure is also a 4D vector. This will come in handy when dealing with shaders. 
+
+
+  \subsection*{Opposite Colors}
+  \begin{lstlisting}
+  class color32
+  {
+    public:
+      unsigned int r, g, b, a;
+
+      color32(double grayscale) 
+             : color(grayscale, grayscale, grayscale, 1.0f) { }
+      color32(double _r, double _g, double _b, double _a = 1.0f) {  }
+  };
+
+
+
+  \end{lstlisting}
+
+
+  \begin{lstlisting}
+  void start();
+  void update();
+  int main() { Awake(); }
+  void Awake() {
+    RenderEngine::setStart(start);
+    RenderEngine::setUpdate(update);
+    RenderEngine::setFixedUpdate(fixedUpdate);
+    // MUST BE CALLED LAST
+    RenderEngine::START(true);
+  }
+  void start() {
+    Gameobject go;
+    go.transform.position = Random::Vector3().normalised *  Random::Value(-5, 5); 
+    Debug::Log(go.transform.position)
+  }
+  \end{lstlisting}
+
+
+
+
+\section*{Primitives}
+
+  Phigs grants us the existance of the following function:
+
+\begin{equation}
+  P(x, y), \forall x, y, -screen::WIDTH / 2 \leq x \leq screen::WIDTH / 2  
+  \label{eq:pixel}
+\end{equation}
+
+
+Based on this function opengl will build the following procedures:
+
+
+
+\textbf{Line-Drawing Procedure}
+% This definition is using variables of line type, width and color
+
+\begin{equation}
+  y = m * x + b
+\end{equation}
+
+with m being:
+\begin{equation}
+  m = \frac{\delta y}{\delta x}
+\end{equation}
+
+
+
+
+
+
+
+\textbf{Circle Generating Procedure}
+
+\textbf{Boundary Fill Procedure}
+
+
+
+\section*{Primitives}
+
+PHIGS (Programmer's Hierarchical Interactive Graphics System) provides the function:
+
+\begin{equation}
+P(x, y), \forall x, y, -\frac{\text{screen::WIDTH}}{2} \leq x \leq \frac{\text{screen::WIDTH}}{2}
+\label{eq
+}
+\end{equation}
+
+This function is the fundamental building block for rendering graphics on a screen in OpenGL. Based on this function, OpenGL implements various procedures to draw shapes and perform graphical operations.
+
+\subsection*{Points and Lines}
+
+Points and lines are basic graphical primitives. A point is represented by its coordinates 
+(
+𝑥
+,
+𝑦
+)
+(x,y) on the screen, and a line is represented by a linear equation.
+
+\subsubsection*{Line-Drawing Procedure}
+
+A line can be represented by the equation:
+
+\begin{equation}
+y = mx + b
+\end{equation}
+
+where 
+𝑚
+m is the slope of the line, calculated as:
+
+\begin{equation}
+m = \frac{\delta y}{\delta x}
+\end{equation}
+
+DDA Algorithm (Digital Differential Analyzer)
+The DDA algorithm is an incremental method for drawing lines:
+
+\begin{align*}
+\Delta x &= x_1 - x_0 \
+\Delta y &= y_1 - y_0 \
+\text{If } |\Delta x| > |\Delta y|, &\text{ then } \text{steps} = |\Delta x| \text{ else } \text{steps} = |\Delta y| \
+\Delta x_{\text{increment}} &= \frac{\Delta x}{\text{steps}} \
+\Delta y_{\text{increment}} &= \frac{\Delta y}{\text{steps}}
+\end{align*}
+
+Starting from 
+(
+𝑥
+0
+,
+𝑦
+0
+)
+(x 
+0
+​
+ ,y 
+0
+​
+ ), the algorithm increments the coordinates:
+
+\begin{align*}
+x &= x + \Delta x_{\text{increment}} \
+y &= y + \Delta y_{\text{increment}}
+\end{align*}
+
+Bresenham's Line Drawing Algorithm
+Bresenham's algorithm uses integer arithmetic for efficient computation:
+
+\begin{align*}
+\Delta x &= x_1 - x_0 \
+\Delta y &= y_1 - y_0 \
+\text{Decision parameter} , p &= 2\Delta y - \Delta x
+\end{align*}
+
+For each 
+𝑥
+x from 
+𝑥
+0
+x 
+0
+​
+  to 
+𝑥
+1
+x 
+1
+​
+ :
+
+\begin{align*}
+\text{If } p < 0, &\text{ then } p = p + 2\Delta y \
+\text{else}, &\text{ increment } y \text{ and } p = p + 2(\Delta y - \Delta x)
+\end{align*}
+
+Line Attributes
+Width
+Line width can be controlled using a parameter 
+𝑤
+w:
+
+\begin{equation}
+\text{LineWidth}(w)
+\end{equation}
+
+Color
+Color can be specified using RGB values:
+
+\begin{equation}
+\text{Color}(r, g, b)
+\end{equation}
+
+Segments
+A line segment between two points 
+(
+𝑥
+0
+,
+𝑦
+0
+)
+(x 
+0
+​
+ ,y 
+0
+​
+ ) and 
+(
+𝑥
+1
+,
+𝑦
+1
+)
+(x 
+1
+​
+ ,y 
+1
+​
+ ) can be drawn using the above algorithms, with the line attributes applied.
+
+\subsection*{Circle-generating Algorithms}
+
+Midpoint Circle Algorithm
+The midpoint circle algorithm efficiently draws circles using the symmetry of circles and incremental calculations:
+
+\begin{align*}
+x &= r, y = 0 \
+\text{Decision parameter} , p &= 1 - r
+\end{align*}
+
+For each 
+𝑥
+x from 
+𝑟
+r to 0:
+
+\begin{align*}
+\text{If } p < 0, &\text{ then } p = p + 2x + 3 \
+\text{else}, &\text{ decrement } y \text{ and } p = p + 2(x - y) + 5
+\end{align*}
+
+Parametric Form
+Using the parametric form of a circle:
+
+\begin{align*}
+x &= r \cos \theta \
+y &= r \sin \theta
+\end{align*}
+
+\subsection*{Flood-Fill Algorithms}
+
+Flood-fill algorithms fill a contiguous area of pixels with a specified color.
+
+Boundary Fill Algorithm
+Starting from a seed point 
+(
+𝑥
+,
+𝑦
+)
+(x,y):
+
+\begin{align*}
+\text{If } P(x, y) \neq \text{boundary_color} \text{ and } P(x, y) \neq \text{fill_color}, &\text{ then fill } P(x, y) \text{ and apply to neighboring pixels}
+\end{align*}
+
+\subsection*{Text Renderer}
+
+Rendering text involves drawing each character glyph using the above primitives and positioning them appropriately.
+
+\section*{Conclusion}
+
+The described primitives and algorithms form the basis of graphical rendering in OpenGL, allowing the creation of complex images from basic elements like points, lines, and circles.
+
+
+
+
+
+
+
+      \begin{itemize}
+        \item Points and Lines
+        \begin{itemize}
+          \item Width
+          \item Color
+          \begin{itemize}
+            \item Flood-Fill Algorithms
+          \end{itemize}
+          \item Segments
+        \end{itemize}
+        \item Circle-generating Algorithms
+        \item Text Renderer
+      \end{itemize}
+
+  % \subsubsection*{Operations}
+  %   \begin{itemize}
+  %     \item Matrices
+  %     \begin{itemize}
+  %       \item Homogeneous Representation
+  %       \item Matrix      Multiplication
+  %     \end{itemize}
+
+  %     \item Basic Transformations
+  %     \begin{itemize}
+  %         \item Translation
+  %         % TODO: ADD EQUASIONS
+  %         \item Rotation
+  %         \begin{itemize}
+  %             \item Euler Method
+  %             \item Euler Problem
+  %             \item Quaternions
+  %             % TODO: EQUASIONS
+  %         \end{itemize}
+  %         \item Scaling
+  %         % TODO: EQUASIONS
+  %     \end{itemize}
+  %     \end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+\section*{Integration with Game Management components}
+
+
+
+
+

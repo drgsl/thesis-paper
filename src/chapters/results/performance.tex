@@ -1,53 +1,641 @@
 
 
 
-\chapter*{Technical Review}
+\chapter*{Formal Proof}
 \addcontentsline{toc}{chapter}{Technical Review}
 
+In this chapter, we will inspect the criteria to which a piece of software needs to qualify in order to be considered part of the game engines set.
 
-    In this chapter, we will inspect to what extent needs one piece of software to satisfy in order for it to be considered part of the collection containing game engine.
-    
-    \section*{Speed}
-    % \addcontentsline{toc}{section}{Speed}
-    \section*{Memory}
-    % \addcontentsline{toc}{section}{Memory}
+\section*{Natural Language Statement}
+
+% \section*{Speed}
+% \addcontentsline{toc}{section}{Speed}
+% % Content of the section
+
+% \section*{Memory}
+% \addcontentsline{toc}{section}{Memory}
+% % Content of the section
+
+\paragraph*{Wikipedia}
+"A game engine is a software framework primarily designed for the development of video games and generally includes relevant engines."
 
 
-    \paragraph*{Wikipedia} "A game engine is a software framework primarily designed for the development of video games and generally includes relevant libraries
-    % and support programs such as a level editor.
-    (...).
-    % Game engine can also refer to the development software supporting this framework, typically 
-    % a suite of tools and features for developing games.
-    The core functionality typically provided by a game engine may include a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, artificial intelligence, 
-    (...)
-    % networking, streaming, memory management, threading, localization support, scene graph, and video support for cinematics.
-    "
 
-    So, in order to satisfy this definition, a piece of software \emph{P} can be considered a game engine, if and only if \emph{P} satisfies the following:
+% \paragraph*{Wikipedia}
+% "The core functionality typically provided by a game engine may include 
+% a rendering engine, 
+% a physics engine with collision detection
+% (...)
+% % sound, 
+% % scripting, 
+% % artificial intelligence, 
+% % networking, 
+% % streaming, 
+% % memory management, 
+% % threading, 
+% % localization support, 
+% % scene graph, 
+% % and video support for cinematics.
+% "
 
-    \begin{itemize}
-        \item \emph{P} is a software framework
-        \begin{itemize}
-          \item {"A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code. 
-            (...) 
-            It provides a standard way to build and deploy applications and is a universal, reusable software environment 
-            (...)
-            to facilitate the development of software applications, products and solutions. "} source: Wikipedia
+% So, in order to satisfy this definition, a piece of software \( P \) can be considered a game engine if and only if \( P \) satisfies the following conditions.
 
-            % \paragraph*{Wikipedia} {"A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code.
-            % % , thus providing application-specific software. 
-            % (...)
-            % It provides a standard way to build and deploy applications and is a universal, reusable software environment 
-            % % that provides particular functionality as part of a larger software platform 
-            % (...)
-            % to facilitate the development of software applications, products and solutions. "}
-            \begin{itemize}
-                \item Generic functionality that can be selectively adapted based on user's code.
-                \item provides a standard way of building and deploying applications
-            \end{itemize}
-        \end{itemize}
-        \item \emph{P} includes a suite of relevant engines
-    \end{itemize}
+% \section*{Formal Criteria}
+
+% \subsection*{Software Framework}
+% \addcontentsline{toc}{subsection}{Software Framework}
+
+
+
+
+\pagebreak
+
+
+
+
+
+
+
+Let \( S \) be a piece of software.
+
+\section*{Formal Definition}
+% \textbf{Game Engine Definition Function}
+
+\[
+\text{isGameEngine}(S) =
+\begin{cases}
+    \text{true}, & \text{if } \text{isFramework}(S) \land \text{hasEngines}(S) \\
+    \text{false}, & \text{otherwise}
+\end{cases}
+\]
+
+
+
+% Let \( P \) be a piece of software. \( P \) is a game engine if:
+
+% \[
+% \text{SF}(P) \land \text{SR}(P)
+% \]
+
+% where:
+% \[
+% \text{SF}(P) \equiv \text{Software Framework}(P)
+% \]
+% \[
+% \text{SR}(P) \equiv \text{Suite of Relevant Engines}(P)
+% \]
+
+% \textbf{Software Framework Definition Function}
+
+
+
+
+
+\[
+\text{isSoftwareFramework}(S) =
+\begin{cases}
+    \text{true}, & \text{if } \text{Generic}(S)  \land \text{stdDeployed}(S) \\
+    \text{false}, & \text{otherwise}
+\end{cases}
+\]
+
+
+
+
+
+
+% \( P \) is a software framework if:
+
+% \[
+% \text{SF}(P) \equiv \text{hasGenericFunc}(P) \land \text{STD}(P)
+% \]
+
+% where:
+% \[
+% \text{GF}(P) \equiv \text{Generic Functionality}(P)
+% \]
+% \[
+% \text{STD}(P) \equiv \text{Standard Deployment}(P)
+% \]
+
+% \begin{itemize}
+%     \item \( \text{GF}(P) \): Generic functionality that can be selectively adapted based on user-written code.
+%     \item \( \text{STD}(P) \): Provides a standard way of building and deploying applications.
+% \end{itemize}
+
+
+
+
+
+Let GameEngines::PossibleComponents 
+be the collection of all the possible engines in any game engine.
+
+\[
+\text{GE::PC} = 
+\[
+\begin{cases}
+  \text{Rendering}, 
+  \text{Physics}, 
+  \text{Scripting}, 
+  \text{Sound}, 
+  \text{AI}, 
+  \text{Robotics}
+  ...
+\end{cases}
+\]
+
+\[
+\text{hasEngineSuite}(P) =
+\begin{cases}
+    \text{true}, & \text{if } \left( |S.\text{engines}| > 0 \right) \land \left( S.\text{engines} \subseteq \text{GE::PC} \right) \\
+    \text{false}, & \text{otherwise}
+\end{cases}
+\]
+
+
+% TRUE IF length(S.engines) >      0 
+%         AND
+%         S.engines       is in   Collection of usual engines in game engines
+
+% \[
+% \text{hasEngineSuite}(P) =
+% \begin{cases}
+%     \text{true}, & \text{if } (\text{Scene Graph}(P) \land \text{Rendering}(P)) \\
+%     & \quad \lor (\text{Physics}(P) \land \text{Scripting}(P)) \\
+%     & \quad \lor (\text{Sound}(P) \land \text{AI}(P)) \\
+%     & \quad \lor (\text{Machine Learning}(P) \land \text{Robotics}(P)) \\
+%     \text{false}, & \text{otherwise}
+% \end{cases}
+% \]
+
+
+
+
+
+
+% \textbf{Suite of Relevant Engines Function Definition}
+
+% \( P \) includes a suite of relevant engines if:
+
+% \[
+%   \text{SR}(P) 
+% \]
+% \[
+%   \equiv
+% \]
+% \[
+%   (\text{Scene Graph}(P) \land \text{Rendering}(P))
+% \]
+% \[
+% \lor 
+% \]
+% \[
+%   (\text{Physics}(P) \land \text{Scripting}(P) )
+% \]
+% \[
+% \lor
+% \]
+% \[
+%   (\text{Sound}(P) \land \text{AI}(P) )
+% \lor
+%   (\text{Machine Learning}(P) \land \text{Robotics}(P)) 
+% \]
+% % \section*{Application to Your Software}
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{Formal Proof}
+
+In this section, we will formally verify whether PyroGamer qualifies as a game engine based on the defined criteria.
+
+\section*{Software Framework Verification}
+\addcontentsline{toc}{section}{Software Framework Verification}
+
+To determine if PyroGamer satisfies the software framework criterion:
+
+\[
+\text{isSoftwareFramework(PyroGamer)} =
+\begin{cases}
+    \text{true}, & \text{if } \text{Generic Functionality(PyroGamer)} \land \text{Standard Deployment(PyroGamer)} \\
+    \text{false}, & \text{otherwise}
+\end{cases}
+\]
+
+Where:
+\begin{itemize}
+    \item \text{Generic Functionality(PyroGamer)}: PyroGamer provides generic functionality that can be adapted by user-written code, such as game logic scripts and customization options.
+    \item \text{Standard Deployment(PyroGamer)}: PyroGamer provides a standard way of building and deploying game applications, ensuring consistency and ease of use across different projects.
+\end{itemize}
+
+\section*{Suite of Relevant Engines Verification}
+\addcontentsline{toc}{section}{Suite of Relevant Engines Verification}
+
+To verify if PyroGamer includes a suite of relevant engines:
+
+\[
+\text{hasEngineSuite(PyroGamer)} =
+\begin{cases}
+    \text{true}, & \text{if } \left( |S.\text{engines}| > 0 \right) \land \left( S.\text{engines} \subseteq \text{GameEngines::PossibleComponents} \right) \\
+    \text{false}, & \text{otherwise}
+\end{cases}
+\]
+
+Where:
+\begin{itemize}
+    \item \( |S.\text{engines}| > 0 \): PyroGamer has a non-empty set of engines.
+    \item \( S.\text{engines} \subseteq \text{GameEngines::PossibleComponents} \): All engines in PyroGamer are part of the collection of possible engines in any game engine.
+\end{itemize}
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+
+Based on the verification of both criteria:
+
+\begin{itemize}
+    \item PyroGamer satisfies the software framework criterion by providing generic functionality and standard deployment features.
+    \item PyroGamer includes a suite of relevant engines, covering rendering, physics, sound, scripting, AI, networking, streaming, memory management, threading, localization, scene graph, and video support.
+\end{itemize}
+
+Therefore, PyroGamer meets the formal definition of a game engine as defined by its software framework and suite of relevant engines.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Let \( P \) represent PyroGamer. To determine if PyroGamer satisfies the software framework criterion:
+
+% \[
+% \text{SF(PyroGamer)} \equiv \text{GF(PyroGamer)} \land \text{STD(PyroGamer)}
+% \]
+
+% \begin{itemize}
+%     \item \( \text{GF(PyroGamer)} \): PyroGamer provides generic functionality that can be adapted by user-written code, such as game logic scripts and customization options.
+%     \item \( \text{STD(PyroGamer)} \): PyroGamer provides a standard way of building and deploying game applications, ensuring consistency and ease of use across different projects.
+% \end{itemize}
+
+% \subsection*{Suite of Relevant Engines}
+% \addcontentsline{toc}{subsection}{Suite of Relevant Engines}
+% To verify if PyroGamer includes a suite of relevant engines:
+
+% \[
+% \text{SR(PyroGamer)} \equiv \text{Rendering(PyroGamer)} \land \text{Physics(PyroGamer)} \land \text{Sound(PyroGamer)} \land \text{Scripting(PyroGamer)} \land \text{AI(PyroGamer)} \land \text{Networking(PyroGamer)} \land \text{Streaming(PyroGamer)} \land \text{Memory Management(PyroGamer)} \land \text{Threading(PyroGamer)} \land \text{Localization(PyroGamer)} \land \text{Scene Graph(PyroGamer)} \land \text{Video Support(PyroGamer)}
+% \]
+
+% Given the details about PyroGamer provided earlier, we know that:
+
+% \begin{itemize}
+%     \item PyroGamer includes a rendering engine for displaying game graphics.
+%     \item PyroGamer integrates physics for simulating interactions between game objects.
+%     \item PyroGamer manages sound effects and music playback for immersive audio experiences.
+%     \item PyroGamer supports scripting to allow developers to define game behaviors and logic.
+%     \item PyroGamer incorporates artificial intelligence algorithms to control non-player characters and game behaviors.
+%     \item PyroGamer includes networking capabilities for multiplayer game functionality.
+%     \item PyroGamer supports streaming data to manage large game assets efficiently.
+%     \item PyroGamer handles memory management to optimize resource usage during gameplay.
+%     \item PyroGamer provides threading support for concurrent tasks and performance optimization.
+%     \item PyroGamer includes localization features for adapting games to different languages and regions.
+%     \item PyroGamer utilizes a scene graph to organize and manage game objects in a hierarchical structure.
+%     \item PyroGamer supports video playback for cinematic sequences within games.
+% \end{itemize}
+
+% \section*{Conclusion}
+% \addcontentsline{toc}{section}{Conclusion}
+% Therefore, based on the comprehensive analysis of PyroGamer, it meets the criteria of a game engine as defined by its software framework and suite of relevant engines.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \chapter*{Technical Review}
+% \addcontentsline{toc}{chapter}{Technical Review}
+
+% In this chapter, we will inspect the criteria a piece of software needs to satisfy in order to be considered part of the collection containing a game engine.
+
+% \section*{Speed}
+% % \addcontentsline{toc}{section}{Speed}
+% \section*{Memory}
+% % \addcontentsline{toc}{section}{Memory}
+
+% \paragraph*{Wikipedia}
+% "A game engine is a software framework primarily designed for the development of video games and generally includes relevant libraries. The core functionality typically provided by a game engine may include a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, artificial intelligence, networking, streaming, memory management, threading, localization support, scene graph, and video support for cinematics."
+
+% So, in order to satisfy this definition, a piece of software \( P \) can be considered a game engine if and only if \( P \) satisfies the following conditions:
+
+% \section*{Formal Criteria}
+
+% \subsection*{Software Framework}
+% Let \( P \) be a piece of software. \( P \) is a game engine if:
+
+% \[
+% \text{SF}(P) \land \text{SR}(P)
+% \]
+
+% where:
+% \[
+% \text{SF}(P) \equiv \text{Software Framework}(P)
+% \]
+% \[
+% \text{SR}(P) \equiv \text{Suite of Relevant Engines}(P)
+% \]
+
+% \subsubsection*{Software Framework}
+% \( P \) is a software framework if:
+
+% \[
+% \text{SF}(P) \equiv \text{GF}(P) \land \text{STD}(P)
+% \]
+
+% where:
+% \[
+% \text{GF}(P) \equiv \text{Generic Functionality}(P)
+% \]
+% \[
+% \text{STD}(P) \equiv \text{Standard Deployment}(P)
+% \]
+
+% \begin{itemize}
+%     \item \( \text{GF}(P) \): Generic functionality that can be selectively adapted based on user-written code.
+%     \item \( \text{STD}(P) \): Provides a standard way of building and deploying applications.
+% \end{itemize}
+
+% \subsubsection*{Suite of Relevant Engines}
+% \( P \) includes a suite of relevant engines if:
+
+% \[
+% \text{SR}(P) \equiv \text{Rendering}(P) \land \text{Physics}(P) \land \text{Sound}(P) \land \text{Scripting}(P) \land \text{AI}(P) \land \text{Networking}(P) \land \text{Streaming}(P) \land \text{Memory Management}(P) \land \text{Threading}(P) \land \text{Localization}(P) \land \text{Scene Graph}(P) \land \text{Video Support}(P)
+% \]
+
+% where each term represents a specific engine or functionality included in the suite:
+% \begin{itemize}
+%     \item \( \text{Rendering}(P) \): Includes a rendering engine for 2D or 3D graphics.
+%     \item \( \text{Physics}(P) \): Includes a physics engine or collision detection and response.
+%     \item \( \text{Sound}(P) \): Includes sound management.
+%     \item \( \text{Scripting}(P) \): Includes scripting capabilities.
+%     \item \( \text{AI}(P) \): Includes artificial intelligence.
+%     \item \( \text{Networking}(P) \): Includes networking support.
+%     \item \( \text{Streaming}(P) \): Includes streaming capabilities.
+%     \item \( \text{Memory Management}(P) \): Includes memory management.
+%     \item \( \text{Threading}(P) \): Includes threading support.
+%     \item \( \text{Localization}(P) \): Includes localization support.
+%     \item \( \text{Scene Graph}(P) \): Includes scene graph management.
+%     \item \( \text{Video Support}(P) \): Includes video support for cinematics.
+% \end{itemize}
+
+% \section*{Application to Your Software}
+
+% For your software, PyroGamer, we can apply these criteria as follows:
+
+% \subsection*{Software Framework}
+% Let \( P \) represent PyroGamer. To determine if PyroGamer satisfies the software framework criterion:
+
+% \[
+% \text{SF(PyroGamer)} \equiv \text{GF(PyroGamer)} \land \text{STD(PyroGamer)}
+% \]
+
+% \begin{itemize}
+%     \item \( \text{GF(PyroGamer)} \): PyroGamer provides generic functionality that can be adapted by user-written code, such as game logic scripts and customization options.
+%     \item \( \text{STD(PyroGamer)} \): PyroGamer provides a standard way of building and deploying game applications, ensuring consistency and ease of use across different projects.
+% \end{itemize}
+
+% \subsection*{Suite of Relevant Engines}
+% To verify if PyroGamer includes a suite of relevant engines:
+
+% \[
+% \text{SR(PyroGamer)} \equiv \text{Rendering(PyroGamer)} \land \text{Physics(PyroGamer)} \land \text{Sound(PyroGamer)} \land \text{Scripting(PyroGamer)} \land \text{AI(PyroGamer)} \land \text{Networking(PyroGamer)} \land \text{Streaming(PyroGamer)} \land \text{Memory Management(PyroGamer)} \land \text{Threading(PyroGamer)} \land \text{Localization(PyroGamer)} \land \text{Scene Graph(PyroGamer)} \land \text{Video Support(PyroGamer)}
+% \]
+
+% Given the details about PyroGamer provided earlier, we know that:
+
+% \begin{itemize}
+%     \item PyroGamer includes a rendering engine for displaying game graphics.
+%     \item PyroGamer integrates physics for simulating interactions between game objects.
+%     \item PyroGamer manages sound effects and music playback for immersive audio experiences.
+%     \item PyroGamer supports scripting to allow developers to define game behaviors and logic.
+%     \item PyroGamer incorporates artificial intelligence algorithms to control non-player characters and game behaviors.
+%     \item PyroGamer includes networking capabilities for multiplayer game functionality.
+%     \item PyroGamer supports streaming data to manage large game assets efficiently.
+%     \item PyroGamer handles memory management to optimize resource usage during gameplay.
+%     \item PyroGamer provides threading support for concurrent tasks and performance optimization.
+%     \item PyroGamer includes localization features for adapting games to different languages and regions.
+%     \item PyroGamer utilizes a scene graph to organize and manage game objects in a hierarchical structure.
+%     \item PyroGamer supports video playback for cinematic sequences within games.
+% \end{itemize}
+
+% \section*{Conclusion}
+% Therefore, based on the comprehensive analysis of PyroGamer, it meets the criteria of a game engine as defined by its software framework and suite of relevant engines.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \chapter*{Technical Review}
+% \addcontentsline{toc}{chapter}{Technical Review}
+
+% In this chapter, we will inspect the criteria a piece of software needs to satisfy in order to be considered part of the collection containing a game engine.
+
+% \section*{Speed}
+% % \addcontentsline{toc}{section}{Speed}
+% \section*{Memory}
+% % \addcontentsline{toc}{section}{Memory}
+
+% \paragraph*{Wikipedia}
+% "A game engine is a software framework primarily designed for the development of video games and generally includes relevant libraries. The core functionality typically provided by a game engine may include a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, artificial intelligence, networking, streaming, memory management, threading, localization support, scene graph, and video support for cinematics."
+
+% So, in order to satisfy this definition, a piece of software \( P \) can be considered a game engine if and only if \( P \) satisfies the following conditions:
+
+% \section*{Formal Criteria}
+
+% \subsection*{Software Framework}
+% Let \( P \) be a piece of software. \( P \) is a game engine if:
+
+% \[
+% \text{SF}(P) \land \text{SR}(P)
+% \]
+
+% where:
+% \[
+% \text{SF}(P) \equiv \text{Software Framework}(P)
+% \]
+% \[
+% \text{SR}(P) \equiv \text{Suite of Relevant Engines}(P)
+% \]
+
+% \subsubsection*{Software Framework}
+% \( P \) is a software framework if:
+
+% \[
+% \text{SF}(P) \equiv \text{GF}(P) \land \text{STD}(P)
+% \]
+
+% where:
+% \[
+% \text{GF}(P) \equiv \text{Generic Functionality}(P)
+% \]
+% \[
+% \text{STD}(P) \equiv \text{Standard Deployment}(P)
+% \]
+
+% \begin{itemize}
+%     \item \( \text{GF}(P) \): Generic functionality that can be selectively adapted based on user-written code.
+%     \item \( \text{STD}(P) \): Provides a standard way of building and deploying applications.
+% \end{itemize}
+
+% \subsubsection*{Suite of Relevant Engines}
+% \( P \) includes a suite of relevant engines if:
+
+% \[
+% \text{SR}(P) \equiv \text{Rendering}(P) \land \text{Physics}(P) \land \text{Sound}(P) \land \text{Scripting}(P) \land \text{AI}(P) \land \text{Networking}(P) \land \text{Streaming}(P) \land \text{Memory Management}(P) \land \text{Threading}(P) \land \text{Localization}(P) \land \text{Scene Graph}(P) \land \text{Video Support}(P)
+% \]
+
+% where each term represents a specific engine or functionality included in the suite:
+% \begin{itemize}
+%     \item \( \text{Rendering}(P) \): Includes a rendering engine for 2D or 3D graphics.
+%     \item \( \text{Physics}(P) \): Includes a physics engine or collision detection and response.
+%     \item \( \text{Sound}(P) \): Includes sound management.
+%     \item \( \text{Scripting}(P) \): Includes scripting capabilities.
+%     \item \( \text{AI}(P) \): Includes artificial intelligence.
+%     \item \( \text{Networking}(P) \): Includes networking support.
+%     \item \( \text{Streaming}(P) \): Includes streaming capabilities.
+%     \item \( \text{Memory Management}(P) \): Includes memory management.
+%     \item \( \text{Threading}(P) \): Includes threading support.
+%     \item \( \text{Localization}(P) \): Includes localization support.
+%     \item \( \text{Scene Graph}(P) \): Includes scene graph management.
+%     \item \( \text{Video Support}(P) \): Includes video support for cinematics.
+% \end{itemize}
+
+% \section*{Conclusion}
+% Therefore, \( P \) is a game engine if and only if:
+% \[
+% \text{SF}(P) \land \text{SR}(P)
+% \]
+
+% \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \chapter*{Technical Review}
+% \addcontentsline{toc}{chapter}{Technical Review}
+
+
+%     In this chapter, we will inspect to what extent needs one piece of software to satisfy in order for it to be considered part of the collection containing game engine.
+%     
+%     \section*{Speed}
+%     % \addcontentsline{toc}{section}{Speed}
+%     \section*{Memory}
+%     % \addcontentsline{toc}{section}{Memory}
+
+
+%     \paragraph*{Wikipedia} "A game engine is a software framework primarily designed for the development of video games and generally includes relevant libraries
+%     % and support programs such as a level editor.
+%     (...).
+%     % Game engine can also refer to the development software supporting this framework, typically 
+%     % a suite of tools and features for developing games.
+%     The core functionality typically provided by a game engine may include a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, artificial intelligence, 
+%     (...)
+%     % networking, streaming, memory management, threading, localization support, scene graph, and video support for cinematics.
+%     "
+
+%     So, in order to satisfy this definition, a piece of software \emph{P} can be considered a game engine, if and only if \emph{P} satisfies the following:
+
+%     \begin{itemize}
+%         \item \emph{P} is a software framework
+%         \begin{itemize}
+%           \item {"A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code. 
+%             (...) 
+%             It provides a standard way to build and deploy applications and is a universal, reusable software environment 
+%             (...)
+%             to facilitate the development of software applications, products and solutions. "} source: Wikipedia
+
+%             % \paragraph*{Wikipedia} {"A software framework is an abstraction in which software, providing generic functionality, can be selectively changed by additional user-written code.
+%             % % , thus providing application-specific software. 
+%             % (...)
+%             % It provides a standard way to build and deploy applications and is a universal, reusable software environment 
+%             % % that provides particular functionality as part of a larger software platform 
+%             % (...)
+%             % to facilitate the development of software applications, products and solutions. "}
+%             \begin{itemize}
+%                 \item Generic functionality that can be selectively adapted based on user's code.
+%                 \item provides a standard way of building and deploying applications
+%             \end{itemize}
+%         \end{itemize}
+%         \item \emph{P} includes a suite of relevant engines
+%     \end{itemize}
 
 
 
