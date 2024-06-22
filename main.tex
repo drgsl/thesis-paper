@@ -30,12 +30,12 @@
             top=2cm,
             bottom=2cm,
  }
-\graphicspath{{src/images/}}        % path where the images are located
+\graphicspath{{src/img/}}        % path where the images are located
 \setlength{\parindent}{1cm}     % paragraph indentation
 
 % other options
 \linespread{1.5}                % space between lines
-\renewcommand*\contentsname{Cuprins}    % table of contents name
+\renewcommand*\contentsname{Table of contents}    % table of contents name
 
 
 
@@ -85,41 +85,121 @@
     
     % front-matter
     \pagenumbering{gobble}
-    
+
+
+
+
+
+
+
+
     \blankpage
     \input{src/front/cover}
     \blankpage
-    \input{src/front/titlepage}
+    \input{src/front/title}
     \blankpage
-    % \input{src/front/declaration1}
-    % \input{src/front/declaration2}
 
-    % chapters
     \setcounter{page}{1}
     \pagenumbering{arabic}
     
+
+
+
+
+
+
     \blankpage
-    \input{src/parts/Abstract}
-   
+    \input{src/content/abstract}
+ 
+
+
+
+
     % table of contents
     \tableofcontents
 
-    % \blankpage
-    \input{src/parts/Overview.tex}
-    \input{src/parts/FieldStudy.tex}
 
-    \input{src/parts/Implementation.tex}
-    \input{src/parts/Results}
 
-    \input{src/parts/Bibliography}
 
-    % \input{src/chapters/introduction}
-    % \input{src/chapters/motivation}
-    
-    % \input{src/chapters/chapter1}
-    % \input{src/chapters/chapter2}
-    % \input{src/chapters/chapter3}
-    
-    % \input{src/chapters/conclusions}
+
+
+    \part{Introduction}
+      \chapter*{Introduction}
+        \section*{Motivation}
+          \input{src/content/motivation}
+        \section*{Introduction}
+          \input{src/content/introduction}
+          \input{src/content/bachelors}
+        \section*{Game Engines}
+          In this section, we will inspect the criteria to which a piece of software needs to qualify in order to be considered part of the game engines set.
+          \input{src/content/proof}
+
+    \part{Implementation}
+      \chapter*{Implementation}
+        \input{src/content/app/demo}
+        \section*{Components}
+          In this section, we will inspect each component present in the implementation.
+          \input{src/content/app/components/math}
+          \input{src/content/app/components/renderer}
+          \input{src/content/app/components/probability}
+          \input{src/content/app/components/pyqt}
+        \section*{Implementation}
+          \input{src/content/app/design}
+
+    \part{Bibliography}
+      \chapter*{Bibliography}
+
+        \section*{Literature}
+          In the following, i will present all the literature i used in this research and it will be grouped based on what i learned from that said resource.
+
+          \subsection*{Mathematical Framework}
+            \subsubsection*{"Mathematics For Game Developers" by AUTHOR}
+              \input{src/content/study/book/GameDevMath}
+          \subsection*{Rendering Engine}
+            \subsubsection*{"Computer Graphics in C/C++" by AUTHOR}
+              \input{src/content/study/book/CompGraph}
+            \subsubsection*{"opengl SUPERBIBLE" by AUTHOR}
+              \input{src/content/study/book/superbible}
+              \textbf{How does the screen know what the videoboard wants to render?}
+                \input{src/content/study/youtube/beneater}
+          \subsection*{C++ Software Infrastructure}
+            \subsubsection*{C++ by BJORN STROUPWAFFLE}
+              \input{src/content/study/book/bjorn}
+
+        \section*{Field Study}
+          \subsection*{CS189 Stanford Computer Graphics Student Projects}
+            \input{src/content/study/paper/stanford/CS189}
+          \subsection*{CS201 Stanford Machine Learning Student Projects}
+            \input{src/content/study/paper/stanford/CS201}
+          \subsection*{Simulating Human Emunacra}
+            \input{src/content/study/paper/emulatra}
+          \subsection*{Detective}
+            This technology had been expanded further from research environments, this technology made it into production and there now exists services that allow access to fine-tuned ai models with special integration for popular use-cases.
+            \input{src/content/study/provider/detective}
+          \subsection*(How does the screen know what to display?)
+
+
+
+
+
+
+
+    % % \blankpage
+    % \input{src/parts/Overview.tex}
+    % \input{src/parts/FieldStudy.tex}
+
+    % \input{src/parts/Implementation.tex}
+    % \input{src/parts/Results}
+
+    % \input{src/parts/Bibliography}
+
+    % % \input{src/chapters/introduction}
+    % % \input{src/chapters/motivation}
+    % 
+    % % \input{src/chapters/chapter1}
+    % % \input{src/chapters/chapter2}
+    % % \input{src/chapters/chapter3}
+    % 
+    % % \input{src/chapters/conclusions}
 
 \end{document}

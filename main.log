@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  21 JUN 2024 17:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  22 JUN 2024 19:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -342,7 +342,8 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box57
-) (./main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -363,7 +364,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -443,10 +443,10 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 
 
 ] (./src/front/cover.tex
-<src/images/logoFii.png, id=9, 193.47281pt x 188.95593pt>
-File: src/images/logoFii.png Graphic file (type png)
-<use src/images/logoFii.png>
-Package pdftex.def Info: src/images/logoFii.png  used on input line 13.
+<src/img/logoFii.png, id=9, 193.47281pt x 188.95593pt>
+File: src/img/logoFii.png Graphic file (type png)
+<use src/img/logoFii.png>
+Package pdftex.def Info: src/img/logoFii.png  used on input line 13.
 (pdftex.def)             Requested size: 136.57462pt x 133.38693pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
@@ -455,14 +455,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 l.47 \end{titlepage}
                      [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./src/images/logoFii.png>])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./src/img/logoFii.png>])
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91     \blankpage
+l.98     \blankpage
                     [0
 
-] (./src/front/titlepage.tex
+] (./src/front/title.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -473,296 +473,191 @@ l.35 \end{titlepage}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.93     \blankpage
-                    [0
+l.100     \blankpage
+                     [0
 
 ] [0
 
 
-] (./src/parts/Abstract.tex [1
+] (./src/content/abstract.tex) [1
 
-
-]) [2]
+]
 No file main.toc.
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-(./src/parts/Overview.tex [3
+[2
 
-] [4
+] [3
 
-] (./src/chapters/academic/introduction.tex [5]) (./src/chapters/academic/motivation.tex [6
-
-]) (./src/chapters/academic/goals.tex [7
-
-]) (./src/chapters/academic/benefits.tex [8
-
-]
-Overfull \hbox (0.23573pt too wide) in paragraph at lines 15--17
-[]\OT1/ppl/m/n/12 As I have al-ready pre-vi-ously men-tioned, this is a stan-dard-ized prac-tice that seems
+] (./src/content/motivation.tex) (./src/content/introduction.tex) (./src/content/bachelors.tex
+Overfull \hbox (3.30702pt too wide) in paragraph at lines 12--14
+[]\OT1/ppl/m/n/12 This im-ple-men-ta-tion re-quired ex-ten-sive study of mul-ti-ple com-puter sci-ence fields.
  []
 
-[9
-
-]
-<src/images/facade.jpeg, id=76, 463.7325pt x 258.9675pt>
-File: src/images/facade.jpeg Graphic file (type jpg)
-<use src/images/facade.jpeg>
-Package pdftex.def Info: src/images/facade.jpeg  used on input line 67.
-(pdftex.def)             Requested size: 364.19667pt x 203.38475pt.
- [10
-
- <./src/images/facade.jpeg>]
-Overfull \hbox (7.74736pt too wide) in paragraph at lines 77--78
-[]\OT1/ppl/m/n/12 Such so-lu-tions have al-ready been ex-per-i-mented with, in the fol-low-ing i will present
- []
-
-<src/images/dougdoug.jpeg, id=83, 784.9325pt x 453.695pt>
-File: src/images/dougdoug.jpeg Graphic file (type jpg)
-<use src/images/dougdoug.jpeg>
-Package pdftex.def Info: src/images/dougdoug.jpeg  used on input line 92.
-(pdftex.def)             Requested size: 364.19667pt x 210.50908pt.
-
-Overfull \hbox (1.9407pt too wide) in paragraph at lines 92--94
-[][] \OT1/ppl/m/n/12 Screen-shots
- []
-
-<src/images/arrow.jpeg, id=84, 441.65pt x 442.65375pt>
-File: src/images/arrow.jpeg Graphic file (type jpg)
-<use src/images/arrow.jpeg>
-Package pdftex.def Info: src/images/arrow.jpeg  used on input line 101.
-(pdftex.def)             Requested size: 364.19667pt x 365.03848pt.
-[11 <./src/images/dougdoug.jpeg>]
-<src/images/morningRoutine.jpeg, id=90, 612.2875pt x 431.6125pt>
-File: src/images/morningRoutine.jpeg Graphic file (type jpg)
-<use src/images/morningRoutine.jpeg>
-Package pdftex.def Info: src/images/morningRoutine.jpeg  used on input line 108.
-(pdftex.def)             Requested size: 182.09486pt x 128.35855pt.
-<src/images/birthdayParty.jpeg, id=91, 752.8125pt x 509.905pt>
-File: src/images/birthdayParty.jpeg Graphic file (type jpg)
-<use src/images/birthdayParty.jpeg>
-Package pdftex.def Info: src/images/birthdayParty.jpeg  used on input line 112.
-(pdftex.def)             Requested size: 364.19667pt x 246.68896pt.
- [12 <./src/images/arrow.jpeg> <./src/images/morningRoutine.jpeg>]
-Overfull \hbox (1.1237pt too wide) in paragraph at lines 114--115
-[]\OT1/ppl/m/n/12 The fol-low-ing goes more in de-tail over the im-ple-men-tata-tion de-sign for one agent: 
- []
-
-<src/images/DataStructure.jpeg, id=97, 464.73625pt x 223.83624pt>
-File: src/images/DataStructure.jpeg Graphic file (type jpg)
-<use src/images/DataStructure.jpeg>
-Package pdftex.def Info: src/images/DataStructure.jpeg  used on input line 116.
-(pdftex.def)             Requested size: 364.19667pt x 175.4181pt.
-<src/images/alphazero.jpeg, id=98, 540.0175pt x 546.04pt>
-File: src/images/alphazero.jpeg Graphic file (type jpg)
-<use src/images/alphazero.jpeg>
-Package pdftex.def Info: src/images/alphazero.jpeg  used on input line 127.
-(pdftex.def)             Requested size: 364.19667pt x 368.26114pt.
-)) (./src/parts/FieldStudy.tex [13 <./src/images/birthdayParty.jpeg> <./src/images/DataStructure.jpeg>] [14 <./src/images/alphazero.jpeg>] [15
-
-] (./src/chapters/research/introduction.tex
-<src/images/stanford_softbodies.jpeg, id=114, 426.59375pt x 507.8975pt>
-File: src/images/stanford_softbodies.jpeg Graphic file (type jpg)
-<use src/images/stanford_softbodies.jpeg>
-Package pdftex.def Info: src/images/stanford_softbodies.jpeg  used on input line 17.
-(pdftex.def)             Requested size: 227.62206pt x 271.01337pt.
-<src/images/stanford_chess.jpeg, id=115, 646.415pt x 883.3pt>
-File: src/images/stanford_chess.jpeg Graphic file (type jpg)
-<use src/images/stanford_chess.jpeg>
-Package pdftex.def Info: src/images/stanford_chess.jpeg  used on input line 19.
-(pdftex.def)             Requested size: 227.62206pt x 311.03308pt.
-) (./src/chapters/research/hardware.tex [16
-
- <./src/images/stanford_softbodies.jpeg>] [17 <./src/images/stanford_chess.jpeg>]
-<src/images/arduino.jpeg, id=127, 557.08125pt x 529.98pt>
-File: src/images/arduino.jpeg Graphic file (type jpg)
-<use src/images/arduino.jpeg>
-Package pdftex.def Info: src/images/arduino.jpeg  used on input line 10.
-(pdftex.def)             Requested size: 227.62206pt x 216.54921pt.
-<src/images/beneater.jpeg, id=128, 627.34375pt x 450.68375pt>
-File: src/images/beneater.jpeg Graphic file (type jpg)
-<use src/images/beneater.jpeg>
-Package pdftex.def Info: src/images/beneater.jpeg  used on input line 13.
-(pdftex.def)             Requested size: 227.62206pt x 163.52512pt.
-) (./src/chapters/research/opengl.tex [18
-
- <./src/images/arduino.jpeg>] [19 <./src/images/beneater.jpeg>] [20
-
-]) (./src/chapters/research/phigs.tex)) (./src/parts/Implementation.tex [21] [22
-
-] (./src/chapters/app/overview.tex) (./src/chapters/app/arch.tex [23] [24
-
-]
-<src/images/implementation_arch.png, id=169, 841.1425pt x 1184.425pt>
-File: src/images/implementation_arch.png Graphic file (type png)
-<use src/images/implementation_arch.png>
-Package pdftex.def Info: src/images/implementation_arch.png  used on input line 8.
-(pdftex.def)             Requested size: 455.24411pt x 641.04388pt.
- [25 <./src/images/implementation_arch.png>]
-Overfull \hbox (2.31148pt too wide) in paragraph at lines 16--18
-[]\OT1/ppl/m/n/12 One ob-vi-ous start im-ped-i-ment is go-ing past the first cou-ple of hello-world projects
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 31.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 16.
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [26] [27
-
-] [28] (./src/sections/mathEngine.tex
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 19.
- (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [29
-
-] [30] [31] [32]) [33] (./src/sections/renderEngine.tex [34
-
-] [35]) [36] (./src/sections/mlInterface.tex) [37
-
-] [38
-
-] (./src/sections/pyqt.tex
-
-./src/sections/pyqt.tex:39: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39   \text{typeOf} (\(
-                         d_i \)) \in \{\text{File}, \text{Directory}\}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./src/sections/pyqt.tex:39: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39   \text{typeOf} (\( d_i \)
-                               ) \in \{\text{File}, \text{Directory}\}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/02/21 1.10 listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 101.
- [39
-
-]
-./src/sections/pyqt.tex:140: Missing $ inserted.
-<inserted text> 
-                $
-l.140 \end{lstlisting}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./src/sections/pyqt.tex:140: Missing { inserted.
-<to be read again> 
-                   _
-l.140 \end{lstlisting}
-                      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./src/sections/pyqt.tex:140: Missing { inserted.
-<to be read again> 
-                   _
-l.140 \end{lstlisting}
-                      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./src/sections/pyqt.tex:140: Missing $ inserted.
-<inserted text> 
-                $
-l.140 \end{lstlisting}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./src/sections/pyqt.tex:140: Missing } inserted.
-<inserted text> 
-                }
-l.140 \end{lstlisting}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./src/sections/pyqt.tex:140: Missing } inserted.
-<inserted text> 
-                }
-l.140 \end{lstlisting}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[40] [41])) [42]) (./src/parts/Results.tex [43
-
-] (./src/chapters/results/performance.tex [44
+)) (./src/content/proof.tex [4
 
 ]
 
-./src/chapters/results/performance.tex:135: LaTeX Error: Bad math environment delimiter.
+./src/content/proof.tex:24: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 \[
-        
+l.24   \[
+         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./src/chapters/results/performance.tex:145: Missing \endgroup inserted.
+./src/content/proof.tex:35: Misplaced \crcr.
+\endarray ->\crcr 
+                  \egroup \egroup 
+l.35   \end{cases}
+                  
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./src/content/proof.tex:35: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup 
+                          \egroup 
+l.35   \end{cases}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./src/content/proof.tex:35: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup \egroup 
+                                  
+l.35   \end{cases}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./src/content/proof.tex:35: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.145 \]
-        
+l.35   \end{cases}
+                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[45]
-Overfull \hbox (193.3746pt too wide) detected at line 246
-[] \OT1/cmr/m/n/12 = []
- []
+./src/content/proof.tex:35: Extra \right.
+\endcases ->\endarray \right .
+                              
+l.35   \end{cases}
+                  
+I'm ignoring a \right that had no matching \left.
 
 
-Overfull \hbox (7.53082pt too wide) in paragraph at lines 251--252
-[][]\OT1/ppl/m/n/12 : Py-roGamer pro-vides a stan-dard way of build-
- []
+./src/content/proof.tex:35: LaTeX Error: \begin{equation*} on input line 22 ended by \end{cases}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35   \end{cases}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./src/content/proof.tex:35: Missing $ inserted.
+<inserted text> 
+                $
+l.35   \end{cases}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./src/content/proof.tex:35: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.35   \end{cases}
+                  
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
 
 
-Overfull \hbox (145.44026pt too wide) detected at line 265
-[] \OT1/cmr/m/n/12 = []
- []
+./src/content/proof.tex:36: LaTeX Error: Bad math environment delimiter.
 
-[46]) (./src/chapters/results/future.tex [47] [48
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36   \]
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-])) (./src/parts/Bibliography.tex [49]
-Chapter 1.
-) [50
 
-] (./main.aux)
+./src/content/proof.tex:36: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36   \]
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./src/content/proof.tex:36: Missing $ inserted.
+<inserted text> 
+                $
+l.36   \]
+         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./src/content/proof.tex:36: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.36   \]
+         
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./src/content/proof.tex:36: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.36   \]
+         
+Things are pretty mixed up, but I think the worst is over.
+
+) [5] [6
+
+] (./src/content/app/demo.tex) (./src/content/app/components/math.tex) (./src/content/app/components/renderer.tex) (./src/content/app/components/probability.tex) (./src/content/app/components/pyqt.tex) (./src/content/app/design.tex) [7
+
+] [8
+
+] (./src/content/study/book/GameDevMath.tex) (./src/content/study/book/CompGraph.tex) (./src/content/study/book/superbible.tex) (./src/content/study/youtube/beneater.tex) (./src/content/study/book/bjorn.tex) (./src/content/study/paper/stanford/CS189.tex) (./src/content/study/paper/stanford/CS201.tex) (./src/content/study/paper/emulatra.tex) (./src/content/study/provider/detective.tex [9
+
+]) [10] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -775,21 +670,21 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  448D8E087EB48D12F3539514E4E371EF;3246.
+(rerunfilecheck)             After:  7F8A6DFD214AA8792C5BB2DD1D713BC5;367.
  ) 
 Here is how much of TeX's memory you used:
- 14286 strings out of 476076
- 220490 string characters out of 5793775
- 2126187 words of memory out of 5000000
- 35859 multiletter control sequences out of 15000+600000
- 581875 words of font info for 95 fonts, out of 8000000 for 9000
+ 13239 strings out of 476076
+ 207682 string characters out of 5793775
+ 1930187 words of memory out of 5000000
+ 35050 multiletter control sequences out of 15000+600000
+ 576698 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,14n,79p,608b,2195s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (56 pages, 2173341 bytes).
+ 75i,7n,79p,335b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on main.pdf (16 pages, 91305 bytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
- 483 compressed objects within 5 object streams
- 256 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

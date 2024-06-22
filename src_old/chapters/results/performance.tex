@@ -127,27 +127,27 @@ Let \( S \) be a piece of software.
 
 
 
-Let GameEngines::PossibleComponents 
+let gameengines::possiblecomponents 
 be the collection of all the possible engines in any game engine.
 
 \[
-\text{GE::PC} = 
+\text{ge::pc} = 
 \[
 \begin{cases}
-  \text{Rendering}, 
-  \text{Physics}, 
-  \text{Scripting}, 
-  \text{Sound}, 
-  \text{AI}, 
-  \text{Robotics}
+  \text{rendering}, 
+  \text{physics}, 
+  \text{scripting}, 
+  \text{sound}, 
+  \text{ai}, 
+  \text{robotics}
   ...
 \end{cases}
 \]
 
 \[
-\text{hasEngineSuite}(P) =
+\text{hasenginesuite}(p) =
 \begin{cases}
-    \text{true}, & \text{if } \left( |S.\text{engines}| > 0 \right) \land \left( S.\text{engines} \subseteq \text{GE::PC} \right) \\
+    \text{true}, & \text{if } \left( |s.\text{engines}| > 0 \right) \land \left( s.\text{engines} \subseteq \text{ge::pc} \right) \\
     \text{false}, & \text{otherwise}
 \end{cases}
 \]
