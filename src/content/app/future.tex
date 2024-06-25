@@ -1,0 +1,113 @@
+
+
+
+
+
+\section*{Deployment and Distribution}
+\addcontentsline{toc}{section}{Deployment and Distribution}
+
+\subsection*{Packaged Builds}
+% \addcontentsline{toc}{subsection}{Packaged Builds}
+
+The project aims to streamline deployment with packaged builds for easier distribution. Plans include packaging for AUR (Arch User Repository) and as a PyPi (Python Package Index) library.
+
+\section*{Module Packaging}
+% \addcontentsline{toc}{section}{Module Packaging}
+
+Each module within the application should be independently packaged to facilitate modular use and distribution through PyPi.
+
+\subsubsection*{Current Progress}
+% \addcontentsline{toc}{subsubsection}{Current Progress}
+
+Early builds are available for testing via the following command:
+\[
+\text{pip install -i https://test.pypi.org/simple/ game-genie}
+\]
+Support for pip installation is temporarily paused pending further stabilization of the application.
+
+\section*{Performance Enhancement}
+% \addcontentsline{toc}{section}{Performance Enhancement}
+
+\subsection*{Evaluation and Optimization}
+% \addcontentsline{toc}{subsection}{Evaluation and Optimization}
+
+Efforts are ongoing to evaluate and optimize the application's performance, focusing on runtime efficiency and responsiveness.
+
+\subsubsection*{Speed Analysis}
+% \addcontentsline{toc}{subsubsection}{Speed Analysis}
+
+Initial benchmarks indicate satisfactory performance within current scope. Future optimizations will target critical execution time areas.
+
+\subsubsection*{Optimization Strategies}
+% \addcontentsline{toc}{subsubsection}{Optimization Strategies}
+
+Proposed strategies include algorithmic improvements, caching mechanisms, and leveraging parallel processing capabilities.
+
+
+\section*{Conclusion}
+% \addcontentsline{toc}{section}{Conclusion}
+
+These planned enhancements are designed to elevate the application's functionality, performance, and usability. By focusing on deployment, optimization, and integration, the project aims to deliver a more robust and efficient toolset for its users.
+
+
+\pagebreak
+
+\subsection*{Integration with Web Scraper}
+\addcontentsline{toc}{section}{Integration with Web Scraper}
+
+\subsection*{Enhancing Machine Learning Capabilities}
+% \addcontentsline{toc}{subsection}{Enhancing Machine Learning Capabilities}
+
+Integrating a web scraper component enhances the application's data acquisition capabilities for machine learning tasks.
+
+\section*{Web Crawler: Inner Workings}
+
+% \addcontentsline{toc}{section}{Integration with Web Scraper}
+The web crawler script utilizes Selenium for web browsing and Colorama for output coloring. Below are key functions and their mathematical underpinnings:
+
+% \subsection*{Extracting Product Details}
+
+\begin{lstlisting}[language=Python, caption={Function to Retrieve Product Details}]
+def getProductDetails(driver):
+    try:
+        productDetails = driver.find_element(By.CLASS_NAME, "product-details")
+    except Exception as e:
+        print(Back.RED + f"Could not find product details -> {e} ")
+        return None
+    return productDetails
+\end{lstlisting}
+
+% \subsection*{Processing Prices}
+
+\begin{lstlisting}[language=Python, caption={Function to Extract Lowest Price}]
+def getLowestPrice(driver):
+    productDetails = getProductDetails(driver)
+    if productDetails is None:
+        print(Back.RED + f"Could not get product details")
+        return -1
+    try:
+        lowestPriceText = productDetails.find_element(By.XPATH, "//*[contains(@itemprop, 'lowPrice')]")
+        lowestPrice = getFloat(lowestPriceText.text)
+    except Exception as e:
+        print(Back.RED + f"Lowest Price could not be found -> {e} ")
+        return -1
+    return lowestPrice
+\end{lstlisting}
+
+% \subsection*{Mathematical Formulas}
+
+% The function \texttt{getFloat(text)} employs regular expressions to parse numerical values from text, using the following formula:
+
+% \[
+% \text{numbers} = \text{re.findall(r'\textbackslash d+', text)}
+% \]
+
+% This extracts digits from the text, converting them into a floating-point number.
+
+\subsection*{Conclusion}
+
+By integrating Selenium for web automation and leveraging mathematical parsing techniques, the web crawler efficiently gathers product data from URLs provided as command-line arguments.
+
+
+
+

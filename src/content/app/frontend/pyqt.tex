@@ -1,0 +1,182 @@
+
+
+  
+  \[
+    \text{Directory } D := \{d_1, d_2, \ldots, d_n\}, \quad \text{where } \text{TypeOf}(d_i) \in \{\text{File}, \text{Directory}\}
+  \]
+  
+  \[
+    \forall \ module_i \in \text{frontend} \Rightarrow 
+    module_i \supseteq \{\text{init.py}, \text{main.py}, \text{cli.py}\}
+  \]
+  
+  Specific to this implementation, we have the following modules and sub-modules:
+  
+  \[
+    (\exists \ \text{Editor} \in \text{Modules}). \ \text{Editor.submodules} \
+    \rightarrow_{\text{depend on}} \ \text{PyQt}
+  \]
+  
+  \[
+    (\exists \ \text{Editor} \in \text{Modules}). \ \text{Editor.submodules} \
+    \supseteq \{\text{Hierarchy}, \text{Scene View}, \text{Inspector}, \text{Assets}, \text{Terminal}\}
+  \]
+  
+  \[
+    (\exists \ \text{Assets} \in \text{Editor.submodules}). \ \text{Assets} \rightarrow_{\text{modifies}} \{\text{Project Tree}\} 
+  \]
+  
+  \[
+    (\exists \ \text{Hierarchy} \in \text{Editor.submodules}). \ \text{Hierarchy} \rightarrow_{\text{modifies}} \ \text{JSON\_Scene\_File}
+  \]
+  
+  \[
+    (\exists \ \text{Inspector} \in \text{Editor.submodules}). \ \text{Inspector} \rightarrow_{\text{modifies}} \ \text{JSON\_Scene\_File}
+  \]
+  
+  The interactions between different modules can be represented using functions and mappings. Let \( f: E \to H \) represent the function mapping elements from the Editor to the Hub. 
+  Similarly, \( g: H \to S_p \) represents the mapping from Hub to Splash.
+  
+  \[
+  \begin{aligned}
+    \text{user} &\xrightarrow{\text{launch}} \text{splash}     
+         \xrightarrow{\text{launch}} \text{Hub}          
+         \xrightarrow{\text{launch}} \text{Editor} \\
+  \end{aligned}
+  \]
+ 
+  \[
+  \begin{aligned}
+        \text{Editor}  &\xrightarrow{\text{launch}} \{\text{Hierarchy}, \text{SceneView}, \text{Inspector}, \text{Assets}\}
+  \end{aligned}
+  \]
+
+  \[
+  \text{SceneView} \xrightarrow{\text{launch}} (\text{c++ } \land \text{python}) \ \text{Runner} \xrightarrow{\text{launch}} \{\text{opengl}, \text{scipy}\}
+  \]
+  
+  \[
+  \text{Hierarchy} \xrightarrow{\text{reads}} \{\text{active\_scene.json}\}
+  \]
+  
+  \[
+  \text{Inspector} \xrightarrow{\text{reads}} \{\text{active\_game\_object.json}\}
+  \]
+  
+  \[
+  \text{Assets} \xrightarrow{\text{reads}} \{\text{FileTreeOf(projectPath)}\}
+  \]
+  
+  \[
+  (\text{user} \land \text{Hub}) \lor (\text{user} \land \text{Editor}) \lor (\text{user} \land \text{CLInterface}) \xrightarrow{\text{Request}} (\text{FileManager} \lor \text{SceneManager})
+  \xrightarrow{\text{response}}
+  \]
+  
+  % \[
+  % \xrightarrow{\text{request}} (\text{FileManager} \lor \text{SceneManager})
+  % \xrightarrow{\text{response}}
+  % \]
+  % 
+
+% \begin{quote}
+% The frontend component is organized 
+% into several directories and files. 
+
+% It includes functionalities for 
+% the editor, hub, and splash interfaces. 
+% \end{quote}
+
+
+% \begin{math}
+%   Directory \ D \ :=  \{d_1, d_2, \ldots, d_n\}
+%   , 
+%   where \ \ \TypeOf (\( d_i \)) \in \{File, Directory\}
+% \end{math}
+
+
+% \begin{math}
+%   \forall module_i \in frontend \Rightarrow 
+%   module_i 
+%   \supseteq
+%   \{init.py, main.py, cli.py\}
+% \end{math}
+
+% Specific to this implementation, 
+% we have the following modules and sub-modules:
+
+
+% \begin{math}
+%   (\exists \ Editor \in Modules).
+%   Editor.submodules \
+%   \rightarrow_{depend\ on} PyQt
+% \end{math}
+
+% \begin{math}
+%   (\exists \ Editor \in Modules).
+%   Editor.submodules \
+%   \supseteq \{ Hierarchy, Scene \ View, Inspector, Assets, Terminal \}
+% \end{math}
+
+
+% \begin{math}
+%   (\exists \ Assets \in Editor.submodules).
+%   \ Assets \rightarrow_{modifies} \{ \ Project \ Tree \} 
+% \end{math}
+
+% \begin{math}
+%   (\exists \ Hierarchy \in Editor.submodules).
+%   \ Hierarchy \rightarrow_{modifies} \ JSON\_Scene\_File
+% \end{math}
+
+% \begin{math}
+%   (\exists \ Inspector \in Editor.submodules).
+%   \ Inspector \rightarrow_{modifies} JSON\_Scene\_File\ 
+% \end{math}
+
+% % \begin{math}
+% %   (\exists \ Terminal \in Editor.submodules).
+% %   \ Terminal = Terminal
+% % \end{math}
+
+
+
+% The interactions between different modules can be represented using functions and mappings.
+% Let \( f: E \to H \) represent the function mapping elements from the Editor to the Hub.
+% Similarly, \( g: H \to S_p \) represents the mapping from Hub to Splash.
+
+
+% \begin{math}
+
+%   user \xrightarrow{launch} splash     
+%        \xrightarrow{launch} Hub          
+%        \xrightarrow{launch} Editor
+%        \xrightarrow{launch} \{Hierarchy, SceneView, Inspector, Assets \}
+
+%   SceneView \xrightarrow{launch} (\text{c++ } \land python ) \  Runner \xrightarrow{launch} \{ opengl, matplotlib, numpy \}
+
+%   Hierarchy \xrightarrow{reads} \{ active_scene.json \}
+  
+%   Inspector \xrightarrow{reads} \{ active_game_object.json \}
+  
+%   Assets    \xrightarrow{reads} \{ FileTreeOf(projectPath) \}
+
+%   (user \land Hub ) \lor (user \land Editor) \lor (user \land CLInterface) \xrightarrow{Request} (FileManager \lor SceneManager)
+
+%   \xrightarrow{request} (FileManager \lor SceneManager)
+%         \xrightarrow{response} 
+
+%   %      \rightarrow_{request} FileManager \rightarrow_{response} Editor \rightarrow_{reaction} user
+
+%   % user \rightarrow splash     \rightarrow_{action} Hub  \rightarrow_{request} FileManager \rightarrow_{response} Hub \rightarrow_[reaction] user
+
+%   % user \rightarrow_{request} Hub.CLI    \rightarrow_{request} FileManager 
+
+%   % user \rightarrow_{request} Editor.CLI \rightarrow_{request} FileManager 
+
+%   % user \rightarrow_{request} FileManager 
+% \end{math}
+
+
+
+
+

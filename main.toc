@@ -1,4 +1,13 @@
 \babel@toc {english}{}\relax 
 \contentsline {part}{I\hspace {1em}Introduction}{3}{part.1}%
-\contentsline {part}{II\hspace {1em}Implementation}{6}{part.2}%
-\contentsline {part}{III\hspace {1em}Bibliography}{8}{part.3}%
+\contentsline {section}{Game Engines}{10}{section*.23}%
+\contentsline {section}{Machine Learning Integration}{12}{section*.35}%
+\contentsline {part}{II\hspace {1em}Implementation}{15}{part.2}%
+\contentsline {chapter}{Rendering Engine}{20}{section*.45}%
+\contentsline {chapter}{Mathematics Engine}{22}{lstnumber.0.5.19}%
+\contentsline {chapter}{Machine Learning Module}{24}{equation.0.0.2}%
+\contentsline {chapter}{Enhancements and Roadmap}{26}{section*.57}%
+\contentsline {section}{Deployment and Distribution}{26}{section*.58}%
+\contentsline {section}{Integration with Web Scraper}{27}{section*.67}%
+\contentsline {part}{III\hspace {1em}Bibliography}{28}{part.3}%
+\contentsline {section}{Literature}{29}{section*.72}%

@@ -1,0 +1,247 @@
+
+
+
+
+
+
+
+
+% In this section, we will inspect the criteria to which a piece of software needs to qualify in order to be considered part of the game engines set.
+
+
+\begin{center}
+\subsection*{Formal Proof}
+\textbf{Creation of GG}
+
+\begin{math}
+&\text{Let } GG \text{ be the thesis project game engine with } GG.\text{components} = \{M, R, E, FM\}.
+\end{math}
+
+\begin{math}
+&\text{We know that } \exists Unity \in GameEngines
+\end{math}
+
+\begin{math}
+Unity.components = \{  \}
+\end{math}
+
+More in-depth analysis of Unity's components is done in Field Study chapter.
+Right now, we are only interested in the Vector3 and Transform Classes.
+
+
+\subsubsection*{Demonstration with Unity}
+
+\begin{equation}
+\begin{aligned}
+&\text{Let Unity be a well-known game engine.} \\
+&\text{Unity also includes components } \{M, R, E, FM\}. \\
+&\text{Therefore, } \text{isGameEngine(Unity)}.
+\end{aligned}
+\end{equation}
+\end{center}
+
+
+
+\subsection*{Formal Conclusion}
+
+\begin{math}
+GG \overset{\text{DEFAULT}}{\subseteq} \text{SoftwareEntities} 
+\end{math}
+
+\begin{math}
+GG \overset{|GG.components| \geq 0}{\subseteq} \text{Frameworks} 
+\end{math}
+
+\begin{math}
+GG \overset{|GG.components| \geq 0}{\subseteq} \text{GameEngines} 
+\end{math}
+
+
+
+
+
+
+
+
+
+
+
+\begin{equation}
+\begin{align}
+
+\label{}
+\end{align}
+\end{equation}
+
+Let \( S \) be a piece of software, input for a function \( \text{isGameEngine} \) that outputs a binary response.
+\[
+\text{isGameEngine}(S) = \text{isFramework}(S) \land (\text{S::Components} \subseteq \text{GE::E})
+\]
+
+
+\begin{equation} \label{FrameworkDef}
+\begin{align*} 
+&GG \in \text{SoftwareFrameworks} 
+\rightleftharpoons
+&|GG::\text{Components}| \geq 0 
+\end{align*}
+\end{equation}
+
+
+where \(\text{GE::E}\) represents the collection of \forall \text{components in } \forall \text{game engines, formulated as:}
+\]
+\begin{equation} \label{gameEngineDef}
+  \text{GE::E} = \bigcup_{G \in \text{GameEngines}} \{(G, C) \mid C \in \text{Components}\}
+\end{equation}
+
+\begin{equation} \label{myGameEngineDef}
+\begin{align*} 
+&\text{Let } GG \in \text{Piece of Software} \\
+&\text{Let } GG::\text{Components} = \{M, R, E, FM\}
+\end{align*}
+\end{equation}
+
+
+\begin{equation} \label{isGGaGE}
+\begin{align*} 
+&GG \in \text{GameEngines} 
+\rightleftharpoons
+&GG::\text{Components} \subseteq \text{GE::E}
+\end{align*}
+\end{equation}
+
+
+
+
+% \begin{subequation} 
+% &GG::M, GG::R, G::E, G::FM \in \text{Components}
+% \rightleftharpoons
+
+
+
+\text{ denote MathEngine, RendererEngine,
+GUI Editor, and File Manager respectively.} \\
+\end{subequation}
+
+
+
+
+
+
+
+
+
+
+
+
+% \textbf{Given:}
+% \begin{equation}
+% \begin{aligned}
+% &M, R, GUI, FM \text{ denote MathEngine, RendererEngine, GUI Editor, and File Manager respectively.}
+% \end{aligned}
+% \end{equation}
+
+% \textbf{Statement 1:}
+\begin{equation}
+\begin{center}
+  (&(\exists GG) . \text{isGameEngine}(GG))
+  \land
+
+  \land 
+  (\text{GG::Components} = \{M, R, GUI, FM\}) \\
+
+&\land (\exists G_i) \, \text{isGameEngine}(G_i) \land (\text{G_i::Components} = \{M, R, GUI, FM\}) \\
+
+&\Rightarrow \text{isGameEngine}(GG)
+\end{center}
+\end{equation}
+
+\textbf{Statement 2:}
+\begin{equation}
+\begin{aligned}
+&(\exists \text{ Unity}) \, \text{isGameEngine(Unity)} \land (\text{Unity::Components} = \{M, R, GUI, FM\})
+\end{aligned}
+\end{equation}
+
+\textbf{Proof:}
+
+% \textbf{Statement 1 Proof:}
+\begin{equation}
+% \begin{aligned}
+&\text{Let } GG \text{ and } G_i \text{ be such that } \\
+&\text{isGameEngine}(GG) \land (\text{GG::Components} = \{M, R, GUI, FM\}), \\
+&\text{isGameEngine}(G_i) \land (\text{G_i::Components} = \{M, R, GUI, FM\}). \\
+&\text{Therefore, } \text{isGameEngine}(GG).
+% \end{aligned}
+\end{equation}
+
+\textbf{Statement 2 Proof:}
+\begin{equation}
+\begin{aligned}
+&\text{Let Unity be such that } \text{isGameEngine(Unity)} \land (\text{Unity::Components} = \{M, R, GUI, FM\}).
+\end{aligned}
+\end{equation}
+
+
+
+
+
+
+
+
+\noindent\rule{\linewidth}{0.4pt}
+
+
+In mathematical notation, the usage of specific game engines in different scenarios can be represented as:
+
+\[
+\begin{aligned}
+&\text{UnrealEngine} \in \text{PhotoRealisticScenarios} \\
+&\text{Unity} \in \text{ClothSimulators} \\
+&\text{P5.js} \in \text{PhysicsDemonstrations}
+\end{aligned}
+\]
+
+\noindent\rule{\linewidth}{0.4pt}
+
+\textbf{Given:}
+\begin{align*}
+&\text{Let } ME, RE, GUIE, FM \text{ denote MathEngine, RendererEngine, GUI Editor, and File Manager respectively.} \\
+&\text{From the code snippets:} \\
+&\text{isGameEngine}(ME) \Rightarrow \text{isFramework}(ME) \land (\text{ME::Components} \subseteq \text{GE::E}) \\
+&\text{isGameEngine}(RE) \Rightarrow \text{isFramework}(RE) \land (\text{RE::Components} \subseteq \text{GE::E}) \\
+&\text{isGameEngine}(GUIE) \Rightarrow \text{isFramework}(GUIE) \land (\text{GUIE::Components} \subseteq \text{GE::E}) \\
+&\text{isGameEngine}(FM) \Rightarrow \text{isFramework}(FM) \land (\text{FM::Components} \subseteq \text{GE::E}) \\
+\end{align*}
+
+\textbf{To Prove:}
+\[
+\text{Using or building game engines } GE \text{ is standard industry practice.}
+\]
+
+\textbf{Proof:}
+\begin{align*}
+&\text{Each engine (MathEngine, RendererEngine, GUI Editor, File Manager) is considered a game engine if it satisfies} \\
+&\text{the criteria } \text{isGameEngine}(S) \Rightarrow \text{isFramework}(S) \land (\text{S::Components} \subseteq \text{GE::E}). \\
+&\text{These engines demonstrate specialized functionalities essential for gaming and diverse applications,} \\
+&\text{such as mathematical computations, rendering graphics, user interface design, and file management.} \\
+&\text{Their existence and usage across industries highlight the necessity and ubiquity of game engines,} \\
+&\text{thus establishing the practice of using or building them as standard in the industry.}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

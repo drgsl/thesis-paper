@@ -1,0 +1,133 @@
+
+
+
+    \subsection*{Integration Capabilities}
+
+Python's extensive ecosystem empowers this project to incorporate a wide array of tools and libraries. For instance, the project's modular design facilitates integration with advanced statistical packages like NumPy and SciPy for robust mathematical computations. Furthermore, visualization tools such as Matplotlib or interactive frameworks like Plotly can enhance data representation and exploration.
+
+
+
+
+
+
+
+\subsection*{Data Structures}
+
+\begin{lstlisting}[language=C++, caption={Event Class Declaration}]
+class Event {
+public:
+    std::string name;
+    double probability;
+
+    Event(std::string _name, double _probability) : name(_name), probability(_probability) {}
+};
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption={Outcome Class Declaration}]
+class Outcome {
+public:
+    std::string description;
+    double value;
+
+    Outcome(std::string _description, double _value) : description(_description), value(_value) {}
+};
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption={Omega (Set of All Possible Outcomes)}]
+std::vector<Outcome> omega = {
+    {"Outcome 1", 0.25},
+    {"Outcome 2", 0.35},
+    {"Outcome 3", 0.4}
+};
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Probabilities Engine Declaration}]
+class ProbabilitiesEngine {
+public:
+    double calculateProbability(double event, double totalEvents);
+    double calculateConditionalProbability(double eventA, double eventB);
+    double calculateJointProbability(double eventA, double eventB);
+    double calculateBayesTheorem(double eventA, double eventB);
+};
+\end{lstlisting}
+
+
+
+
+% \textbf{Mathematical Formulas with Event and Outcome Classes:}
+% \begin{itemize}
+%     \item \textbf{Probability Calculation:}
+%     \[
+%     P(E) = \frac{n(E)}{n(S)}
+%     \]
+%     where \( P(E) \) is the probability of event \( E \), \( n(E) \) is the number of favorable outcomes, and \( n(S) \) is the total number of outcomes.
+%     
+%     \item \textbf{Conditional Probability:}
+%     \[
+%     P(A | B) = \frac{P(A \cap B)}{P(B)}
+%     \]
+%     where \( P(A | B) \) is the conditional probability of \( A \) given \( B \), \( P(A \cap B) \) is the joint probability of \( A \) and \( B \), and \( P(B) \) is the probability of event \( B \).
+%     
+%     \item \textbf{Joint Probability:}
+%     \[
+%     P(A \cap B) = P(A) \cdot P(B)
+%     \]
+%     where \( P(A \cap B) \) is the joint probability of events \( A \) and \( B \), and \( P(A) \) and \( P(B) \) are the probabilities of events \( A \) and \( B \) respectively.
+    
+    \textbf{Bayes' Theorem:}
+    \[
+    P(A | B) = \frac{P(B | A) \cdot P(A)}{P(B)}
+    \]
+    % where \( P(A | B) \) is the posterior probability of \( A \) given \( B \), \( P(B | A) \) is the likelihood of \( B \) given \( A \), \( P(A) \) is the prior probability of \( A \), and \( P(B) \) is the prior probability of \( B \).
+
+\pagebreak
+
+The ID3 (Iterative Dichotomiser 3) algorithm is a decision tree learning algorithm used for classification. Here's a concise overview of its implementation:
+
+\begin{lstlisting}[caption={ID3 Engine Declaration}]
+class ID3Engine {
+public:
+    void createDecisionTree();
+    void calculateEntropy();
+    void calculateInformationGain();
+    void pruneDecisionTree();
+};
+\end{lstlisting}
+
+\textbf{Mathematical Formulas:}
+\begin{itemize}
+    \item \textbf{Entropy Calculation:}
+    \[
+    H(S) = -\sum_{i=1}^{c} P_i \cdot \log_2(P_i)
+    \]
+    % where \( H(S) \) is the entropy of the dataset \( S \), \( P_i \) is the probability of class \( i \) in the dataset, and \( c \) is the number of classes.
+    
+    \item \textbf{Information Gain:}
+    \[
+    IG(S, A) = H(S) - \sum_{v \in Values(A)} \frac{|S_v|}{|S|} \cdot H(S_v)
+    \]
+    % where \( IG(S, A) \) is the information gain of dataset \( S \) for attribute \( A \), \( H(S) \) is the entropy of dataset \( S \), \( Values(A) \) are the possible values of attribute \( A \), \( |S_v| \) is the number of instances in dataset \( S \) with value \( v \) for attribute \( A \), and \( H(S_v) \) is the entropy of dataset \( S_v \).
+%     
+%     \item \textbf{Decision Tree Creation:} The decision tree is recursively built by selecting attributes that maximize information gain at each node until a stopping criterion is met.
+%     
+%     \item \textbf{Pruning:} After tree construction, unnecessary branches are removed to improve predictive accuracy on unseen data.
+\end{itemize}
+
+
+
+
+\subsection*{Project Architecture Flexibility}
+
+The project's architecture allows seamless integration with various Python tools beyond the Probability Engine and ID3 Decision Tree. Python's versatility is showcased, enabling diverse applications.
+
+\subsection*{Customizability and Extensibility}
+
+Developers extend the project with additional machine learning algorithms from libraries like Scikit-learn or apply NLP techniques using NLTK or spaCy. This ensures adaptability to evolving requirements.
+
+\subsection*{Practical Applications}
+
+The architecture supports applications from data analysis to natural language processing and computer vision. Python's ecosystem allows tailored solutions for scalability and performance.
+
+\subsection*{Conclusion}
+
+While the Probability Engine and ID3 Decision Tree highlight capabilities, the architecture fosters integration with a vast array of Python tools, promoting exploration and customization.

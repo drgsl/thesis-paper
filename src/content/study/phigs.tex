@@ -1,0 +1,80 @@
+
+
+
+
+
+
+\begin{quote}
+The rendering engine is built on top of OpenGL, which adheres to the PHIGS standard. In the following, we will explore what PHIGS represents.
+\end{quote}
+
+\subsection*{PHIGS}
+
+\textbf{Structure Definition}
+\[
+\text{Structure } S = \{e_1, e_2, \ldots, e_n \}
+\]
+\[
+\text{where } e_i \in \{\text{Primitive}, \text{Attribute}, \text{Reference to another structure} \}
+\]
+
+\textbf{Structure Store Definition}
+\[
+\text{Structure Store } SS = \{(ID_1, S_1), (ID_2, S_2), \ldots, (ID_m, S_m)\}
+\]
+\[
+\text{where } ID_i \text{ is the identifier of structure } S_i
+\]
+
+\textbf{Workstation Definition}
+\[
+\text{Workstation } W : SS \rightarrow \text{Rendered Image}
+\]
+
+\textbf{Output Primitives Definitions}
+\[
+\text{Point } P = (x, y)
+\]
+\[
+\text{Line } L = \{P_1, P_2\} = \{(x_1, y_1), (x_2, y_2)\}
+\]
+\[
+\text{Polygon } G = \{P_1, P_2, \ldots, P_k\} = \{(x_1, y_1), (x_2, y_2), \ldots, (x_k, y_k)\}
+\]
+\[
+\text{Text } T = (P, \text{string}) = ((x, y), \text{string})
+\]
+
+\textbf{Interaction Example}
+% \[
+% \text{User Input} \rightarrow S_i
+% \]
+% \[
+% SS \cup \{(ID_i, S_i)\} \rightarrow SS'
+% \]
+% \[
+% W(SS') \rightarrow \text{Rendered Image}
+% \]
+\begin{lstlisting}
+// Define a structure with primitives
+structure_id = 1;
+open_structure(structure_id);
+add_primitive(POINT, {x: 10, y: 20});
+add_primitive(LINE, {start: {x: 0, y: 0}, end: {x: 100, y: 100}});
+close_structure(structure_id);
+
+// Update structure store
+structure_store.add({id: structure_id, structure: structure});
+
+// Render on workstation
+workstation.render(structure_store);
+\end{lstlisting}
+
+
+
+
+
+
+
+
+

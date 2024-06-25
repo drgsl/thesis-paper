@@ -1,0 +1,37 @@
+<mxfile host="Electron" modified="2024-06-24T08:22:17.871Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="DDjvu9ZjbccMvguzUm37" version="24.5.1" type="device">
+  <diagram name="Page-1" id="4zJxbQgZF1wR3b6nxz7K">
+    <mxGraphModel dx="1085" dy="-62" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-35" value="Editor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#330000;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1603" width="304" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-36" value="+ GameObject[i].transform .position&amp;nbsp; &lt;span style=&quot;white-space: pre; font-size: 11px;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; :&amp;nbsp;Vector3&lt;div style=&quot;font-size: 11px;&quot;&gt;+ GameObject[i].renderer&amp;nbsp; .primitive &lt;span style=&quot;white-space: pre; font-size: 11px;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; : Shape&lt;br style=&quot;font-size: 11px;&quot;&gt;+ GameObject[i].renderer&amp;nbsp; .primitive&amp;nbsp; .color&amp;nbsp; :&amp;nbsp;Color32&lt;/div&gt;" style="text;strokeColor=#330000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontColor=#330000;" parent="eWnUHyqe-9MQMAGm0uqk-35" vertex="1">
+          <mxGeometry y="26" width="304" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="eWnUHyqe-9MQMAGm0uqk-35" vertex="1">
+          <mxGeometry y="86" width="304" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-38" value="+ AddGameObject(String Name)&amp;nbsp;&lt;div style=&quot;font-size: 11px;&quot;&gt;+ OpenScene(int index)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/div&gt;" style="text;strokeColor=#330000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontColor=#330000;" parent="eWnUHyqe-9MQMAGm0uqk-35" vertex="1">
+          <mxGeometry y="94" width="304" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-43" value="Frontend" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=76;height=34;strokeColor=#330000;" parent="1" vertex="1">
+          <mxGeometry x="214" y="1586" width="400" height="336" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-44" value="File Manager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#330000;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1766" width="304" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-45" value="+ Project&amp;nbsp;&amp;nbsp;&lt;span style=&quot;white-space: pre; font-size: 11px;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; : Path&lt;div style=&quot;font-size: 11px;&quot;&gt;+ SceneManager&amp;nbsp; &amp;nbsp; : Path&lt;br style=&quot;font-size: 11px;&quot;&gt;+ TemplateProject&amp;nbsp; &amp;nbsp;:&amp;nbsp;Path&lt;/div&gt;" style="text;strokeColor=#330000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontColor=#330000;" parent="eWnUHyqe-9MQMAGm0uqk-44" vertex="1">
+          <mxGeometry y="26" width="304" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-46" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="eWnUHyqe-9MQMAGm0uqk-44" vertex="1">
+          <mxGeometry y="86" width="304" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-47" value="+ AddGameObject(gameobject&amp;amp; go)&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 11px;&quot;&gt;+ CreateScene(scene&amp;amp; scene)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=#330000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontColor=#330000;" parent="eWnUHyqe-9MQMAGm0uqk-44" vertex="1">
+          <mxGeometry y="94" width="304" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

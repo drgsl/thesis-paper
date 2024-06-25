@@ -1,0 +1,25 @@
+<mxfile host="Electron" modified="2024-06-23T15:08:53.402Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="t_-D8bf5huRlW9ybGmzh" version="24.5.1" type="device">
+  <diagram name="Page-1" id="4zJxbQgZF1wR3b6nxz7K">
+    <mxGraphModel dx="3137" dy="399" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="irEAHoGv2DruOLMViQSn-23" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="261.9998878210902" y="1534.00488782109" width="302.41022435781963" height="439.4102243578193" as="geometry" />
+        </mxCell>
+        <mxCell id="Wgs9sX5iCPWpXRClivq1-48" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;rotation=90;fillColor=#b1ddf0;strokeColor=#10739e;" parent="irEAHoGv2DruOLMViQSn-23" vertex="1">
+          <mxGeometry x="39.42011217890979" y="111.27511217890992" width="222" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="Wgs9sX5iCPWpXRClivq1-55" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.smiley;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="irEAHoGv2DruOLMViQSn-23" vertex="1">
+          <mxGeometry x="102.71011217890975" y="169.27511217890992" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Wgs9sX5iCPWpXRClivq1-36" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.calloutDouble90Arrow;dy1=10;dx1=20;dx2=154.64;dy2=157.62;arrowHead=10;rotation=-135;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;" parent="irEAHoGv2DruOLMViQSn-23" vertex="1">
+          <mxGeometry x="43.42011217890979" y="184.27511217890992" width="212.57" height="210.86" as="geometry" />
+        </mxCell>
+        <mxCell id="Wgs9sX5iCPWpXRClivq1-46" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.calloutDouble90Arrow;dy1=10;dx1=20;dx2=154.64;dy2=157.62;arrowHead=10;rotation=45;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" parent="irEAHoGv2DruOLMViQSn-23" vertex="1">
+          <mxGeometry x="46.42011217890979" y="44.27511217890992" width="212.57" height="210.86" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

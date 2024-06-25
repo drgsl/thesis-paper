@@ -1,4 +1,5 @@
-\documentclass[12pt]{report}
+\documentclass[12pt twoside]{report}
+% \documentclass{book}
 
 \def\blankpage{%
       \clearpage%
@@ -20,8 +21,25 @@
 \usepackage{wrapfig}            % for the small images that have text around
 \usepackage[rightcaption]{sidecap}
 \usepackage{amsmath}            % for math cases in functions
-
 \usepackage{xcolor}
+\usepackage{fancyhdr}
+% Set the page style to "fancy"...
+\pagestyle{fancy}
+
+
+% %... then configure it.
+% \fancyhead{} % clear all header fields
+% \fancyhead[RO,LE]{\textbf{The performance of new graduates}}
+% \fancyfoot{} % clear all footer fields
+% \fancyfoot[LE,RO]{\thepage}
+% \fancyfoot[LO,CE]{From: K. Grant}
+% \fancyfoot[CO,RE]{To: Dean A. Smith}
+
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+
 
 % includes options
 \geometry{  a4paper,            % scientific thesis standard
@@ -108,9 +126,13 @@
 
 
 
-    \blankpage
+    % \blankpage
+
+
+
+    % \part*{Abstract}
     \input{src/content/abstract}
- 
+    % \fancyhead{} % clear all header fields
 
 
 
@@ -124,59 +146,172 @@
 
 
     \part{Introduction}
-      \chapter*{Introduction}
-        \section*{Motivation}
+      \section*{Motivation}
           \input{src/content/motivation}
-        \section*{Introduction}
+      \section*{Introduction}
           \input{src/content/introduction}
           \input{src/content/bachelors}
-        \section*{Game Engines}
-          In this section, we will inspect the criteria to which a piece of software needs to qualify in order to be considered part of the game engines set.
-          \input{src/content/proof}
+          % \begin{center}
+          % \includegraphics[width=0.9 \textwidth]{game_engine_overview.png}
+          % \end{center}
 
+          \input{src/content/gameEngine/front}
+          \pagebreak
+
+          \fancyhead[L]{}
+          \fancyhead[C]{Problem Statement}
+          \fancyhead[R]{}
+          \input{src/content/problem}
+
+          \fancyhead[L]{}
+          \fancyhead[C]{Field Study}
+          \fancyhead[R]{}
+
+          \input{src/content/study/compGraphHistory}
+          \input{src/content/study/phigs.tex}
+          \pagebreak
+
+
+      \section*{Game Engines}
+\addcontentsline{toc}{section}{Game Engines}
+          \input{src/content/gameEngine/overview}
+          \pagebreak
+
+          % \fancyhead[L]{GAME ENGINES}
+          % \fancyhead[C]{}
+          % \fancyhead[R]{}
+          % \input{src/content/gameEngine/popular}
+          % \input{src/content/gameEngine/RAGE}
+          % \input{src/content/gameEngine/Unity}
+          % \input{src/content/gameEngine/p5.js}
+          % \fancyhead[L]{GAME ENGINES}
+          % \fancyhead[C]{Problem}
+          % \fancyhead[R]{MACHINE LEARNING}
+\addcontentsline{toc}{section}{Machine Learning Integration}
+          \input{src/content/gameEngine/machineLearning}
+          \pagebreak
+
+          % \fancyhead[L]{GAME ENGINES}
+          % \fancyhead[C]{Solution}
+          % \fancyhead[R]{MACHINE LEARNING}
+          \input{src/content/solution}
+
+
+          \pagebreak
+          % \fancyhead[L]{COMPUTER GRAPHICS}
+          % \fancyhead[C]{History}
+          % \fancyhead[R]{GAME ENGINES} 
+          % \input{src/content/study/compGraphHistory}
+
+          % \input{src/content/gameEngine/openSoftware}
+          % \input{src/content/gameEngine/proof}
+          % \input{src/content/proof}
+
+
+    % \fancyhead[C]{demo}
+
+    \input{src/content/app/design}
     \part{Implementation}
-      \chapter*{Implementation}
+    \fancyhead[L]{GAME ENGINE} % clear all footer fields
+    \fancyhead[R]{IMPLEMENTATION} % clear all footer fields
+    \fancyhead[C]{Results}
         \input{src/content/app/demo}
-        \section*{Components}
-          In this section, we will inspect each component present in the implementation.
-          \input{src/content/app/components/math}
-          \input{src/content/app/components/renderer}
-          \input{src/content/app/components/probability}
-          \input{src/content/app/components/pyqt}
-        \section*{Implementation}
-          \input{src/content/app/design}
+        \input{src/content/app/front}
+        \input{src/content/app/inspiration}
+        \input{src/content/app/front2}
+        \pagebreak
+        \input{src/content/app/component}
+        \pagebreak
+        \fancyhead[C]{}
+        \fancyhead[L]{GAME ENGINE}
+        \section*{The Frontend}
+          \fancyhead[R]{COMPONENTS}
+          \fancyhead[C]{FRONTEND}
+          \input{src/content/app/frontend/front}
+          \input{src/content/app/frontend/pyqt}
+          % \input{src/content/app/frontend/guiEngine}
+        \pagebreak
+        \section*{The Backend}
+          \fancyhead[C]{BACKEND}
+          \input{src/content/app/backend/front}
+          % \input{src/content/study/phigs.tex}
+          \pagebreak
+          \fancyhead[C]{Rendering Engine}
+          \addcontentsline{toc}{chapter}{Rendering Engine}
+          \input{src/content/app/backend/renderer}
+          \fancyhead[C]{Vectorial Math Engine}
+
+          \addcontentsline{toc}{chapter}{Mathematics Engine}
+          \input{src/content/app/backend/math}
+          \pagebreak
+          \fancyhead[C]{Machine Learning Module}
+          \addcontentsline{toc}{chapter}{Machine Learning Module}
+          \input{src/content/app/backend/probability}
+          \input{src/content/app/backend/id3}
+
+          \pagebreak
+          \fancyhead[C]{Areas for Further Development}
+
+          \addcontentsline{toc}{chapter}{Enhancements and Roadmap}
+          \input{src/content/app/future}
 
     \part{Bibliography}
       \chapter*{Bibliography}
 
         \section*{Literature}
-          In the following, i will present all the literature i used in this research and it will be grouped based on what i learned from that said resource.
+\addcontentsline{toc}{section}{Literature}
 
-          \subsection*{Mathematical Framework}
-            \subsubsection*{"Mathematics For Game Developers" by AUTHOR}
-              \input{src/content/study/book/GameDevMath}
-          \subsection*{Rendering Engine}
-            \subsubsection*{"Computer Graphics in C/C++" by AUTHOR}
-              \input{src/content/study/book/CompGraph}
-            \subsubsection*{"opengl SUPERBIBLE" by AUTHOR}
-              \input{src/content/study/book/superbible}
-              \textbf{How does the screen know what the videoboard wants to render?}
-                \input{src/content/study/youtube/beneater}
-          \subsection*{C++ Software Infrastructure}
-            \subsubsection*{C++ by BJORN STROUPWAFFLE}
-              \input{src/content/study/book/bjorn}
+In this section, I present the literature that informed this research, organized by the specific knowledge gained from each resource.
+        \subsection*{Mathematical Framework}
+        \begin{enumerate}
+            \item \textit{Mathematics For Game Developers} by Christopher Tremblay \\
+            Provided foundational knowledge on vector mathematics and geometric algorithms crucial for implementing physics and spatial computations in the game engine.
+        \end{enumerate}
 
-        \section*{Field Study}
-          \subsection*{CS189 Stanford Computer Graphics Student Projects}
-            \input{src/content/study/paper/stanford/CS189}
-          \subsection*{CS201 Stanford Machine Learning Student Projects}
-            \input{src/content/study/paper/stanford/CS201}
-          \subsection*{Simulating Human Emunacra}
-            \input{src/content/study/paper/emulatra}
-          \subsection*{Detective}
-            This technology had been expanded further from research environments, this technology made it into production and there now exists services that allow access to fine-tuned ai models with special integration for popular use-cases.
-            \input{src/content/study/provider/detective}
-          \subsection*(How does the screen know what to display?)
+        \subsection*{Rendering Engine}
+        \begin{enumerate}
+            \item \textit{Computer Graphics in C/C++} by Donald Hearn\\
+            Contributed insights into fundamental rendering techniques such as rasterization, shading, and texture mapping, which were essential for building the rendering engine.
+            
+            \item \textit{OpenGL SuperBible} by Bjarne Stroustrup \\
+            Detailed explanations and examples of modern OpenGL programming, including shader programming and GPU-based rendering techniques, which directly influenced the rendering pipeline development.
+        \end{enumerate}
+
+        \subsection*{C++ Software Infrastructure}
+        \begin{enumerate}
+            \item \textit{C++ Primer} by Bjarne Stroustrup \\
+            Provided comprehensive coverage of C++ language features, syntax, and best practices, which formed the backbone of the software infrastructure of the game engine.
+        \end{enumerate}
+
+
+
+        %   \subsection*{Mathematical Framework}
+        %     \subsubsection*{"Mathematics For Game Developers" by AUTHOR}
+        %       \input{src/content/study/book/GameDevMath}
+        %   \subsection*{Rendering Engine}
+        %     \subsubsection*{"Computer Graphics in C/C++" by AUTHOR}
+        %       \input{src/content/study/book/CompGraph}
+        %     \subsubsection*{"opengl SUPERBIBLE" by AUTHOR}
+        %       \input{src/content/study/book/superbible}
+        %       \textbf{How does the screen know what the videoboard wants to render?}
+        %         \input{src/content/study/youtube/beneater}
+        %   \subsection*{C++ Software Infrastructure}
+        %     \subsubsection*{C++ by BJORN STROUPWAFFLE}
+        %       \input{src/content/study/book/bjorn}
+
+        % \section*{Field Study}
+        %   \subsection*{CS189 Stanford Computer Graphics Student Projects}
+        %     \input{src/content/study/paper/stanford/CS189}
+        %   \subsection*{CS201 Stanford Machine Learning Student Projects}
+        %     \input{src/content/study/paper/stanford/CS201}
+        %   \subsection*{Simulating Human Emunacra}
+        %     \input{src/content/study/paper/emulatra}
+        %   \subsection*{Detective}
+        %   \hypertarget{GameEngines}{}
+        %     This technology had been expanded further from research environments, this technology made it into production and there now exists services that allow access to fine-tuned ai models with special integration for popular use-cases.
+        %     \input{src/content/study/provider/detective}
+        %     % \input{src/content/study/provider/unity}
+        %   \subsection*(How does the screen know what to display?)
 
 
 
@@ -203,3 +338,5 @@
     % % \input{src/chapters/conclusions}
 
 \end{document}
+
+

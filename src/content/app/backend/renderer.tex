@@ -1,0 +1,111 @@
+
+
+
+\subsection*{Data Structure}
+
+
+
+
+
+
+
+\begin{lstlisting} [caption={Color Declaration}]
+class Color32
+{
+  public:
+    unsigned int r, g, b, a;
+
+    Color32(double grayscale) 
+           : Color(grayscale, grayscale, grayscale, 1.0f) { }
+    Color32(double _r, double _g, double _b, double _a = 1.0f) {  }
+
+\end{lstlisting}
+
+
+\begin{lstlisting}  [caption={Input Handler}]
+  ...
+  static std::map<unsigned char, bool> KeyUpTable;
+  static std::map<unsigned char, bool> KeyTable;
+  static std::map<unsigned char, bool> KeyDownTable;
+
+  static void updateKeyState(unsigned char key, bool state = true);
+  static void resetKeyStates();
+
+class Input
+{
+  public:
+    static bool getKeyDown(GameEngine::KeyCode key);
+    static bool getKeyDown(GameEngine::KeyCode key);
+    static bool getKeyUp(GameEngine::KeyCode key);
+
+    static bool getAxisRaw(std::string axisName);
+};
+
+enum Keycode 
+{
+  KEY_A = 'a',
+  ...
+}
+
+\end{lstlisting}
+
+
+
+\pagebreak
+
+
+\subsection*{Rendering Pipeline}
+
+\begin{lstlisting} [caption={Renderer Declaration}]
+class opengl {
+  private:
+    static void DisplayFunc;  static void ReshapeFunc;
+    static void KeyboardFunc; static void KeyboardUpFunc; static void MouseFunc;
+  public:
+    void setAwake (void (*func)()); void setStart(void (*func)());
+    void setUpdate(void (*func)()); void setFixedUpdate(void (*func)());
+
+    void background(Color c);           void fill();      void noFill(); 
+    void stroke(Color c);               void strokeWeight(double weight);
+    void point(Vector3 pos);            void line(Vector3 start, Vector3 end);
+    void rect(Vector3 bL, Vector3 tR);  void circle(Vector3 c, double r, double seg=1000); 
+};
+\end{lstlisting}
+
+% // Point function
+% point: R^2 -> Render, 
+%                             point(x):
+%                               glBegin(GL_POINTS)
+%                               glVertex2f(x)
+%                               glEnd()
+
+\begin{lstlisting}[caption={Renderer Definition}]
+...
+line: (R^2, R^2) -> Render,
+                              glBegin(GL_LINES)
+                                glVertex2f(x1, y1)
+                                glVertex2f(x2, y2)
+                              glEnd()
+rect: (R^2, R^2) -> Render
+                              glBegin(GL_QUADS)
+                                glVertex2f(x1, y1)
+                                glVertex2f(x2, y1)
+                                glVertex2f(x2, y2)
+                                glVertex2f(x1, y2)
+                              glEnd()
+circle: (R^2, R) -> Render
+                              glBegin(GL_TRIANGLE_FAN)
+                                glVertex2f(xc + r * cos(i), yc + r * sin(i))
+                                for i in [0, 2pi, 2pi/segments]:
+                                  glVertex2f(xc + r * cos(i), yc + r * sin(i))
+                              glEnd()
+\end{lstlisting}
+% background: Color -> Render
+%                                 glClearColor(r, g, b, a)
+%                                 glClear(GL_COLOR_BUFFER_BIT)
+% stroke: Color -> State
+%                                 glColor4f(r, g, b, a)
+
+
+
+\pagebreak

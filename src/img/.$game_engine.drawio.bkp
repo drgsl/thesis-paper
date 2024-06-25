@@ -1,0 +1,46 @@
+<mxfile host="Electron" modified="2024-06-23T15:33:29.052Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="BgH7NWbhSj0EgPTwO8Om" version="24.5.1" type="device">
+  <diagram name="Page-1" id="4zJxbQgZF1wR3b6nxz7K">
+    <mxGraphModel dx="2214" dy="-62" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-12" value="" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=15;" vertex="1" parent="1">
+          <mxGeometry x="284" y="1886" width="257" height="397" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-11" value="" style="group;fontStyle=4" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="266" y="1832" width="447" height="291" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-4" value="" style="shape=offPageConnector;whiteSpace=wrap;html=1;size=0.7724137931034483;" vertex="1" parent="eWnUHyqe-9MQMAGm0uqk-11">
+          <mxGeometry y="146" width="292" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-6" value="" style="shape=offPageConnector;whiteSpace=wrap;html=1;size=0.7724137931034483;rotation=-180;" vertex="1" parent="eWnUHyqe-9MQMAGm0uqk-11">
+          <mxGeometry width="292" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="eWnUHyqe-9MQMAGm0uqk-11">
+          <mxGeometry y="113" width="292" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-10" value="" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=141.21428571428578;fontStyle=4" vertex="1" parent="eWnUHyqe-9MQMAGm0uqk-11">
+          <mxGeometry x="-155" width="602" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-14" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=15;dx=38;arrowHead=55;rotation=-180;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="eWnUHyqe-9MQMAGm0uqk-11">
+          <mxGeometry x="292" y="145" width="62" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-29" value="Engines" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="eWnUHyqe-9MQMAGm0uqk-11">
+          <mxGeometry x="96.5" y="204" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-32" value="Scene Manager" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="eWnUHyqe-9MQMAGm0uqk-11">
+          <mxGeometry x="97" y="125.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-27" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Renderer&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;OpenGL&amp;nbsp;Interface&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;GameObject Instance&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;rotation=-25.7;" vertex="1" parent="1">
+          <mxGeometry x="371" y="2134" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-33" value="Game Editor" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rotation=-40;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1868.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eWnUHyqe-9MQMAGm0uqk-34" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp;Math&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Vector Manipulation&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Matrix Multiplications&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;rotation=26.000000000000004;" vertex="1" parent="1">
+          <mxGeometry x="282" y="2138" width="180" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

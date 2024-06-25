@@ -1,0 +1,251 @@
+
+
+
+
+
+\subsection*{Data Structure}
+For storing a 3D point, a conventional approach is to use a vector of length 3, often represented as $(x, y, z)$. This data structure is generally sufficient for typical use cases.
+
+However, there are situations where a more sophisticated solution becomes necessary. This advanced approach 
+involves employing a $(k+1)$-dimensional vector space to represent entities of dimension $k$
+and it not only handles edge cases but also simplifies other computational tasks.
+
+\begin{lstlisting} [caption={Vector3 Declaration}]
+class Vector3 {
+  public:
+    double x, y, z, w;
+    Vector3(double _x, double _y = 0, double _z = 0, double _w = 1):x(_x),y(_y),z(_z),w(_w){}
+\end{lstlisting}
+
+
+
+\subsection*{Properties}
+
+\begin{minipage}{0.5\linewidth}
+
+\begin{equation*}
+    \mathbf{v_i} = \begin{pmatrix} x & y & z & w \end{pmatrix}.
+    \end{equation*}
+    \[
+    \text{$v_i$.w} =
+    \begin{cases}
+        1 & \text{if $v_i$ is used for describing a point} \\
+        0 & \text{if $v_i$ is used for describing an arrow}
+    \end{cases}
+    \]
+    
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+    \begin{lstlisting}[language=C++, caption={Vector3 Usage}]
+Vector3 v = Vector3::one * 7;
+Debug::Log(v); // <7,7,7,1>
+    \end{lstlisting}
+\end{minipage}
+
+\begin{center}
+  \textbf{Coordinate System Conversion:}
+\end{center}
+
+\begin{minipage}{0.5\linewidth}
+    \begin{equation*}
+    (x, y, z) \quad = \quad \text{Cartesian Coordinates}
+    \end{equation*}
+\end{minipage}%
+\begin{minipage}{0.5\linewidth}
+    \begin{equation*}
+    (r, \theta, \phi) \quad = \quad \text{Polar Coordinates}
+    \end{equation*}
+\end{minipage}
+
+
+\begin{minipage}{0.5\linewidth}
+    \begin{align*}
+        \text{toPolar(Vector3 point): } \quad & \\
+        \begin{cases}
+            \theta &= \arctan\left(\frac{p.y}{p.x}\right) \\
+            \phi &= \arccos\left(\frac{p.z}{r}\right) \\
+            r &= \sqrt{p.x^2 + p.y^2 + p.z^2}
+        \end{cases}
+    \end{align*}
+\end{minipage}%
+\begin{minipage}{0.5\linewidth}
+    \begin{align*}
+        \text{toCartesian(Vector3 point): } \quad & \\
+        \begin{cases}
+            x &= r \sin\phi \cos\theta \\
+            y &= r \sin\phi \sin\theta \\
+            z &= r \cos\phi
+        \end{cases}
+    \end{align*}
+\end{minipage}
+
+
+
+
+\subsection*{Operators} 
+
+\begin{minipage}[t]{0.5\linewidth}
+    \begin{lstlisting}[language=C++, caption={Vector3 Operators}]
+Vector3& operator=(const Vector3& other);
+Vector3& operator+=(const Vector3& other);
+Vector3& operator*=(double scalar);
+Vector3 operator*(double scalar) const;
+Vector3 operator-(const Vector3& other) const; 
+Vector3 operator+(const Vector3& other) const; 
+double dot(const Vector3& other) const;
+Vector3 operator/(double scalar) const;
+double distance(const Vector3& other) const;
+    \end{lstlisting}
+\end{minipage}%
+\begin{minipage}[t]{0.5\linewidth}
+    \begin{itemize}
+    % \item \textbf{Multiplication and Assignment (*=)}: Multiplies each component of the vector by a scalar (\(\lambda\)).
+    %     \[
+    %     \mathbf{v} *= \lambda \quad \Rightarrow \quad 
+    %     \begin{cases}
+    %         v_x &= v_x \cdot \lambda \\
+    %         v_y &= v_y \cdot \lambda \\
+    %         v_z &= v_z \cdot \lambda
+    %     \end{cases}
+    %     \]
+
+    \item \textbf{Dot Product}: Calculates the dot product between the current vector and another.
+\[
+\mathbf{v} \cdot \mathbf{w} = \sum_{i=1}^{n} v_i \cdot w_i
+\]
+
+    \item \textbf{Distance}: Calculates the Euclidean distance between the current vector and another.
+\[
+\text{distance}(\mathbf{v}, \mathbf{w}) = \sqrt{\sum_{i=1}^{n} (v_i - w_i)^2}
+\]
+    \end{itemize}
+\end{minipage}
+
+
+
+
+
+
+
+\pagebreak
+
+
+
+
+
+
+
+
+
+
+\subsection*{Operations}
+
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{Translation:}
+    \[
+    T(x, y, z) = \begin{pmatrix}
+    1 & 0 & 0 & x \\
+    0 & 1 & 0 & y \\
+    0 & 0 & 1 & z \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}
+    \]
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{Scaling:}
+    \[
+    S(s_x, s_y, s_z) = \begin{pmatrix}
+    s_x & 0 & 0 & 0 \\
+    0 & s_y & 0 & 0 \\
+    0 & 0 & s_z & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}
+    \]
+\end{minipage}
+
+These equasions must be really easy to use. 
+For this i have chosen the option that highly resembles Unity's ecosystem.
+
+
+\begin{lstlisting}[caption={\href{https://www.github.com}{source-code}}]
+...
+int main() { Awake(); }
+void Awake() 
+{
+  RenderEngine::setStart(start);  RenderEngine::setUpdate(update);
+  RenderEngine::START(true);
+}
+void start() 
+{
+  Gameobject go;                                   int speed = 0.01;
+  Debug::Log(go.transform.name);                   Debug::Log(go.transform.position)
+  
+  go.transform.translate(Vector3::Right * speed);  Debug::Log(go.transform.position)
+  go.transform.position = Vector3::one * Math::sqrt(Math::pi);  
+}
+\end{lstlisting}
+
+
+
+
+
+Here lies the slight inconvenience mentioned earlier in this chapter, which justifies the use of Homogeneous Coordinates.
+
+
+\textbf{Rotation with Euler Angles (XYZ order):}
+\begin{equation}
+    R_{XYZ}(\alpha, \beta, \gamma) = R_X(\alpha) \cdot R_Y(\beta) \cdot R_Z(\gamma)
+\end{equation}
+where
+
+\begin{minipage}[t]{0.33\textwidth}
+    \[
+    R_X(\alpha):\begin{pmatrix}
+    1 & 0 & 0 & 0 \\
+    0 & \cos\alpha & -\sin\alpha & 0 \\
+    0 & \sin\alpha & \cos\alpha & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}
+    \]
+\end{minipage}%
+\begin{minipage}[t]{0.33\textwidth}
+    \[
+    R_Y(\beta):\begin{pmatrix}
+    \cos\beta & 0 & \sin\beta & 0 \\
+    0 & 1 & 0 & 0 \\
+    -\sin\beta & 0 & \cos\beta & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}
+    \]
+\end{minipage}%
+\begin{minipage}[t]{0.33\textwidth}
+    \[
+    R_Z(\gamma):\begin{pmatrix}
+    \cos\gamma & -\sin\gamma & 0 & 0 \\
+    \sin\gamma & \cos\gamma & 0 & 0 \\
+    0 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}
+    \]
+\end{minipage}
+
+
+\textbf{Gimbal Lock Issue:} Euler angles suffer from gimbal lock, where two of the three rotational axes align, leading to a loss of one degree of freedom.
+
+\textbf{Solution: Quaternions}
+\begin{equation}
+    q = \cos\left(\frac{\theta}{2}\right) + \sin\left(\frac{\theta}{2}\right)(u_x i + u_y j + u_z k)
+\end{equation}
+where \( \theta \) is the rotation angle and \( (u_x, u_y, u_z) \) is the unit vector representing the axis of rotation.
+
+
+
+
+
+
+
+
+
+
+
+
