@@ -1,7 +1,7 @@
-PWD /home/admin/github/thesis
+PWD /home/admin/git/thesis-paper
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/admin/github/thesis/main.tex
+INPUT /home/admin/git/thesis-paper/main.tex
 OUTPUT main.log
 INPUT /usr/share/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/report.cls
@@ -576,6 +576,11 @@ INPUT src/content/app/future.tex
 INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT ./src/content/results.tex
+INPUT ./src/content/results.tex
+INPUT ./src/content/results.tex
+INPUT ./src/content/results.tex
+INPUT src/content/results.tex
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

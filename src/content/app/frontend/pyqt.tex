@@ -72,6 +72,67 @@
   \xrightarrow{\text{response}}
   \]
   
+
+
+
+
+
+
+
+  \pagebreak
+
+\section*{Submodule Communication}
+
+In the game engine, submodules within the frontend communicate using well-defined processes to ensure a coherent and synchronized user experience. Each submodule is designed to handle specific tasks, and they interact with each other through a series of function calls, events, and data sharing mechanisms.
+
+\subsection*{Communication Mechanisms}
+
+\begin{itemize}
+    \item \textbf{Function Calls:} Direct function calls are used when a submodule needs to invoke a specific operation in another submodule. For example, the Scene View might call functions in the Inspector to update the properties of a selected object.
+    \item \textbf{Event System:} An event-driven architecture allows submodules to subscribe to and broadcast events. When an event occurs (e.g., a user selects an object in the Hierarchy), an event is broadcasted to all interested submodules (e.g., Scene View and Inspector).
+    \item \textbf{Shared Data Structures:} Submodules often share data structures, such as the JSON scene file. When one submodule modifies this data (e.g., the Hierarchy reorders objects), the changes are reflected across all submodules that read from the same data.
+\end{itemize}
+
+\subsection*{Example Workflow}
+
+Consider a scenario where the user selects a game object in the Hierarchy, and this selection needs to be reflected in the Scene View and Inspector:
+
+\begin{enumerate}
+    \item \textbf{Hierarchy:} The user clicks on an object in the Hierarchy submodule.
+    \item \textbf{Event Broadcast:} The Hierarchy submodule broadcasts a "selection changed" event.
+    \item \textbf{Scene View:} The Scene View submodule receives the event and highlights the selected object.
+    \item \textbf{Inspector:} The Inspector submodule receives the event and displays the properties of the selected object for editing.
+\end{enumerate}
+
+\subsection*{Inter-Process Communication (IPC)}
+
+For more complex interactions, especially those that might involve asynchronous operations or different processes, Inter-Process Communication (IPC) mechanisms are used:
+
+\begin{itemize}
+    \item \textbf{Message Passing:} Submodules send messages to each other to request actions or share information. This can be implemented using various IPC methods such as sockets, message queues, or shared memory.
+    \item \textbf{Remote Procedure Calls (RPC):} One submodule can invoke functions in another submodule as if they were local, even though they might be running in separate processes. This abstraction simplifies communication and coordination.
+\end{itemize}
+
+% \subsection*{Synchronization}
+
+% To maintain data consistency and avoid race conditions, synchronization mechanisms such as locks, semaphores, and mutexes are employed. These ensure that only one submodule can modify shared data at a time, preserving the integrity of the data.
+
+% \subsection*{Summary}
+
+% The communication between frontend submodules in the game engine is a blend of direct function calls, event-driven updates, shared data structures, and IPC mechanisms. This robust communication framework allows for a highly interactive and responsive user interface, where changes in one submodule are promptly reflected across all relevant parts of the application.
+
+
+
+
+
+
+
+
+
+
+
+
+
   % \[
   % \xrightarrow{\text{request}} (\text{FileManager} \lor \text{SceneManager})
   % \xrightarrow{\text{response}}

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.8)  25 JUN 2024 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.11)  25 JUN 2024 17:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/admin/github/thesis/main.tex
-(/home/admin/github/thesis/main.tex
+**/home/admin/git/thesis-paper/main.tex
+(/home/admin/git/thesis-paper/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/report.cls
@@ -685,7 +685,7 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
 
 
 ] (./src/front/cover.tex
-<src/img/logoFii.png, id=60, 193.47281pt x 188.95593pt>
+<src/img/logoFii.png, id=68, 193.47281pt x 188.95593pt>
 File: src/img/logoFii.png Graphic file (type png)
 <use src/img/logoFii.png>
 Package pdftex.def Info: src/img/logoFii.png  used on input line 13.
@@ -719,7 +719,7 @@ l.118     \blankpage
                      [0
 
 ] (./src/content/abstract.tex
-<src/img/components.drawio.png, id=77, 2357.80875pt x 1671.24374pt>
+<src/img/components.drawio.png, id=85, 2357.80875pt x 1671.24374pt>
 File: src/img/components.drawio.png Graphic file (type png)
 <use src/img/components.drawio.png>
 Package pdftex.def Info: src/img/components.drawio.png  used on input line 37.
@@ -739,7 +739,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 14
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )) (./src/content/gameEngine/front.tex
-<src/img/game_engine_process.png, id=105, 359.84438pt x 103.88812pt>
+<src/img/game_engine_process.png, id=115, 359.84438pt x 103.88812pt>
 File: src/img/game_engine_process.png Graphic file (type png)
 <use src/img/game_engine_process.png>
 Package pdftex.def Info: src/img/game_engine_process.png  used on input line 9.
@@ -750,7 +750,7 @@ Overfull \hbox (54.54198pt too wide) in paragraph at lines 69--70
  []
 
 [6]) [7] (./src/content/study/compGraphHistory.tex
-<src/img/vga.jpeg, id=147, 803.0pt x 803.0pt>
+<src/img/vga.jpeg, id=157, 803.0pt x 803.0pt>
 File: src/img/vga.jpeg Graphic file (type jpg)
 <use src/img/vga.jpeg>
 Package pdftex.def Info: src/img/vga.jpeg  used on input line 15.
@@ -770,23 +770,23 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 176.
 
 (./src/content/gameEngine/overview.tex [10]
-<src/img/rage_vector_math.jpeg, id=193, 632.3625pt x 291.0875pt>
+<src/img/rage_vector_math.jpeg, id=203, 632.3625pt x 291.0875pt>
 File: src/img/rage_vector_math.jpeg Graphic file (type jpg)
 <use src/img/rage_vector_math.jpeg>
 Package pdftex.def Info: src/img/rage_vector_math.jpeg  used on input line 89.
 (pdftex.def)             Requested size: 395.59225pt x 182.09486pt.
 ) [11 <./src/img/rage_vector_math.jpeg>] (./src/content/gameEngine/machineLearning.tex
-<src/img/dougdoug.jpeg, id=204, 784.9325pt x 453.695pt>
+<src/img/dougdoug.jpeg, id=214, 784.9325pt x 453.695pt>
 File: src/img/dougdoug.jpeg Graphic file (type jpg)
 <use src/img/dougdoug.jpeg>
 Package pdftex.def Info: src/img/dougdoug.jpeg  used on input line 21.
 (pdftex.def)             Requested size: 218.51003pt x 142.26393pt.
-<src/img/arrow.jpeg, id=205, 441.65pt x 442.65375pt>
+<src/img/arrow.jpeg, id=215, 441.65pt x 442.65375pt>
 File: src/img/arrow.jpeg Graphic file (type jpg)
 <use src/img/arrow.jpeg>
 Package pdftex.def Info: src/img/arrow.jpeg  used on input line 27.
 (pdftex.def)             Requested size: 218.51295pt x 142.26672pt.
-<src/img/DataStructure.jpeg, id=206, 464.73625pt x 223.83624pt>
+<src/img/DataStructure.jpeg, id=216, 464.73625pt x 223.83624pt>
 File: src/img/DataStructure.jpeg Graphic file (type jpg)
 <use src/img/DataStructure.jpeg>
 Package pdftex.def Info: src/img/DataStructure.jpeg  used on input line 40.
@@ -796,13 +796,13 @@ Overfull \hbox (8.33531pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
-<src/img/birthdayParty.jpeg, id=207, 752.8125pt x 509.905pt>
+<src/img/birthdayParty.jpeg, id=217, 752.8125pt x 509.905pt>
 File: src/img/birthdayParty.jpeg Graphic file (type jpg)
 <use src/img/birthdayParty.jpeg>
 Package pdftex.def Info: src/img/birthdayParty.jpeg  used on input line 47.
 (pdftex.def)             Requested size: 161.30016pt x 109.2576pt.
 ) [12 <./src/img/dougdoug.jpeg> <./src/img/arrow.jpeg> <./src/img/DataStructure.jpeg> <./src/img/birthdayParty.jpeg>] (./src/content/solution.tex) [13] (./src/content/app/design.tex
-<src/img/app_arch.png, id=225, 841.1425pt x 1184.425pt>
+<src/img/app_arch.png, id=235, 841.1425pt x 1184.425pt>
 File: src/img/app_arch.png Graphic file (type png)
 <use src/img/app_arch.png>
 Package pdftex.def Info: src/img/app_arch.png  used on input line 8.
@@ -816,7 +816,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 41--74
 [][][] 
  []
 
-) (./src/content/app/front.tex [16]) (./src/content/app/inspiration.tex) (./src/content/app/front2.tex) [17] (./src/content/app/component.tex) (./src/content/app/frontend/front.tex) (./src/content/app/frontend/pyqt.tex) [18] (./src/content/app/backend/front.tex) [19] (./src/content/app/backend/renderer.tex [20]) [21] (./src/content/app/backend/math.tex
+) (./src/content/app/front.tex [16]) (./src/content/app/inspiration.tex) (./src/content/app/front2.tex) [17] (./src/content/app/component.tex) (./src/content/app/frontend/front.tex) (./src/content/app/frontend/pyqt.tex [18]) [19] (./src/content/app/backend/front.tex [20]) [21] (./src/content/app/backend/renderer.tex [22]) [23] (./src/content/app/backend/math.tex
 Overfull \hbox (30.35277pt too wide) in paragraph at lines 24--44
 []$[]$ $[]$ 
  []
@@ -836,7 +836,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 87--123
 [][][] 
  []
 
-[22]
+[24]
 Overfull \hbox (28.45274pt too wide) in paragraph at lines 143--165
 [][][] 
  []
@@ -846,16 +846,23 @@ Overfull \hbox (23.90279pt too wide) in paragraph at lines 201--231
 [][][][] 
  []
 
-) [23] (./src/content/app/backend/probability.tex) (./src/content/app/backend/id3.tex [24]) [25] (./src/content/app/future.tex [26] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+) [25] (./src/content/app/backend/probability.tex) (./src/content/app/backend/id3.tex [26]) [27] (./src/content/app/future.tex [28] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-)) [27] [28
+) [29] [30] [31]
+Overfull \hbox (1.69261pt too wide) in paragraph at lines 236--237
+[]\OT1/ppl/m/n/10 libktx fa-cil-i-tates ef-fi-cient tex-ture load-ing and stor-age us-ing the KTX for-mat, op-ti-mized for OpenGL
+ []
+
+) [32] [33
+
+] (./src/content/results.tex) [34] [35
 
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 262.
+(hyperref)                than one, level fixed on input line 267.
 
-[29
+[36
 
 ] (./main.aux)
  ***********
@@ -863,21 +870,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3B6CE562B9AD81D22C653B5027E28E82;1824.
+(rerunfilecheck)             Checksum: AF3D380687D91CA71037B6484B45B3A4;2121.
  ) 
 Here is how much of TeX's memory you used:
- 34750 strings out of 476076
- 783150 string characters out of 5793776
+ 35034 strings out of 476076
+ 787063 string characters out of 5793775
  2519187 words of memory out of 5000000
- 55876 multiletter control sequences out of 15000+600000
+ 56034 multiletter control sequences out of 15000+600000
  575401 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,17n,87p,751b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,87p,754b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (34 pages, 1295688 bytes).
+Output written on main.pdf (41 pages, 1315169 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 611 compressed objects within 7 object streams
- 361 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 876 PDF objects out of 1000 (max. 8388607)
+ 783 compressed objects within 8 object streams
+ 484 named destinations out of 1000 (max. 500000)
+ 175 words of extra memory for PDF output out of 10000 (max. 10000000)
 

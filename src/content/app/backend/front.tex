@@ -10,6 +10,99 @@
 machine learning interface and input handling.
 \end{quote}
 
+\section*{Backend Architecture}
+
+The backend of the game engine is the core that handles critical functionalities such as rendering, physics calculations, input processing, and more. Each component of the backend operates in unison to deliver a seamless and efficient gaming experience. Here's a detailed look at how the backend is structured and how its components interact.
+
+\subsection*{Core Components}
+
+\subsubsection*{Rendering Engine}
+
+The rendering engine is responsible for drawing graphics on the screen. It processes 3D models, textures, lighting, and shadows to create the visual representation of the game world. Using APIs like OpenGL or DirectX, the rendering engine converts game data into pixels on the screen.
+
+
+\begin{lstlisting}[caption={Rendering Example}, language=C++]
+class Renderer {
+public:
+    void drawMesh(const Mesh& mesh, const Shader& shader) {
+        shader.use();
+        mesh.bind();
+        glDrawElements(GL_TRIANGLES, mesh.getIndexCount(), GL_UNSIGNED_INT, 0);
+    }
+};
+\end{lstlisting}
+
+\subsubsection*{Physics Engine}
+
+The physics engine simulates physical interactions in the game world. This includes collision detection, rigid body dynamics, and other physical behaviors. It ensures that objects move and interact in a realistic manner.
+
+\begin{lstlisting}[caption={Physics Simulation}, language=C++]
+class PhysicsEngine {
+public:
+    void simulate(float deltaTime) {
+        for (auto& body : bodies) {
+            body.integrate(deltaTime);
+            checkCollisions(body);
+        }
+    }
+};
+\end{lstlisting}
+
+\subsubsection*{Input System}
+
+The input system handles user inputs from various devices such as keyboards, mice, and game controllers. It captures input events and translates them into actions within the game.
+
+\begin{lstlisting}[caption={Input Handling}, language=C++]
+class Input {
+public:
+    bool isKeyPressed(int key) {
+        return keyState[key];
+    }
+    
+    void update() {
+        // Update key states based on input events
+    }
+};
+\end{lstlisting}
+
+\subsubsection*{Audio Engine}
+
+The audio engine manages sound effects and music within the game. It processes audio files, handles 3D sound positioning, and ensures that audio playback is synchronized with the game.
+
+\begin{lstlisting}[caption={Audio Playback}, language=C++]
+class AudioEngine {
+public:
+    void playSound(const Sound& sound) {
+        sound.play();
+    }
+};
+\end{lstlisting}
+
+\subsubsection*{Event System}
+
+The event system allows components to communicate asynchronously by broadcasting and listening for events. This decouples components and enables flexible interactions.
+
+\begin{lstlisting}[caption={Event System}, language=C++]
+class EventManager {
+public:
+    void subscribe(EventType type, std::function<void()> listener) {
+        listeners[type].push_back(listener);
+    }
+
+    void broadcast(EventType type) {
+        for (auto& listener : listeners[type]) {
+            listener();
+        }
+    }
+};
+\end{lstlisting}
+
+
+% The backend of the game engine is a complex system that requires careful coordination between its various components. By employing efficient communication mechanisms and robust core functionalities, the backend ensures that the game runs smoothly and responsively, providing an immersive experience for players.
+
+
+
+
 
 
 
